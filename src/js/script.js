@@ -14,7 +14,6 @@ helloBtn.addEventListener('click', function () {
 });
 
 btnClose.addEventListener('click', function () {
-    console.log('closing');
     landingPage.setAttribute('class', 'landing-wrapper-showing');
     VerticalTabs.setAttribute('class', 'tabs-wrapper-hidden');
     contentBlock.setAttribute('class', 'content-wrapper-hidden');

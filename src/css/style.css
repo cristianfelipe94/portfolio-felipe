@@ -29,8 +29,8 @@ body {
   visibility: visible;
   color: #D6DBE0;
   transition: 3s ease-in-out; }
-  .landing-wrapper-hidden .tabs-wrapper .sign {
-    left: -1rem;
+  .landing-wrapper-hidden .tabs-wrapper .page-logo {
+    left: -2rem;
     transition: 3s ease-in-out; }
   .landing-wrapper-hidden .tabs-wrapper .lang {
     left: 50%;
@@ -230,9 +230,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #606378; }
-
-.content-inside-wrapper {
-  padding: 2vw; }
 
 .content-page-hidden {
   padding: 0;

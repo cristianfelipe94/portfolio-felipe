@@ -31,8 +31,8 @@ body {
     visibility: visible;
     color: #D6DBE0;
     transition: 3s ease-in-out;
-    .tabs-wrapper .sign {
-        left: -1rem;
+    .tabs-wrapper .page-logo {
+        left: -2rem;
         transition: 3s ease-in-out;
     }
     .tabs-wrapper .lang {
@@ -265,10 +265,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #606378;
-}
-
-.content-inside-wrapper {
-    padding: 2vw;
 }
 
 .content-page-hidden {
