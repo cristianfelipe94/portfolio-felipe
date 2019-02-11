@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
+    <meta name = "CSP" content = "'Content-Security-Policy', "default-src 'none'", "form-action 'none'", "frame-ancestors 'none'", "style-src 'self'", "script-src 'self' 'https://use.fontawesome.com'", "img-src 'self'"">
+    <title>Portfolio.</title>
+</head>
+<body>
+
+    <div class="tabs-info-wrapper-showing" id="js-tabs-info-wrapper">
+        <ul class="tabs-list">
+            <li><a href="index.html" class="tab-items">Home</a></li>
+            <li><a href="about.html" class="tab-items">About</a></li>
+            <li><a href="portfolio.html" class="tab-items">Portfolio</a></li>
+            <li><a href="education.html" class="tab-items">Relevant Education</a></li>
+            <li><a href="experience.html" class="tab-items">Transferable Experience</a></li>
+            <li><a href="resume.html" class="tab-items">Resume</a></li>
+        </ul>
+        <button class="btnAction" id="js-btn-close">Close</button>
+    </div>
+
+    <div class="content-page-showing" id="content-block">
+        <div class="content-inside-wrapper-showing" id="js-wrapper-portfolio">
+            <h2 class="page-title-hidden">Portfolio Page</h2>
+        </div>
+    </div>
+
+    <div class="landingPageMoves" id="js-landingpage">
+        <div class="tabs-wrapper">
+            <div class="sign">
+                <img src="../img/signature-logo-proj-mixed-color.png" alt="" class="img-logo">
+            </div>
+            <div class="lang">
+                <img src="../img/español.svg" alt="" class="flag" id="españolFlagLang">
+                <img src="../img/english.svg" alt="" class="flag" id="englishFlagLang">
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/stoned_christ/" target="bank" class="social-icon fab fa-instagram" id="insta"></a>
+                <a href="https://github.com/cristianfelipe94" target="bank" class="social-icon fab fa-github" id="github"></a>
+            </div>
+            <div class="img-wrapper">
+                <img src="../img/developer-avatar.png" alt="Esto es una foto" class="imgHello">
+                <div class="rotation-anim">
+                    <h2 class="say-hello-text">console.log('Hola');</h2>
+                    <button id="js-hello" class="say-hello-btn">Click</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/scriptPort.js"></script>
+</body>
+</html>
