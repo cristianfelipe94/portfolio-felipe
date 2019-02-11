@@ -9,7 +9,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.landing-page-wrapper {
+.landing-wrapper-showing {
     position: absolute;
     left: 0;
     width: 100vw;
@@ -20,7 +20,7 @@ body {
     color: #EFEDEE;
 }
 
-.landingPageMoves {
+.landing-wrapper-hidden  {
     position: absolute;
     left: 75%;
     top: 0;
@@ -53,7 +53,7 @@ body {
     transition: 3s;
 }
 
-.sign {
+.page-logo {
     display: inline-block;
     position: absolute;
     left: 35%;
@@ -121,7 +121,7 @@ body {
     cursor: pointer;
 }
 
-.imgHello{
+.hello-main-img {
     width: 400px;
     opacity: 1;
 }
@@ -150,7 +150,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.rotation-anim {
+.rotation-animation {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -168,7 +168,7 @@ body {
     }
 }
 
-.tabs-info-wrapper-hidden {
+.tabs-wrapper-hidden {
     position: absolute;
     height: 100vh;
     left: -40%;
@@ -177,7 +177,7 @@ body {
     transition: 4s ease-in-out;
 }
 
-.tabs-info-wrapper-showing {
+.tabs-wrapper-showing {
     height: 100vh;
     width: 25%;
     left: 0;
@@ -215,7 +215,7 @@ body {
     color: #D6DBE0;
 }
 
-.btnAction {
+.btn-action {
     position: absolute;
     top: 50vh;
     height: 25px;
@@ -224,7 +224,7 @@ body {
     border: 0;
 }
 
-.content-page-hidden {
+.content-wrapper-hidden {
     position: absolute;
     top: 0;
     margin: 0 auto;
@@ -237,7 +237,7 @@ body {
     transition: 3s ease-in-out;
 }
 
-.content-page-showing {
+.content-wrapper-showing {
     position: absolute;
     top: 0;
     margin: 0 auto;
@@ -271,14 +271,14 @@ body {
     padding: 2vw;
 }
 
-.content-inside-wrapper-hidden {
+.content-page-hidden {
     padding: 0;
     position: relative;
     left: -200vw;
     transition: 2s ease;
 }
 
-.content-inside-wrapper-showing {
+.content-page-showing {
     padding: 2vw;
     position: relative;
     left: 0;

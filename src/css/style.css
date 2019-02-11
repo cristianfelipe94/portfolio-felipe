@@ -8,7 +8,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.5px; }
 
-.landing-page-wrapper {
+.landing-wrapper-showing {
   position: absolute;
   left: 0;
   width: 100vw;
@@ -18,7 +18,7 @@ body {
   background-image: linear-gradient(to bottom left, #0d1b59, #74014e, #0d1b59);
   color: #EFEDEE; }
 
-.landingPageMoves {
+.landing-wrapper-hidden {
   position: absolute;
   left: 75%;
   top: 0;
@@ -29,13 +29,13 @@ body {
   visibility: visible;
   color: #D6DBE0;
   transition: 3s ease-in-out; }
-  .landingPageMoves .tabs-wrapper .sign {
+  .landing-wrapper-hidden .tabs-wrapper .sign {
     left: -1rem;
     transition: 3s ease-in-out; }
-  .landingPageMoves .tabs-wrapper .lang {
+  .landing-wrapper-hidden .tabs-wrapper .lang {
     left: 50%;
     transition: 3s ease-in-out; }
-  .landingPageMoves .img-logo {
+  .landing-wrapper-hidden .img-logo {
     width: 224px; }
 
 .tabs-wrapper {
@@ -46,7 +46,7 @@ body {
   padding-top: 1rem;
   transition: 3s; }
 
-.sign {
+.page-logo {
   display: inline-block;
   position: absolute;
   left: 35%;
@@ -104,7 +104,7 @@ body {
 .imgHello, .say-hello {
   cursor: pointer; }
 
-.imgHello {
+.hello-main-img {
   width: 400px;
   opacity: 1; }
 
@@ -130,22 +130,22 @@ body {
   transform: rotateZ(0deg);
   transition: 0.5s ease-in-out; }
 
-.rotation-anim {
+.rotation-animation {
   position: absolute;
   top: 50%;
   width: 100%;
   transform: rotateZ(0deg);
   transition: 0.6s ease-in-out; }
-  .rotation-anim:hover {
+  .rotation-animation:hover {
     transform: rotateZ(-180deg);
     transition: 0.9s ease-in-out; }
-    .rotation-anim:hover .say-hello-text, .rotation-anim:hover .say-hello-btn {
+    .rotation-animation:hover .say-hello-text, .rotation-animation:hover .say-hello-btn {
       transform: rotateZ(-180deg);
       transition: 0.9s ease-in-out;
       background-color: white;
       color: #fd2d65; }
 
-.tabs-info-wrapper-hidden {
+.tabs-wrapper-hidden {
   position: absolute;
   height: 100vh;
   left: -40%;
@@ -153,7 +153,7 @@ body {
   background-image: linear-gradient(to bottom right, #0d1b59, #0075a0, #27c8d5);
   transition: 4s ease-in-out; }
 
-.tabs-info-wrapper-showing {
+.tabs-wrapper-showing {
   height: 100vh;
   width: 25%;
   left: 0;
@@ -186,7 +186,7 @@ body {
   text-decoration: none;
   color: #D6DBE0; }
 
-.btnAction {
+.btn-action {
   position: absolute;
   top: 50vh;
   height: 25px;
@@ -194,7 +194,7 @@ body {
   cursor: pointer;
   border: 0; }
 
-.content-page-hidden {
+.content-wrapper-hidden {
   position: absolute;
   top: 0;
   margin: 0 auto;
@@ -206,7 +206,7 @@ body {
   z-index: -1;
   transition: 3s ease-in-out; }
 
-.content-page-showing {
+.content-wrapper-showing {
   position: absolute;
   top: 0;
   margin: 0 auto;
@@ -234,13 +234,13 @@ body {
 .content-inside-wrapper {
   padding: 2vw; }
 
-.content-inside-wrapper-hidden {
+.content-page-hidden {
   padding: 0;
   position: relative;
   left: -200vw;
   transition: 2s ease; }
 
-.content-inside-wrapper-showing {
+.content-page-showing {
   padding: 2vw;
   position: relative;
   left: 0;
