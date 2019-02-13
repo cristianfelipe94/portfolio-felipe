@@ -4,6 +4,9 @@
     const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
     const btnClose = document.getElementById('js-btn-close');
     const homeContentBlock = document.getElementById('js-home-page');
+    const portContentBlock = document.getElementById('js-port-page');
+
+
 
     const tabsDom = document.getElementsByClassName('tab-items');
 
@@ -52,7 +55,7 @@
     const portFolioContent = document.getElementById('js-wrapper-portfolio');
 
     helloBtn.addEventListener('click', function () {
-        
+
         landingPage.setAttribute('class', 'landingPageMoves');
         for (const e of VerticalTabs) {
             e.setAttribute('class', 'tabs-info-wrapper-showing');
@@ -109,29 +112,27 @@
         backgroundModal.setAttribute('class', 'modal-content-hide');
     });
 
-    function createPort() {
-        imgPortArray.forEach(element => {
-            const elementSrc = element.src;
-            const elementAlt = element.alt;
-            const elementPort = document.createElement('img');
-            elementPort.setAttribute('src', elementSrc);
-            elementPort.setAttribute('alt', elementAlt);
-            elementPort.setAttribute('class', 'gallery-port');
-            elementPort.addEventListener('click', function () {
-                const modalElement = document.createElement('img');
-    
-                modalElement.setAttribute('src', elementSrc);
-                modalElement.setAttribute('class', 'modal-img-display');
-    
-                backgroundModal.setAttribute('class', 'modal-content-display');
-    
-                closeModalBtn.addEventListener('click', function () {
-                    backgroundModal.setAttribute('class', 'modal-content-hide');
-                });
-    
-                backgroundModal.appendChild(modalElement);
+    imgPortArray.forEach(element => {
+        const elementSrc = element.src;
+        const elementAlt = element.alt;
+        const elementPort = document.createElement('img');
+        elementPort.setAttribute('src', elementSrc);
+        elementPort.setAttribute('alt', elementAlt);
+        elementPort.setAttribute('class', 'gallery-port');
+        elementPort.addEventListener('click', function () {
+            const modalElement = document.createElement('img');
+
+            modalElement.setAttribute('src', elementSrc);
+            modalElement.setAttribute('class', 'modal-img-display');
+
+            backgroundModal.setAttribute('class', 'modal-content-display');
+
+            closeModalBtn.addEventListener('click', function () {
+                backgroundModal.setAttribute('class', 'modal-content-hide');
             });
-            portFolioContent.appendChild(elementPort);
+
+            backgroundModal.appendChild(modalElement);
         });
-    }
+        portContentBlock.appendChild(elementPort);
+    });
 }());

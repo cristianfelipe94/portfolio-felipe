@@ -250,10 +250,10 @@
     background-color: black;
     animation: showingContent 4s;
     position: absolute;
-    left: 26vw;
-    width: 44vw;
+    left: 25vw;
+    width: 47vw;
     height: 100vh;
-    padding: 20px;
+    padding: 6%;
     overflow-x: auto;
     transition: 3s ease-in-out;
     z-index: 100;
@@ -297,7 +297,7 @@
     width: 60%;
     opacity: 1;
     position: relative;
-    z-index: 50;
+    z-index: 100;
     margin: 5% auto;
     transition: 2s ease;
 }
@@ -309,14 +309,14 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: 49;
+    z-index: 100;
     transition: 2s ease;
 }
 
 .modal-close-btn {
     height: 50px;
     width: 50px;
-    z-index: 51;
+    z-index: 100;
     display: inline-block;
     position: absolute;
     top: 2.5%;
@@ -327,7 +327,7 @@
 .modal-content-hide {
     display: block;
     opacity: 0;
-    z-index: -50;
+    z-index: 100;
     background-color: #1C3144;
     height: 0vh;
     width: 100vw;
