@@ -4,52 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta author= "Cristian">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
     <title>Portfolio.</title>
 </head>
-<body>
+<body id="js-page-content" class="content-relativeness">
 
-    <div class="tabs-wrapper-hidden" id="js-tabs-wrapper">
+    <div class="tabs-info-wrapper-hidden" id="js-tabs-info-wrapper">
+
         <ul class="tabs-list">
-            <li><a href="pages/index.html" class="tab-items">Home</a></li>
-            <li><a href="pages/about.html" class="tab-items">About</a></li>
-            <li><a href="pages/portfolio.html" class="tab-items">Portfolio</a></li>
-            <li><a href="pages/education.html" class="tab-items">Relevant Education</a></li>
-            <li><a href="pages/experience.html" class="tab-items">Transferable Experience</a></li>
-            <li><a href="pages/resume.html" class="tab-items">Resume</a></li>
+            <li class="tab-items"><a href="#js-home-page">Home</a></li>
+            <li class="tab-items"><a href="#js-about-page">About</a></li>
+            <li class="tab-items"><a href="#js-port-page">Portfolio</a></li>
+            <li class="tab-items"><a href="#js-educ-page">Relevant Education</a></li>
+            <li class="tab-items"><a href="#js-exp-page">Transferable Experience</a></li>
+            <li class="tab-items"><a href="#js-resume-page">Resume</a></li>
         </ul>
-        <button class="btn-action" id="js-btn-close">Close</button>
-    </div>
 
-    <div class="content-wrapper-hidden" id="js-content-wrapper">
-        <div class="content-page-hidden" id="js-wrapper-seccion">
-            <h2>Home Page</h2>
-            <p>Hola bienvenido y bienvenida, mi nombre es Cristian Felipe Desarrollador Web Bilingüe, soy un amante de la buena música, el arte y la tecnología. He encontrado en el Desarrollo Web una manera de divertirme, expresarme y conocer personas con historias increíbles.
-            </p>
-            <p>Me considero una persona muy creativa, con ganas de dar lo mejor de mi y con la disposición de aprender y mejorar.</p>
+        <div class="content-page-hidden" id="js-home-page">
+            <div  class="content-inside-wrapper-hidden" id="js-wrapper-portfolio">
+                <h2 class="page-title-hidden">Home Page</h2>
+                <p>Hola bienvenido y bienvenida, mi nombre es Cristian Felipe Desarrollador Web Bilingüe, soy un amante de la buena música, el arte y la tecnología. He encontrado en el Desarrollo Web una manera de divertirme, expresarme y conocer personas con historias increíbles.
+                </p>
+                <p>Me considero una persona muy creativa, con ganas de dar lo mejor de mi y con la disposición de aprender y mejorar.</p>
+            </div>
         </div>
+
+        <div class="content-page-hidden" id="js-about-page">
+            <div class="content-inside-wrapper-hidden" id="js-wrapper-portfolio">
+                <h2 class="page-title-hidden">About Page</h2>
+                <h3>Real Experience:</h3>
+                <p>
+                    Tuve la oportunidad de trabajar por 3 años en el ambiente de Call Center con cuentas en Inglés de dos empresas, Convergys cuentas en Estados Unidos y Hewlett-Packard Inc (HP) con cuentas en United Kingdom (DXC Technology). Donde pude desarrollar mis habilidades como trabajador, líder y persona responsable de mis acciones y las acciones de mis compañeros de trabajo, también tuve que aprender muchos procesos y a utilizar diversas herramientas lo cual me hizo una persona que se adapta rápido a nuevas experiencias, siempre trabajando de la mejor manera.
+                </p>
+                <h3>What I hope to do:</h3>
+                <p>
+                    Recientemente tengo tres títulos de educación avanzada, del INA y el CETAV, lo cual me motiva a seguir estudiando y a prepararme más. Espero llegar a trabajar y a aprender de la industria del Desarrollo Web en una empresa donde me puedan facilitar las herramientas necesarias para ser un mejor profesional. Me gustaría mucho trabajar y pagarme una preparación universitaria relacionada a Desarrollo Web apenas se me dé la oportunidad, ya que es una carrera que me apasiona.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-page-hidden" id="js-port-page">
+            <div class="content-inside-wrapper-hidden" id="js-wrapper-portfolio">
+                <h2 class="page-title-hidden">Portfolio Page</h2>
+            </div>
+        </div>
+
+        <div class="content-page-hidden" id="js-educ-page">
+            <div class="content-inside-wrapper-hidden" id="js-wrapper-portfolio">
+                <h2 class="page-title-hidden">Relevant Education</h2>
+                <p>
+                    Título de Primaria Escuela Roberto Cantillano Vindas (Fecha).
+                </p>
+                <p>
+                    Título de Secundaria Liceo Anastasio Alfaro (Fecha).
+                </p>
+                <p>
+                    Titulo de Aplicaciones Ofimáticas INA (Fecha).
+                </p>
+                <p>
+                    Título de Pronunciación Inglesa INA (Fecha).
+                </p>
+                <p>
+                    Título de Diseño y Desarrollo Web CETAV (Fecha).
+                </p>
+            </div>
+        </div>
+
+        <div class="content-page-hidden" id="js-exp-page">
+            <div class="content-inside-wrapper-hidden" id="js-wrapper-portfolio">
+                <h2 class="page-title-hidden">Experience Page</h2>
+                <p>
+                    Tengo una carrera profesional de 3 años donde pude trabajar con la empresa Convergys y Hewlett-Packard Inc (HP) en cuentas de Call Center.
+                </p>
+                <h3>While I worked at Convergys:</h3>
+                <p>
+                    En Convergys fui agente de Call Center en varias cuentas de Estados Unidos, una de las cuentas fue Security Assurance donde fui agente de:
+                </p>
+                <h3>Tech Support Agent:</h3>
+                <p>
+                    En este rol de agente aprendí mucho de virus, identity theft, seguridad y protección de información. También pude desarrollar habilidades para comprender a los usuarios, sus necesidades y preocupaciones, desarrollé paciencia y la escucha.
+                </p>
+                <h3>Sales Agent:</h3>
+                <p>
+                    En este rol aprendí a ganarme la confianza de los usuarios, controlar diversas situaciones y vender un producto de seguridad para la protección de información personal.
+                </p>
+                <h3>Billing Department Agent:</h3>
+                <p>
+                    En este rol de agente pude desarrollar mi logica matematica, paciencia y skills para tratar a los usuarios, ya que un usuario puede ser muy complicado de tratar cuando su problema o duda está relacionada al dinero y las facturaciones.
+                </p>
+                <h3>While I worked at Hewlett-Packard Inc (HP):</h3>
+                <p>
+                    En Hewlett-Packard fui agente de Call Center en una cuenta nocturna graveyard, en la cual daba soporte técnico a clientes de United Kingdom. Durante el tiempo que trabajé para dicha compañía tuve la gran experiencia de servir como Tech Support Agent y Queue Manager, lo cual me hizo consciente de ser responsable con mis acciones y las acciones de mis compañeros. Fui capaz de organizar meetings, dar feedbacks y crear reportes de métricas a mis supervisores del trabajo realizado en el horario de la noche por nuestro equipo.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-page-hidden" id="js-resume-page">
+            <div class="content-inside-wrapper-hidden" id="js-wrapper-portfolio">
+                <h2 class="page-title">Resume</h2>
+            </div>
+        </div>
+        <button class="btnAction" id="js-btn-close">Close</button>
     </div>
 
-    <div class="landing-wrapper-showing" id="js-landing-page">
+
+    <div id="js-modal" class="modal-content-hide">
+        <button class="modal-close-btn" id="js-close-modal">Close</button>
+        <button>Left</button>
+        <button>Right</button>
+    </div>
+
+    <div class="landing-page-wrapper" id="js-landingpage">
         <div class="tabs-wrapper">
-            <div class="page-logo">
+            <div class="sign">
                 <img src="img/signature-logo-proj-mixed-color.png" alt="" class="img-logo">
             </div>
             <div class="lang">
-                <img src="img/español.svg" alt="" class="flag" id="js-español-lang">
-                <img src="img/english.svg" alt="" class="flag" id="js-english-lang">
+                <img src="img/español.svg" alt="" class="flag" id="españolFlagLang">
+                <img src="img/english.svg" alt="" class="flag" id="englishFlagLang">
             </div>
             <div class="social">
-                <a href="https://www.instagram.com/stoned_christ/" target="_blank" class="social-icon fab fa-instagram" id="js-insta"></a>
-                <a href="https://github.com/cristianfelipe94" target="_blank" class="social-icon fab fa-github" id="js-github"></a>
+                <a href="https://www.instagram.com/stoned_christ/" target="bank" class="social-icon fab fa-instagram" id="insta"></a>
+                <a href="https://github.com/cristianfelipe94" target="bank" class="social-icon fab fa-github" id="github"></a>
             </div>
             <div class="img-wrapper">
-                <img src="img/developer-avatar.png" alt="Esto es una foto" class="hello-main-img">
-                <div class="rotation-animation">
+                <img src="img/developer-avatar.png" alt="Esto es una foto" class="imgHello">
+                <div class="rotation-anim">
                     <h2 class="say-hello-text">console.log('Hola');</h2>
                     <button id="js-hello" class="say-hello-btn">Click</button>
                 </div>
