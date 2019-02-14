@@ -300,7 +300,7 @@
 }
 
 .gallery-port {
-    width: 43%;
+    width: 100%;
     padding: 1%;
     margin: 2%;
     opacity: 0.5;
@@ -310,6 +310,32 @@
         opacity: 1;
         box-shadow: 1px 1px 25px #fd2d65;
         transition: 0.5s ease;
+    }
+}
+
+.portfolio-wrappers {
+    position: relative;
+    display: inline-block;
+    width: 43%;
+    padding: 1%;
+    margin: 2%;
+    text-align: center;
+}
+
+.portfolio-icons {
+    z-index: 50;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    font-size: 3em;
+    text-decoration: none;
+    width: 1em;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    &:hover {
+        color: #fd2d65;
+        transition: 0.6s ease;
     }
 }
 
@@ -385,3 +411,5 @@
     text-decoration: none;
     transition: 1.5s ease;
 }
+
+
