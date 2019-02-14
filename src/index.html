@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Portfolio.</title>
 </head>
 <body id="js-page-content" class="content-relativeness">
@@ -18,21 +20,24 @@
             <li class="tab-items"><a href="#js-home-page">Home</a></li>
             <li class="tab-items"><a href="#js-about-page">About</a></li>
             <li class="tab-items"><a href="#js-port-page">Portfolio</a></li>
-            <li class="tab-items"><a href="#js-educ-page">Relevant Education</a></li>
-            <li class="tab-items"><a href="#js-exp-page">Transferable Experience</a></li>
-            <li class="tab-items"><a href="#js-resume-page">Resume</a></li>
+            <li class="tab-items"><a href="#js-educ-page">Education</a></li>
+            <li class="tab-items"><a href="#js-exp-page">Experience</a></li>
+            <li class="tab-items"><a href="#js-contact-page">Contact</a></li>
             <li class="tab-items"><a href="#js-github-page">Github Activity</a></li>
         </ul>
 
         <div class="content-page-hidden" id="js-home-page">
-            <h2 class="page-title-hidden">Home Page</h2>
-            <p>Hola bienvenido y bienvenida, mi nombre es Cristian Felipe Desarrollador Web Bilingüe, soy un amante de la buena música, el arte y la tecnología. He encontrado en el Desarrollo Web una manera de divertirme, expresarme y conocer personas con historias increíbles.
-            </p>
-            <p>Me considero una persona muy creativa, con ganas de dar lo mejor de mi y con la disposición de aprender y mejorar.</p>
+            <h2 class="page-title-hidden">Home</h2>
+            <p>Hola bienvenida o bienvenido, mi nombre es Cristian Felipe soy Diseñador y Desarrollador web.</p>
+            <p>He encontrado en el Desarrollo Web una manera en la que puedo divertirme y realizarme como profesional. También he tenido la oportunidad de conocer personas con historias increíbles lo cual me motiva a crecer como desarrollador web.</p>
+            <p>Soy una persona creativa, con ganas de dar lo mejor de mi y con la disposición de aprender y mejorar.</p>
+            <p>Cosas que me gustan:</p>
+            <span class="like-icons-color"><img src="img/spriteThingsWhite.svg" alt="" class="sprite-position"></span>
+            <span class="like-icons-words"></span>
         </div>
 
         <div class="content-page-hidden" id="js-about-page">
-            <h2 class="page-title-hidden">About Page</h2>
+            <h2 class="page-title-hidden">About</h2>
             <h3>Real Experience:</h3>
             <p>
                 Tuve la oportunidad de trabajar por 3 años en el ambiente de Call Center con cuentas en Inglés de dos empresas, Convergys cuentas en Estados Unidos y Hewlett-Packard Inc (HP) con cuentas en United Kingdom (DXC Technology). Donde pude desarrollar mis habilidades como trabajador, líder y persona responsable de mis acciones y las acciones de mis compañeros de trabajo, también tuve que aprender muchos procesos y a utilizar diversas herramientas lo cual me hizo una persona que se adapta rápido a nuevas experiencias, siempre trabajando de la mejor manera.
@@ -44,7 +49,7 @@
         </div>
 
         <div class="content-page-hidden" id="js-port-page">
-            <h2 class="page-title-hidden">Portfolio Page</h2>
+            <h2 class="page-title-hidden">Portfolio</h2>
         </div>
 
         <div class="content-page-hidden" id="js-educ-page">
@@ -67,7 +72,7 @@
         </div>
 
         <div class="content-page-hidden" id="js-exp-page">
-            <h2 class="page-title-hidden">Experience Page</h2>
+            <h2 class="page-title-hidden">Experience</h2>
             <p>
                 Tengo una carrera profesional de 3 años donde pude trabajar con la empresa Convergys y Hewlett-Packard Inc (HP) en cuentas de Call Center.
             </p>
@@ -91,10 +96,24 @@
             <p>
                 En Hewlett-Packard fui agente de Call Center en una cuenta nocturna graveyard, en la cual daba soporte técnico a clientes de United Kingdom. Durante el tiempo que trabajé para dicha compañía tuve la gran experiencia de servir como Tech Support Agent y Queue Manager, lo cual me hizo consciente de ser responsable con mis acciones y las acciones de mis compañeros. Fui capaz de organizar meetings, dar feedbacks y crear reportes de métricas a mis supervisores del trabajo realizado en el horario de la noche por nuestro equipo.
             </p>
+            <h2 class="page-title">Resume</h2>
         </div>
 
-        <div class="content-page-hidden" id="js-resume-page">
-            <h2 class="page-title">Resume</h2>
+        <div class="content-page-hidden" id="js-contact-page">
+            <h2 class="page-title">Contact</h2>
+            <form action="POST" class="form-block-size">
+                <label for="nameInput">Name</label>
+                <input type="text" name="nameInput" id="js-name-input" class="input-color" placeholder="Name" minlength="4" maxlength="15">
+                <br/>
+                <label for="nameInput">Email</label>
+                <input type="text" name="emailInput" id="js-email-input" class="input-color" placeholder="Email" minlength="4" maxlength="30">
+                <br/>
+                <label for="nameInput">How can I help?</label>
+                <br/>
+                <textarea name="messageInput" id="js-message-input" cols="30" rows="10" class="message-input-color"></textarea>
+                <input type="submit" class="submit-color">
+                <br/>
+            </form>
         </div>
 
         <div class="content-page-hidden" id="js-github-page">
@@ -129,7 +148,7 @@
             <div class="img-wrapper">
                 <img src="img/developer-avatar.png" alt="Esto es una foto" class="imgHello">
                 <div class="rotation-anim">
-                    <h2 class="say-hello-text">console.log('Hola')</h2>
+                    <h2 class="say-hello-text">console.log('Hola');</h2>
                     <button id="js-hello" class="say-hello-btn">Click</button>
                 </div>
             </div>

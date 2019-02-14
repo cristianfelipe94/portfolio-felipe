@@ -1,10 +1,11 @@
+@charset "UTF-8";
 .content-relativeness {
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
   background-color: #D6DBE0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 15px;
   letter-spacing: 0.5px; }
 
@@ -156,7 +157,8 @@
   color: #D6DBE0;
   display: inline-block;
   margin: 0;
-  width: 43%;
+  width: 41%;
+  padding: 1%;
   text-align: center;
   transform: rotateZ(0deg);
   transition: 0.5s ease-in-out; }
@@ -164,8 +166,8 @@
 .say-hello-btn {
   color: #D6DBE0;
   border: none;
-  height: 47px;
-  width: 47px;
+  height: 48px;
+  width: 48px;
   border-radius: 50% 50%;
   background-color: #fd2d65;
   transform: rotateZ(0deg);
@@ -173,7 +175,7 @@
 
 .rotation-anim {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   transform: rotateZ(0deg);
   transition: 0.6s ease-in-out; }
@@ -221,26 +223,76 @@
   z-index: 100;
   color: #D6DBE0; }
 
-.activity-wrapper {
-  margin: 0;
-  padding: 4%; }
+.like-icons-color {
+  height: 120px;
+  width: 144px;
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  left: 35%;
+  border: 8px solid white;
+  box-shadow: 0px -1px 20px #fd2d65;
+  border-radius: 20px; }
 
-.activity-item-wrapper {
-  border-bottom: 4px solid white;
-  border-radius: 2px;
-  margin: 10% 0;
-  list-style: none;
-  transition: 2s ease; }
-  .activity-item-wrapper:hover {
-    border-radius: 5px;
-    border-bottom: 4px solid #fd2d65;
-    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
-    transition: 0.8s ease; }
+@keyframes spriteMoves {
+  0% {
+    left: 0px; }
+  10% {
+    left: -144px; }
+  20% {
+    left: -288px; }
+  30% {
+    left: -432px; }
+  40% {
+    left: -576px; }
+  50% {
+    left: -720px; }
+  60% {
+    left: -854px; }
+  70% {
+    left: -998px; }
+  80% {
+    left: -1150px; }
+  90% {
+    left: -1290px; }
+  100% {
+    left: 0px; } }
+@keyframes spriteWords {
+  0% {
+    content: 'Tecnología.'; }
+  10% {
+    content: 'Trabajo en Equipo.'; }
+  20% {
+    content: 'Video juegos.'; }
+  30% {
+    content: 'Buena música.'; }
+  40% {
+    content: 'Arte.'; }
+  50% {
+    content: 'Tocar guitarra.'; }
+  60% {
+    content: 'Comida.'; }
+  70% {
+    content: 'Naturaleza.'; }
+  80% {
+    content: 'Animales, en especial gatos.'; }
+  90% {
+    content: 'Salir con amistades'; }
+  100% {
+    content: 'Tecnología.'; } }
+.sprite-position {
+  height: 120px;
+  position: absolute;
+  display: inline-block;
+  animation: spriteMoves 50s ease-in-out infinite;
+  background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5); }
 
-.activity-url-color {
-  color: #D6DBE0;
-  text-decoration: none;
-  transition: 1.5s ease; }
+.like-icons-words::after {
+  content: '';
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  animation: spriteWords 50s ease-in-out infinite; }
 
 .gallery-port {
   width: 100%;
@@ -262,7 +314,7 @@
     box-shadow: 1px 1px 25px #fd2d65;
     transition: 0.5s ease; }
   .portfolio-wrappers:hover .portfolio-icons {
-    color: #fd2d65;
+    color: #27c8d5;
     transition: 0.6s ease;
     box-shadow: 0px -1px 20px #fd2d65;
     background-color: black;
@@ -323,6 +375,38 @@
   position: absolute;
   transition: 2s ease; }
 
+.form-block-size {
+  margin: 5% auto;
+  width: 80%; }
+
+.input-color {
+  overflow: visible;
+  width: 50%;
+  margin: 5% 2%; }
+
+.message-input-color {
+  overflow: visible;
+  width: 95%;
+  margin: 2% 0 5%; }
+
+.submit-color {
+  width: 50%;
+  padding: 2%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  border: none;
+  box-shadow: 1px 1px 30px #27c8d5;
+  background-image: linear-gradient(to bottom right, #0075a0, #27c8d5);
+  transition: 2s;
+  color: white;
+  font-size: 1.1rem; }
+  .submit-color:hover {
+    box-shadow: 1px 1px 20px #0075a0;
+    transition: 1s; }
+
 .tabs-info-wrapper-hidden {
   position: absolute;
   height: 100vh;
@@ -371,5 +455,26 @@
   right: 0vw;
   cursor: pointer;
   border: 0; }
+
+.activity-wrapper {
+  margin: 0;
+  padding: 4%; }
+
+.activity-item-wrapper {
+  border-bottom: 4px solid white;
+  border-radius: 2px;
+  margin: 10% 0;
+  list-style: none;
+  transition: 2s ease; }
+  .activity-item-wrapper:hover {
+    border-radius: 5px;
+    border-bottom: 4px solid #fd2d65;
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
+    transition: 0.8s ease; }
+
+.activity-url-color {
+  color: #D6DBE0;
+  text-decoration: none;
+  transition: 1.5s ease; }
 
 /*# sourceMappingURL=style.css.map */

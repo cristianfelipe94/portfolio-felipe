@@ -1,0 +1,55 @@
+.like-icons-color {
+    height: 120px;
+    width: 144px;
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    left: 35%;
+    border: 8px solid white;
+    box-shadow: 0px -1px 20px #fd2d65;
+    border-radius: 20px;
+}
+
+@keyframes spriteMoves {
+    0% {left: 0px;}
+    10% {left: -144px};
+    20% {left: -288px;}
+    30% {left: -432px;}
+    40% {left: -576px;}
+    50% {left: -720px;}
+    60% {left: -854px;}
+    70% {left: -998px;}
+    80% {left: -1150px;}
+    90% {left: -1290px;}
+    100% {left: 0px;}
+}
+
+@keyframes spriteWords {
+    0% {content: 'Tecnología.';}
+    10% {content: 'Trabajo en Equipo.';}
+    20% {content: 'Video juegos.';}
+    30% {content: 'Buena música.';}
+    40% {content: 'Arte.';}
+    50% {content: 'Tocar guitarra.';}
+    60% {content: 'Comida.';}
+    70% {content: 'Naturaleza.';}
+    80% {content: 'Animales, en especial gatos.';}
+    90% {content: 'Salir con amistades';}
+    100% {content: 'Tecnología.';}
+}
+
+.sprite-position {
+    height: 120px;
+    position: absolute;
+    display: inline-block;
+    animation: spriteMoves 50s ease-in-out infinite;
+    background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5);
+}
+
+.like-icons-words::after {
+    content: '';
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    animation: spriteWords 50s ease-in-out infinite;
+}

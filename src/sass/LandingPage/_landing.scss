@@ -10,7 +10,6 @@
     color: #EFEDEE;
 }
 
-
 .landingPageMoves {
     position: absolute;
     left: 80%;
@@ -154,7 +153,8 @@
     color: #D6DBE0;
     display: inline-block;
     margin: 0;
-    width: 43%;
+    width: 41%;
+    padding: 1%;
     text-align: center;
     transform: rotateZ(0deg);
     transition: 0.5s ease-in-out;
@@ -163,8 +163,8 @@
 .say-hello-btn {
     color: #D6DBE0;
     border: none;
-    height: 47px;
-    width: 47px;
+    height: 48px;
+    width: 48px;
     border-radius: 50% 50%;
     background-color: #fd2d65;
     transform: rotateZ(0deg);
@@ -173,7 +173,7 @@
 
 .rotation-anim {
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: 100%;
     transform: rotateZ(0deg);
     transition: 0.6s ease-in-out;
