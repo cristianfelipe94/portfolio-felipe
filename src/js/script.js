@@ -120,8 +120,6 @@
         });
     });
 
-
-
     closeModalBtn.addEventListener('click', function () {
         backgroundModal.setAttribute('class', 'modal-content-hide');
     });
