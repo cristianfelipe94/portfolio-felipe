@@ -106,10 +106,18 @@
   width: 1em;
   cursor: pointer;
   color: #D6DBE0;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px transparent;
+  text-align: center;
+  transition: 1s ease-in-out; }
   .social-icon:hover {
     color: #fd2d65;
-    transition: 0.6s ease; }
+    transition: 0.6s ease;
+    box-shadow: 0px -1px 20px white;
+    background-color: white;
+    border-radius: 50%;
+    transition: 1s ease-in-out; }
 
 .img-wrapper {
   position: absolute;
@@ -269,10 +277,6 @@
   opacity: 0.5;
   box-shadow: 1px 1px 10px #D6DBE0;
   transition: 2s ease; }
-  .gallery-port:hover {
-    opacity: 1;
-    box-shadow: 1px 1px 25px #fd2d65;
-    transition: 0.5s ease; }
 
 .portfolio-wrappers {
   position: relative;
@@ -281,21 +285,31 @@
   padding: 1%;
   margin: 2%;
   text-align: center; }
+  .portfolio-wrappers:hover .gallery-port {
+    opacity: 1;
+    box-shadow: 1px 1px 25px #fd2d65;
+    transition: 0.5s ease; }
+  .portfolio-wrappers:hover .portfolio-icons {
+    color: #fd2d65;
+    transition: 0.6s ease;
+    box-shadow: 0px -1px 20px #fd2d65;
+    background-color: black;
+    transition: 1s ease-in-out; }
 
 .portfolio-icons {
   z-index: 50;
   position: absolute;
-  left: 40%;
   top: 40%;
+  left: 42%;
   font-size: 3em;
   text-decoration: none;
-  width: 1em;
   cursor: pointer;
+  border-radius: 50%;
   color: white;
-  padding: 0.5rem; }
-  .portfolio-icons:hover {
-    color: #fd2d65;
-    transition: 0.6s ease; }
+  padding: 2%;
+  text-align: center;
+  box-shadow: 0px 0px 15px transparent;
+  transition: 1s ease-in-out; }
 
 .modal-img-display {
   display: block;
