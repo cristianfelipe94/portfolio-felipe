@@ -15,28 +15,41 @@
   height: 100vh;
   transition: 3s ease-in-out;
   border-left: 2px solid black;
-  background-image: linear-gradient(to bottom left, #0d1b59, #74014e, #0d1b59);
+  background-image: linear-gradient(to bottom left, #0d1b59, #74014e);
   color: #EFEDEE; }
 
 .landingPageMoves {
   position: absolute;
-  left: 75%;
+  left: 80%;
   top: 0;
-  width: 100vw;
+  width: 25%;
   height: 100vh;
   border-left: 2px solid #fd2d65;
-  background-image: linear-gradient(to bottom left, #0d1b59, #74014e, #0d1b59);
+  background-image: linear-gradient(to bottom left, #0d1b59, #74014e);
   visibility: visible;
   color: #D6DBE0;
   transition: 3s ease-in-out; }
-  .landingPageMoves .tabs-wrapper .sign {
-    left: -1rem;
-    transition: 3s ease-in-out; }
+  .landingPageMoves .sign {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: -20%;
+    text-align: center;
+    margin: 0 auto;
+    transition: 3s ease; }
   .landingPageMoves .tabs-wrapper .lang {
-    left: 50%;
+    position: absolute;
+    left: 150%;
+    width: 100%;
+    transition: 3s ease; }
+  .landingPageMoves .social {
+    position: absolute;
+    right: -150%;
+    transition: 3s ease; }
+  .landingPageMoves .img-wrapper {
+    left: 150%;
+    right: -150%;
     transition: 3s ease-in-out; }
-  .landingPageMoves .img-logo {
-    width: 224px; }
 
 .tabs-wrapper {
   position: relative;
@@ -44,25 +57,30 @@
   height: 100vh;
   margin: 0 auto;
   padding-top: 1rem;
-  transition: 3s; }
+  transition: 3s ease-in-out; }
 
 .sign {
   display: inline-block;
   position: absolute;
-  left: 35%;
-  padding: 1rem;
+  width: 500px;
+  left: 0;
+  right: 0;
+  padding: 1%;
+  text-align: center;
+  margin: 0 auto;
   transition: 3s ease-in-out; }
 
 .img-logo {
-  width: 300px;
-  transition: 3s ease-in-out; }
+  width: 70%;
+  transition: 3s ease; }
 
 .lang {
   display: inline-block;
   position: absolute;
+  width: 100%;
   left: 0;
   padding: 1rem;
-  transition: 3s ease-in-out;
+  transition: 3s ease;
   z-index: 1; }
 
 .flag {
@@ -79,7 +97,8 @@
   right: 0;
   padding: 1rem;
   z-index: 1;
-  text-align: right; }
+  text-align: right;
+  transition: 3s ease; }
 
 .social-icon {
   font-size: 3em;
@@ -90,7 +109,7 @@
   padding: 0.5rem; }
   .social-icon:hover {
     color: #fd2d65;
-    transition: 0.6s ease-in-out; }
+    transition: 0.6s ease; }
 
 .img-wrapper {
   position: absolute;
@@ -99,7 +118,8 @@
   right: 0;
   left: 0;
   top: 30%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transition: 4s ease-in-out; }
 
 .imgHello, .say-hello {
   cursor: pointer; }
@@ -155,7 +175,7 @@
 
 .tabs-info-wrapper-showing {
   height: 100vh;
-  width: 25%;
+  width: 20%;
   left: 0;
   position: absolute;
   margin: 0;
@@ -203,12 +223,13 @@
   z-index: -50;
   animation: hiddingContent 3s;
   position: absolute;
-  left: -80vw;
+  left: -100vw;
   margin: 0 auto;
   height: 100vh;
-  width: 44vw;
-  transition: 3s ease-in-out;
-  color: white; }
+  width: 58vw;
+  color: white;
+  background-color: black;
+  transition: 4s ease-in-out; }
 
 @keyframes showingContent {
   0% {
@@ -219,12 +240,12 @@
   background-color: black;
   animation: showingContent 4s;
   position: absolute;
-  left: 25vw;
-  width: 47vw;
+  left: 20vw;
+  width: 58vw;
   height: 100vh;
-  padding: 6%;
+  padding: 5%;
   overflow-x: auto;
-  transition: 3s ease-in-out;
+  transition: 4s ease-in-out;
   z-index: 100;
   color: #D6DBE0; }
 
@@ -236,7 +257,7 @@
   background: #f1f1f1; }
 
 ::-webkit-scrollbar-thumb {
-  background: #252946; }
+  background: #e82559; }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #606378; }
@@ -246,11 +267,11 @@
   padding: 1%;
   margin: 2%;
   opacity: 0.5;
-  box-shadow: 1px 1px 5px grey;
-  transition: 1s ease; }
+  box-shadow: 1px 1px 10px #D6DBE0;
+  transition: 2s ease; }
   .gallery-port:hover {
     opacity: 1;
-    box-shadow: 2px 2px 5px grey;
+    box-shadow: 1px 1px 25px #fd2d65;
     transition: 0.5s ease; }
 
 .modal-img-display {
@@ -301,6 +322,7 @@
   border-bottom: 4px solid white;
   border-radius: 2px;
   margin: 10% 0;
+  list-style: none;
   transition: 2s ease; }
   .activity-item-wrapper:hover {
     border-radius: 5px;
