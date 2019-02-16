@@ -3,7 +3,7 @@
     position: absolute;
     height: 100vh;
     left: -40%;
-    width: 25%;
+    width: 20%;
     background-image: linear-gradient(to bottom right,#0d1b59,#0075a0,#27c8d5);
     transition: 6s;
 }
@@ -20,28 +20,28 @@
 }
 
 .tabs-list {
-    position: absolute;
-    top: 28vh;
-    right: 0;
-    padding: 0;
-    display: inline-block;
-    list-style: none;
-    color: #D6DBE0;
-    transition: 0.6s ease-in-out;
+  position: absolute;
+  padding: 0;
+  display: block;
+  color: white;
+  transition: 0.6s ease-in-out;
+  width: 100%;
+  list-style: none;
 }
 
 .tabs-list li {
-    margin: 2rem 0;
-    padding: 5px;
+    margin: 5% auto;
+    padding: 15%;
     transition: 1.5s ease-in-out;
+    width: 70%;
     &:hover {
-        padding: 5px;
         background-color: #006593;
         transition: 0.5s ease-in-out;
     }
 }
 
 .tab-items a {
+    padding: 7%;
     text-decoration: none;
     color: #D6DBE0;
 }
