@@ -71,7 +71,7 @@
 
             const links = element.querySelectorAll('ul > li > a');
 
-            const listItem = element.querySelectorAll('div');
+            const listItem = element.querySelectorAll('div .content-page-hidden');
             tabsArray.push(listItem);
 
             for (const link of links) {
@@ -171,6 +171,7 @@
     const request = new XMLHttpRequest();
     request.addEventListener('load', function (event) {
         const response = event.target.response;
+        console.log(response);
         for (let e = 0; e < maxResponse; e++) {
 
             const activityItem = document.createElement('li');
@@ -185,25 +186,44 @@
             const responseTypeAction = response[e].type;
             const responseDate = response[e].created_at;
             const responseDateFormated = responseDate.slice(0, 10).split('-').reverse().join('.');
-            const responseMessage = response[e].payload.commits[0].message;
+            let responseMessage = response[e].payload.commits;
+            if (responseMessage !== undefined) {
+                responseMessage = response[e].payload.commits[0].message;
+                console.log(responseMessage);
+                activityUrl.setAttribute('href', responseFinalUrl);
+                activityUrl.setAttribute('target', '_blank');
+                activityUrl.setAttribute('class', 'activity-url-color');
 
-            activityUrl.setAttribute('href', responseFinalUrl);
-            activityUrl.setAttribute('target', '_blank');
-            activityUrl.setAttribute('class', 'activity-url-color');
+                activityDate.innerText = responseDateFormated;
+                activityCommit.innerText = responseMessage;
+                activityName.innerText = responseTypeAction;
+                activityUrl.innerText = responseFinalUrl;
 
-            activityDate.innerText = responseDateFormated;
-            activityCommit.innerText = responseMessage;
-            activityName.innerText = responseTypeAction;
-            activityUrl.innerText = responseFinalUrl;
+                activityItem.appendChild(activityDate);
+                activityItem.appendChild(activityCommit);
+                activityItem.appendChild(activityName);
+                activityItem.appendChild(activityUrl);
 
-            activityItem.appendChild(activityDate);
-            activityItem.appendChild(activityCommit);
-            activityItem.appendChild(activityName);
-            activityItem.appendChild(activityUrl);
+                activityItem.setAttribute('class', 'activity-item-wrapper');
 
-            activityItem.setAttribute('class', 'activity-item-wrapper');
+                activityContentBlock.appendChild(activityItem);
+            } else if (responseMessage === undefined) {
+                activityUrl.setAttribute('href', responseFinalUrl);
+                activityUrl.setAttribute('target', '_blank');
+                activityUrl.setAttribute('class', 'activity-url-color');
 
-            activityContentBlock.appendChild(activityItem);
+                activityDate.innerText = responseDateFormated;
+                activityName.innerText = responseTypeAction;
+                activityUrl.innerText = responseFinalUrl;
+
+                activityItem.appendChild(activityDate);
+                activityItem.appendChild(activityName);
+                activityItem.appendChild(activityUrl);
+
+                activityItem.setAttribute('class', 'activity-item-wrapper');
+
+                activityContentBlock.appendChild(activityItem);
+            }
         }
     });
 

@@ -7,7 +7,7 @@
   background-color: #D6DBE0;
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 15px;
-  letter-spacing: 0.5px; }
+  letter-spacing: 1.5px; }
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -161,7 +161,8 @@
   padding: 1%;
   text-align: center;
   transform: rotateZ(0deg);
-  transition: 0.5s ease-in-out; }
+  transition: 0.5s ease-in-out;
+  letter-spacing: 0.5px; }
 
 .say-hello-btn {
   color: #D6DBE0;
@@ -227,12 +228,14 @@
   height: 120px;
   width: 144px;
   position: absolute;
+  left: 5%;
   overflow: hidden;
-  display: inline-block;
-  left: 35%;
-  border: 8px solid white;
   box-shadow: 0px -1px 20px #fd2d65;
-  border-radius: 20px; }
+  border-radius: 20px;
+  transition: 1s; }
+  .like-icons-color:hover {
+    box-shadow: 0px -1px 20px #b82e55;
+    transition: 0.8s; }
 
 @keyframes spriteMoves {
   0% {
@@ -275,7 +278,7 @@
   70% {
     content: 'Naturaleza.'; }
   80% {
-    content: 'Animales, en especial gatos.'; }
+    content: 'Gatos.'; }
   90% {
     content: 'Salir con amistades'; }
   100% {
@@ -287,11 +290,20 @@
   animation: spriteMoves 50s ease-in-out infinite;
   background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5); }
 
+.sprite-wrapper-position {
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative; }
+
+.like-icons-words {
+  width: 160px;
+  text-align: center;
+  margin: 5% auto;
+  letter-spacing: 0.5px; }
+
 .like-icons-words::after {
   content: '';
-  height: 250px;
-  width: 250px;
-  background-color: red;
   animation: spriteWords 50s ease-in-out infinite; }
 
 .gallery-port {

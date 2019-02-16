@@ -2,12 +2,15 @@
     height: 120px;
     width: 144px;
     position: absolute;
+    left: 5%;
     overflow: hidden;
-    display: inline-block;
-    left: 35%;
-    border: 8px solid white;
     box-shadow: 0px -1px 20px #fd2d65;
     border-radius: 20px;
+    transition: 1s;
+    &:hover {
+        box-shadow: 0px -1px 20px #b82e55;
+        transition: 0.8s;
+    }
 }
 
 @keyframes spriteMoves {
@@ -33,7 +36,7 @@
     50% {content: 'Tocar guitarra.';}
     60% {content: 'Comida.';}
     70% {content: 'Naturaleza.';}
-    80% {content: 'Animales, en especial gatos.';}
+    80% {content: 'Gatos.';}
     90% {content: 'Salir con amistades';}
     100% {content: 'Tecnología.';}
 }
@@ -46,10 +49,22 @@
     background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5);
 }
 
+.sprite-wrapper-position {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.like-icons-words {
+    width: 160px;
+    text-align: center;
+    margin: 5% auto;
+    letter-spacing: 0.5px;
+}
+
+
 .like-icons-words::after {
     content: '';
-    height: 250px;
-    width: 250px;
-    background-color: red;
     animation: spriteWords 50s ease-in-out infinite;
 }
