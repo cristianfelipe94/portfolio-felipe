@@ -6,6 +6,8 @@
   const homeContentBlock = document.getElementById('js-home-page');
   const portContentBlock = document.getElementById('js-port-page');
 
+  const educationContentBlock = document.getElementById('js-diploma-page');
+
   const backgroundImg = document.getElementById('js-background-img');
 
   const backgroundModal = document.getElementById('js-modal');
@@ -78,7 +80,7 @@
       'img/background/soft.jpg',
       'img/background/floyd.jpg',
       'img/background/mermaid.jpg',
-      'img/background/raven.jpg',
+      'img/background/witch.jpg',
       'img/background/support.jpg',
       'img/background/skinish.jpg',
       'img/background/rights.jpg',
@@ -192,6 +194,70 @@
       portContentBlock.appendChild(portElementWrapper);
   });
 
+
+  const diplomaContent = [
+    diploma1 = {
+      src: 'img/diploma.png',
+      alt: 'diploma information',
+      content: 'Título de Diseño y Desarrollo Web CETAV',
+      date: 'Fecha CETAV',
+    },
+    diploma2 = {
+      src: 'img/diploma.png',
+      alt: 'diploma information',
+      content: 'Título de Pronunciación Inglesa INA',
+      date: 'Fecha INA',
+    },
+    diploma3 = {
+      src: 'img/diploma.png',
+      alt: 'diploma information',
+      content: 'Titulo de Aplicaciones Ofimáticas INA',
+      date: 'Fecha INA',
+    },
+    diploma4 = {
+      src: 'img/diploma.png',
+      alt: 'diploma information',
+      content: 'Título de Secundaria Liceo Anastasio Alfaro',
+      date: 'Fecha Secundaria',
+    },
+    diploma5 = {
+      src: 'img/diploma.png',
+      alt: 'diploma information',
+      content: 'Título de Primaria Escuela Roberto Cantillano Vindas',
+      date: 'Fecha Primaria',
+    },
+  ];
+
+  diplomaContent.forEach(element => {
+    const srcElement = element.src;
+    const altElement = element.alt;
+    const contentElement = element.content;
+    const dateElement = element.date;
+
+    const elementListItem = document.createElement('li');
+    const elementLogo = document.createElement('img');
+    const elementInformation = document.createElement('p');
+    const elementDateInfo = document.createElement('p');
+
+    elementLogo.setAttribute('src', srcElement);
+    elementLogo.setAttribute('alt', altElement);
+    elementLogo.setAttribute('class', 'diploma-logo-size');
+
+    elementInformation.innerText = contentElement;
+    elementInformation.setAttribute('class', 'diploma-content');
+
+    elementDateInfo.innerText = dateElement;
+    elementDateInfo.setAttribute('class', 'diploma-date-position');
+
+    elementListItem.setAttribute('class', 'diploma-position');
+
+    elementListItem.appendChild(elementLogo);
+    elementListItem.appendChild(elementInformation);
+    elementListItem.appendChild(elementDateInfo);
+
+    educationContentBlock.appendChild(elementListItem);
+  });
+
   function loadBackgroundImg() {
       const indexBackground = generateRandomNumb(imgBackground.length);
       backgroundImg.setAttribute('src', imgBackground[indexBackground]);
@@ -203,7 +269,7 @@
 
   const request = new XMLHttpRequest();
 
-  function generateRsponseElements(event) {
+  function generateResponseElements(event) {
       const response = event.target.response;
       for (let e = 0; e < maxResponse; e++) {
           const activityItem = document.createElement('li');
@@ -218,6 +284,7 @@
           const responseTypeAction = response[e].type;
           const responseDate = response[e].created_at;
           const responseDateFormated = responseDate.slice(0, 10).split('-').reverse().join('.');
+          
           let responseMessage = response[e].payload.commits;
           if (responseMessage !== undefined) {
               responseMessage = response[e].payload.commits[0].message;
@@ -258,7 +325,7 @@
       }
     }
 
-    request.addEventListener('load', generateRsponseElements);
+    request.addEventListener('load', generateResponseElements);
 
     // Response the system is waiting.
     request.responseType = 'json';

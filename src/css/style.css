@@ -7,7 +7,12 @@
   background-color: black;
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 15px;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  line-height: 25px; }
+
+::selection {
+  color: white;
+  background-color: #fd2d65; }
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -46,7 +51,7 @@
   width: 100vw;
   z-index: -100;
   position: absolute;
-  opacity: 0.7; }
+  opacity: 0.8; }
 
 .landing-page-wrapper {
   position: absolute;
@@ -249,11 +254,47 @@
   z-index: 100;
   color: white; }
 
+.diploma-position {
+  width: 90%;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid #fd2d65;
+  background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
+  transition: 0.8s ease; }
+  .diploma-position:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid #fd2d65;
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
+    transition: 0.8s ease; }
+
+.diploma-logo-size {
+  width: 25%; }
+
+.diploma-content {
+  width: 80%;
+  display: inline-block;
+  top: 20%;
+  position: absolute; }
+
+.diploma-date-position {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.exp-content-size {
+  width: 40%;
+  float: left;
+  border-left: 1px solid #fd2d65;
+  padding: 0% 4%; }
+
 .like-icons-color {
   height: 120px;
   width: 144px;
   position: absolute;
-  left: 5%;
+  left: 34%;
+  right: 34%;
   overflow: hidden;
   box-shadow: 0px -1px 20px #fd2d65;
   border-radius: 20px;
@@ -316,7 +357,7 @@
   background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5); }
 
 .sprite-wrapper-position {
-  width: 25%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
   position: relative; }
@@ -469,13 +510,16 @@
   color: white;
   transition: 0.6s ease-in-out;
   width: 100%;
-  list-style: none; }
+  height: 100%;
+  overflow: auto;
+  list-style: none;
+  margin: 0; }
 
 .tabs-list li {
   margin: 5% auto;
-  padding: 15%;
+  padding: 5%;
   transition: 1.5s ease-in-out;
-  width: 70%; }
+  height: 8%; }
   .tabs-list li:hover {
     background-color: #006593;
     transition: 0.5s ease-in-out; }

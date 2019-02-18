@@ -1,0 +1,41 @@
+.diploma-position {
+  width: 90%;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid #fd2d65;
+  background-image: linear-gradient(
+    transparent, transparent, transparent,
+    transparent,transparent,transparent,
+    transparent,transparent
+  );
+  transition: 0.8s ease;
+  &:hover {
+      border-radius: 5px;
+      border-bottom: 1px solid #fd2d65;
+      background-image: linear-gradient(
+          transparent, transparent, transparent,
+          transparent,transparent,transparent,
+          transparent,#fd2d65
+      );
+      transition: 0.8s ease;
+  }
+}
+// ola q ase
+.diploma-logo-size {
+  width: 25%;
+}
+
+.diploma-content {
+  width: 80%;
+  display: inline-block;
+  top: 20%;
+  position: absolute;
+}
+
+.diploma-date-position {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
