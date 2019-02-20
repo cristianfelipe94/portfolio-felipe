@@ -283,6 +283,37 @@
   bottom: 0;
   right: 0; }
 
+.ui-company-background {
+  background-color: white;
+  text-align: center; }
+
+.ui-companies-list {
+  margin: 0;
+  padding: 0; }
+
+.list-company-item {
+  padding: 2%;
+  list-style: none;
+  margin: 2%; }
+  .list-company-item:hover .ui-company-logo {
+    opacity: 1;
+    transition: 0.8s ease-in-out; }
+  .list-company-item:hover .ui-line-border {
+    width: 100%;
+    transition: 1.5s ease-in-out; }
+
+.ui-line-border {
+  display: block;
+  border: 2px solid #fd2d65;
+  width: 0%;
+  transition: 1.5s ease-in-out; }
+
+.ui-company-logo {
+  width: 50%;
+  padding: 2%;
+  opacity: 0.6;
+  transition: 0.8s ease-in-out; }
+
 .exp-content-size {
   width: 40%;
   float: left;
