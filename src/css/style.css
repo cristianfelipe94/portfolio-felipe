@@ -312,7 +312,7 @@
   padding: 0; }
 
 .list-company-item {
-  padding: 2%;
+  padding: 4%;
   list-style: none;
   margin: 2%; }
   .list-company-item:hover .ui-line-border {
@@ -346,6 +346,11 @@
   height: 100%;
   margin: 0 auto;
   padding: 4%; }
+
+.page-content-position {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1%; }
 
 .like-icons-color {
   height: 120px;
@@ -434,7 +439,7 @@
   width: 100%;
   padding: 1%;
   margin: 2%;
-  opacity: 0.9;
+  opacity: 0.7;
   box-shadow: 1px 1px 10px #D6DBE0;
   transition: 2s ease; }
 
