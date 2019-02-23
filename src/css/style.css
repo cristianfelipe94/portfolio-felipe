@@ -254,8 +254,18 @@
   z-index: 100;
   color: white; }
 
+.content-page-showing:hover .ui-title-underline {
+  width: 10%;
+  transition: 1.5s ease-in-out; }
+
+.ui-title-underline {
+  width: 100%;
+  display: block;
+  border: 2px solid #fd2d65;
+  transition: 1.5s ease-in-out; }
+
 .diploma-position {
-  width: 90%;
+  width: 100%;
   display: inline-block;
   position: relative;
   border-bottom: 1px solid #fd2d65;
@@ -283,6 +293,11 @@
   bottom: 0;
   right: 0; }
 
+.diploma-list-position {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0; }
+
 .page-header-position {
   margin: 0 auto;
   width: 90%;
@@ -300,13 +315,13 @@
   padding: 2%;
   list-style: none;
   margin: 2%; }
-  .list-company-item:hover .ui-company-logo {
-    opacity: 1;
-    transition: 1s ease-in-out; }
   .list-company-item:hover .ui-line-border {
     border: 2px solid #fd2d65;
     width: 100%;
     transition: 1.5s ease-in-out; }
+  .list-company-item:hover .ui-company-logo {
+    opacity: 1;
+    transition: 0.8s ease-in-out; }
 
 .ui-line-border {
   display: block;
@@ -325,6 +340,12 @@
   float: left;
   border-left: 1px solid #fd2d65;
   padding: 0% 4%; }
+
+.ui-content-width {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 4%; }
 
 .like-icons-color {
   height: 120px;
@@ -493,6 +514,11 @@
 .form-block-size {
   margin: 5% auto;
   width: 80%; }
+
+.contact-header-position {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1%; }
 
 .input-color {
   overflow: visible;

@@ -1,5 +1,5 @@
 .diploma-position {
-  width: 90%;
+  width: 100%;
   display: inline-block;
   position: relative;
   border-bottom: 1px solid #fd2d65;
@@ -38,4 +38,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.diploma-list-position {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
 }

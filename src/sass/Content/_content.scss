@@ -35,3 +35,19 @@
     z-index: 100;
     color: white;
 }
+
+.content-page-showing{
+  &:hover {
+    .ui-title-underline {
+      width: 10%;
+      transition: 1.5s ease-in-out;
+    }
+  }
+}
+
+.ui-title-underline {
+  width: 100%;
+  display: block;
+  border: 2px solid #fd2d65;
+  transition: 1.5s ease-in-out;
+}
