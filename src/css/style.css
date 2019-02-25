@@ -606,7 +606,8 @@
   border: 0; }
 
 .activity-wrapper {
-  margin: 0;
+  margin: 0 auto;
+  width: 90%;
   padding: 4%; }
 
 .activity-item-wrapper {
