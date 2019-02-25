@@ -1,39 +1,40 @@
 
 .landing-page-wrapper {
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    transition: 3s ease-in-out;
-    border-left: 2px solid black;
     background-image: linear-gradient(to bottom left,#0d1b59,#74014e);
+    border-left: 2px solid black;
     color: #EFEDEE;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    transition: 3s ease-in-out;
+    width: 100vw;
 }
 
 .landingPageMoves {
-    position: absolute;
-    left: 80%;
-    top: 0;
-    width: 25%;
-    height: 100vh;
+
     border-left: 2px solid #fd2d65;
     background-image: linear-gradient(to bottom left,#0d1b59,#74014e);
     color: #D6DBE0;
+    height: 100vh;
+    left: 80%;
+    position: absolute;
+    top: 0;
+    width: 25%;
     transition: 3s ease-in-out;
     .sign {
         display: inline-block;
-        position: absolute;
-        width: 100%;
         left: -20%;
-        text-align: center;
         margin: 0 auto;
+        position: absolute;
+        text-align: center;
+        width: 100%;
         transition: 3s ease;
     }
     .tabs-wrapper .lang {
-        position: absolute;
         left: 150%;
-        width: 100%;
+        position: absolute;
         transition: 3s ease;
+        width: 100%;
     }
     .social {
         position: absolute;
@@ -49,10 +50,10 @@
 
 
 .tabs-wrapper {
-    position: relative;
-    max-width: 970px;
     height: 100vh;
+    max-width: 970px;
     margin: 0 auto;
+    position: relative;
     padding-top: 1rem;
     transition: 3s ease-in-out;
 }

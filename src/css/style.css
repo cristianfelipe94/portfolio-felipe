@@ -1,18 +1,18 @@
 @charset "UTF-8";
 .content-relativeness {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
   background-color: black;
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 15px;
+  height: 100vh;
   letter-spacing: 1.5px;
-  line-height: 25px; }
+  line-height: 25px;
+  overflow: hidden;
+  position: relative;
+  width: 100vw; }
 
 ::selection {
-  color: white;
-  background-color: #fd2d65; }
+  background-color: #fd2d65;
+  color: white; }
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -28,64 +28,64 @@
   background: #606378; }
 
 .background-img-hidden {
-  width: 60%;
-  height: 100%;
   display: block;
-  z-index: -200;
+  height: 100%;
   position: absolute;
   left: -20%;
-  transition: 3s ease-in-out; }
+  transition: 3s ease-in-out;
+  width: 60%;
+  z-index: -200; }
 
 .background-img-showing {
-  width: 60%;
-  height: 100%;
   display: block;
-  z-index: -200;
+  height: 100%;
   position: absolute;
   left: 20%;
-  transition: 3s ease-in-out; }
+  transition: 3s ease-in-out;
+  width: 60%;
+  z-index: -200; }
 
 .background-shade-color {
   background-color: black;
   height: 100vh;
-  width: 100vw;
-  z-index: -100;
+  opacity: 0.8;
   position: absolute;
-  opacity: 0.8; }
+  width: 100vw;
+  z-index: -100; }
 
 .landing-page-wrapper {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  transition: 3s ease-in-out;
-  border-left: 2px solid black;
   background-image: linear-gradient(to bottom left, #0d1b59, #74014e);
-  color: #EFEDEE; }
+  border-left: 2px solid black;
+  color: #EFEDEE;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  transition: 3s ease-in-out;
+  width: 100vw; }
 
 .landingPageMoves {
-  position: absolute;
-  left: 80%;
-  top: 0;
-  width: 25%;
-  height: 100vh;
   border-left: 2px solid #fd2d65;
   background-image: linear-gradient(to bottom left, #0d1b59, #74014e);
   color: #D6DBE0;
+  height: 100vh;
+  left: 80%;
+  position: absolute;
+  top: 0;
+  width: 25%;
   transition: 3s ease-in-out; }
   .landingPageMoves .sign {
     display: inline-block;
-    position: absolute;
-    width: 100%;
     left: -20%;
-    text-align: center;
     margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
     transition: 3s ease; }
   .landingPageMoves .tabs-wrapper .lang {
-    position: absolute;
     left: 150%;
-    width: 100%;
-    transition: 3s ease; }
+    position: absolute;
+    transition: 3s ease;
+    width: 100%; }
   .landingPageMoves .social {
     position: absolute;
     right: -150%;
@@ -96,10 +96,10 @@
     transition: 3s ease-in-out; }
 
 .tabs-wrapper {
-  position: relative;
-  max-width: 970px;
   height: 100vh;
+  max-width: 970px;
   margin: 0 auto;
+  position: relative;
   padding-top: 1rem;
   transition: 3s ease-in-out; }
 
@@ -225,17 +225,17 @@
   100% {
     z-index: -50; } }
 .content-page-hidden {
-  z-index: -50;
   animation: hiddingContent 3s;
-  position: absolute;
+  background-color: black;
+  color: #D6DBE0;
+  height: 100vh;
   left: -100vw;
   margin: 0 auto;
-  height: 100vh;
-  width: 58vw;
   padding: 5%;
-  background-color: black;
+  position: absolute;
   transition: 4s ease-in-out;
-  color: #D6DBE0; }
+  width: 58vw;
+  z-index: -50; }
 
 @keyframes showingContent {
   0% {
@@ -244,64 +244,64 @@
     z-index: -50; } }
 .content-page-showing {
   animation: showingContent 4s;
-  position: absolute;
-  left: 20vw;
-  width: 58vw;
+  color: white;
   height: 100vh;
-  padding: 5%;
+  left: 20vw;
   overflow-x: auto;
+  padding: 5%;
+  position: absolute;
   transition: 4s ease-in-out;
-  z-index: 100;
-  color: white; }
+  width: 58vw;
+  z-index: 100; }
 
 .content-page-showing:hover .ui-title-underline {
   width: 10%;
   transition: 1.5s ease-in-out; }
 
 .ui-title-underline {
-  width: 100%;
-  display: block;
   border: 2px solid #fd2d65;
+  display: block;
+  width: 100%;
   transition: 1.5s ease-in-out; }
 
 .diploma-position {
-  width: 100%;
+  background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
+  border-bottom: 1px solid #fd2d65;
   display: inline-block;
   position: relative;
-  border-bottom: 1px solid #fd2d65;
-  background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
+  width: 100%;
   transition: 0.8s ease; }
   .diploma-position:hover {
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
     border-radius: 5px;
     border-bottom: 1px solid #fd2d65;
-    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
     transition: 0.8s ease; }
 
 .diploma-logo-size {
   width: 25%; }
 
 .diploma-content {
-  width: 80%;
   display: inline-block;
   top: 20%;
-  position: absolute; }
+  position: absolute;
+  width: 80%; }
 
 .diploma-date-position {
+  bottom: 0;
   display: inline-block;
   margin: 0;
   position: absolute;
-  bottom: 0;
   right: 0; }
 
 .diploma-list-position {
-  width: 90%;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  width: 90%; }
 
 .page-header-position {
   margin: 0 auto;
-  width: 90%;
-  padding: 1%; }
+  padding: 1%;
+  width: 90%; }
 
 .ui-company-background {
   background-color: white;
@@ -312,9 +312,9 @@
   padding: 0; }
 
 .list-company-item {
-  padding: 4%;
   list-style: none;
-  margin: 2%; }
+  margin: 2%;
+  padding: 4%; }
   .list-company-item:hover .ui-line-border {
     border: 2px solid #fd2d65;
     width: 100%;
@@ -324,43 +324,43 @@
     transition: 0.8s ease-in-out; }
 
 .ui-line-border {
-  display: block;
   border: 2px solid white;
+  display: block;
   width: 0%;
   transition: 1.5s ease-in-out; }
 
 .ui-company-logo {
-  width: 50%;
   padding: 2%;
   opacity: 0.5;
+  width: 50%;
   transition: 0.8s ease-in-out; }
 
 .exp-content-size {
-  width: 40%;
-  float: left;
   border-left: 1px solid #fd2d65;
-  padding: 0% 4%; }
+  float: left;
+  padding: 0% 4%;
+  width: 40%; }
 
 .ui-content-width {
-  width: 90%;
   height: 100%;
   margin: 0 auto;
-  padding: 4%; }
+  padding: 4%;
+  width: 90%; }
 
 .page-content-position {
   margin: 0 auto;
-  width: 90%;
-  padding: 1%; }
+  padding: 1%;
+  width: 90%; }
 
 .like-icons-color {
-  height: 120px;
-  width: 144px;
-  position: absolute;
-  left: 34%;
-  right: 34%;
-  overflow: hidden;
   box-shadow: 0px -1px 20px #fd2d65;
   border-radius: 20px;
+  height: 120px;
+  left: 34%;
+  overflow: hidden;
+  position: absolute;
+  right: 34%;
+  width: 144px;
   transition: 1s; }
   .like-icons-color:hover {
     box-shadow: 0px -1px 20px #b82e55;
@@ -413,27 +413,27 @@
   100% {
     content: 'Tecnología.'; } }
 .sprite-position {
-  height: 120px;
-  position: absolute;
-  display: inline-block;
   animation: spriteMoves 50s ease-in-out infinite;
-  background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5); }
+  background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5);
+  display: inline-block;
+  height: 120px;
+  position: absolute; }
 
 .sprite-wrapper-position {
-  width: 80%;
-  text-align: center;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  text-align: center;
+  width: 80%; }
 
 .like-icons-words {
-  width: 160px;
-  text-align: center;
+  letter-spacing: 0.5px;
   margin: 5% auto;
-  letter-spacing: 0.5px; }
+  text-align: center;
+  width: 160px; }
 
 .like-icons-words::after {
-  content: '';
-  animation: spriteWords 50s ease-in-out infinite; }
+  animation: spriteWords 50s ease-in-out infinite;
+  content: ''; }
 
 .gallery-port {
   width: 100%;
@@ -517,38 +517,38 @@
   transition: 2s ease; }
 
 .form-block-size {
-  margin: 5% auto;
-  width: 80%; }
+  width: 80%;
+  margin: 5% auto; }
 
 .contact-header-position {
   margin: 0 auto;
-  width: 80%;
-  padding: 1%; }
+  padding: 1%;
+  width: 80%; }
 
 .input-color {
+  margin: 5% 2%;
   overflow: visible;
-  width: 50%;
-  margin: 5% 2%; }
+  width: 50%; }
 
 .message-input-color {
+  margin: 2% 0 5%;
   overflow: visible;
-  width: 95%;
-  margin: 2% 0 5%; }
+  width: 95%; }
 
 .submit-color {
-  width: 50%;
-  padding: 2%;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  left: 0;
-  display: block;
+  background-image: linear-gradient(to bottom right, #0075a0, #27c8d5);
   border: none;
   box-shadow: 1px 1px 30px #27c8d5;
-  background-image: linear-gradient(to bottom right, #0075a0, #27c8d5);
-  transition: 2s;
   color: white;
-  font-size: 1.1rem; }
+  display: block;
+  font-size: 1.1rem;
+  left: 0;
+  margin: 0 auto;
+  padding: 2%;
+  position: absolute;
+  right: 0;
+  transition: 2s;
+  width: 50%; }
   .submit-color:hover {
     box-shadow: 1px 1px 20px #0075a0;
     transition: 1s; }
@@ -612,18 +612,23 @@
 .activity-item-wrapper {
   border-bottom: 4px solid white;
   border-radius: 2px;
-  margin: 10% 0;
   list-style: none;
+  margin: 10% 0;
   transition: 2s ease; }
   .activity-item-wrapper:hover {
+    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
     border-radius: 5px;
     border-bottom: 4px solid #fd2d65;
-    background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, #fd2d65);
     transition: 0.8s ease; }
 
 .activity-url-color {
   color: #D6DBE0;
   text-decoration: none;
   transition: 1.5s ease; }
+
+@media screen and (max-width: 600px) {
+  .tabs-list li {
+    height: 11%;
+    overflow: hidden; } }
 
 /*# sourceMappingURL=style.css.map */

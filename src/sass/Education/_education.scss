@@ -1,23 +1,23 @@
 .diploma-position {
-  width: 100%;
-  display: inline-block;
-  position: relative;
-  border-bottom: 1px solid #fd2d65;
   background-image: linear-gradient(
     transparent, transparent, transparent,
     transparent,transparent,transparent,
     transparent,transparent
   );
+  border-bottom: 1px solid #fd2d65;
+  display: inline-block;
+  position: relative;
+  width: 100%;
   transition: 0.8s ease;
   &:hover {
-      border-radius: 5px;
-      border-bottom: 1px solid #fd2d65;
-      background-image: linear-gradient(
-          transparent, transparent, transparent,
-          transparent,transparent,transparent,
-          transparent,#fd2d65
-      );
-      transition: 0.8s ease;
+    background-image: linear-gradient(
+      transparent, transparent, transparent,
+      transparent,transparent,transparent,
+      transparent,#fd2d65
+    );
+    border-radius: 5px;
+    border-bottom: 1px solid #fd2d65;
+    transition: 0.8s ease;
   }
 }
 // ola q ase
@@ -26,22 +26,22 @@
 }
 
 .diploma-content {
-  width: 80%;
   display: inline-block;
   top: 20%;
   position: absolute;
+  width: 80%;
 }
 
 .diploma-date-position {
+  bottom: 0;
   display: inline-block;
   margin: 0;
   position: absolute;
-  bottom: 0;
   right: 0;
 }
 
 .diploma-list-position {
-  width: 90%;
   margin: 0 auto;
   padding: 0;
+  width: 90%;
 }

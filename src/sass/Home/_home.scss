@@ -1,18 +1,18 @@
 .page-content-position {
   margin: 0 auto;
-  width: 90%;
   padding: 1%;
+  width: 90%;
 }
 
 .like-icons-color {
-    height: 120px;
-    width: 144px;
-    position: absolute;
-    left: 34%;
-    right: 34%;
-    overflow: hidden;
     box-shadow: 0px -1px 20px #fd2d65;
     border-radius: 20px;
+    height: 120px;
+    left: 34%;
+    overflow: hidden;
+    position: absolute;
+    right: 34%;
+    width: 144px;
     transition: 1s;
     &:hover {
         box-shadow: 0px -1px 20px #b82e55;
@@ -49,29 +49,29 @@
 }
 
 .sprite-position {
-    height: 120px;
-    position: absolute;
-    display: inline-block;
     animation: spriteMoves 50s ease-in-out infinite;
     background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5);
+    display: inline-block;
+    height: 120px;
+    position: absolute;
 }
 
 .sprite-wrapper-position {
-    width: 80%;
-    text-align: center;
     margin: 0 auto;
     position: relative;
+    text-align: center;
+    width: 80%;
 }
 
 .like-icons-words {
-    width: 160px;
-    text-align: center;
-    margin: 5% auto;
     letter-spacing: 0.5px;
+    margin: 5% auto;
+    text-align: center;
+    width: 160px;
 }
 
 
 .like-icons-words::after {
-    content: '';
     animation: spriteWords 50s ease-in-out infinite;
+    content: '';
 }

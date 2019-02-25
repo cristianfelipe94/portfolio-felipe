@@ -1,7 +1,6 @@
 // Global styles
 ////////////////
 @import 'Variables/variables';
-@import 'MediaQueries/mediaMobile';
 @import 'Global/global';
 @import 'ScrollBar/scroll';
 
@@ -18,3 +17,7 @@
 @import 'Contact/contact';
 @import 'Tabs/tabs';
 @import 'GithubActivity/github';
+
+// Media Queries Mobile
+///////////////////////
+@import 'MediaQueries/mediaMobile';
