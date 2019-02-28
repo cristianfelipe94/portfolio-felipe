@@ -1,4 +1,4 @@
-(function () {
+(function iife() {
   const helloBtn = document.getElementById('js-hello');
   const landingPage = document.getElementById('js-landingpage');
   const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
@@ -93,7 +93,7 @@
 
       for (const element of elements) {
 
-          const links = element.querySelectorAll('ul > li > a');
+          const links = element.querySelectorAll('ul > li');
 
           const listItem = element.querySelectorAll('div .content-page-hidden');
           tabsArray.push(listItem);
@@ -102,7 +102,8 @@
 
               link.addEventListener('click', function change(e) {
                   clear();
-                  let tabsOption = e.target.getAttribute('href');
+                  let insideElement = link.firstChild;
+                  const tabsOption = insideElement.getAttribute('href');
                   let tabsContent = element.querySelector(tabsOption);
                   showingElements(tabsContent);
               });

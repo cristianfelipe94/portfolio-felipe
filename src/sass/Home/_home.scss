@@ -4,33 +4,32 @@
   width: 90%;
 }
 
-.like-icons-color {
-    box-shadow: 0px -1px 20px #fd2d65;
-    border-radius: 20px;
-    height: 120px;
-    left: 34%;
-    overflow: hidden;
-    position: absolute;
-    right: 34%;
-    width: 144px;
-    transition: 1s;
-    &:hover {
-        box-shadow: 0px -1px 20px #b82e55;
-        transition: 0.8s;
-    }
+@keyframes blinking {
+  0% {box-shadow: 0px -1px 20px #27c8d5;}
+  10% {box-shadow: 0px -1px 20px #27c8d5;}
+  20% {box-shadow: 0px -1px 20px #fd2d65;}
+  30% {box-shadow: 0px -1px 20px #27c8d5;}
+  40% {box-shadow: 0px -1px 20px #fd2d65;}
+  50% {box-shadow: 0px -1px 20px #27c8d5;}
+  60% {box-shadow: 0px -1px 20px #fd2d65;}
+  70% {box-shadow: 0px -1px 20px #27c8d5;}
+  80% {box-shadow: 0px -1px 20px #fd2d65;}
+  100% {box-shadow: 0px -1px 20px #27c8d5;}
+  90% {box-shadow: 0px -1px 20px #fd2d65;}
+  100% {box-shadow: 0px -1px 20px #27c8d5;}
 }
 
 @keyframes spriteMoves {
     0% {left: 0px;}
-    10% {left: -144px};
-    20% {left: -288px;}
-    30% {left: -432px;}
-    40% {left: -576px;}
-    50% {left: -720px;}
-    60% {left: -854px;}
-    70% {left: -998px;}
-    80% {left: -1150px;}
-    90% {left: -1290px;}
+    10% {left: -95px;}
+    20% {left: -191px;}
+    30% {left: -288px;}
+    40% {left: -384px;}
+    50% {left: -476px;}
+    60% {left: -572px;}
+    70% {left: -660px;}
+    80% {left: -760px;}
+    90% {left: -860px;}
     100% {left: 0px;}
 }
 
@@ -48,11 +47,25 @@
     100% {content: 'Tecnología.';}
 }
 
+.like-icons-color {
+  animation: blinking 50s ease-in-out infinite;
+  border-radius: 5px;
+  height: 100px;
+  left: 34%;
+  overflow: hidden;
+  position: absolute;
+  right: 34%;
+  width: 100px;
+  transition: 1s;
+}
+
+
 .sprite-position {
     animation: spriteMoves 50s ease-in-out infinite;
-    background-image: linear-gradient(to bottom left, #0d1b59, #0075a0, #27c8d5);
     display: inline-block;
-    height: 120px;
+    height: 80px;
+    margin: 10% auto;
+    opacity: 0.8;
     position: absolute;
 }
 
@@ -60,7 +73,7 @@
     margin: 0 auto;
     position: relative;
     text-align: center;
-    width: 80%;
+    width: 70%;
 }
 
 .like-icons-words {
