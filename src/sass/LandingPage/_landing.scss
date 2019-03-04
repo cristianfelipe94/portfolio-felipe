@@ -11,7 +11,6 @@
 }
 
 .landingPageMoves {
-
     border-left: 2px solid #fd2d65;
     background-image: linear-gradient(to bottom left,#0d1b59,#74014e);
     color: #D6DBE0;
@@ -149,8 +148,8 @@
 .say-hello-text {
     border: none;
     font-size: 1.2em;
-    background-color: #fd2d65;
-    color: #D6DBE0;
+    background-image: linear-gradient(to bottom left,#B10230,#fd2d65);
+    color: white;
     display: inline-block;
     margin: 0;
     width: 41%;
@@ -162,12 +161,12 @@
 }
 
 .say-hello-btn {
-    color: #D6DBE0;
+    color: white;
     border: none;
     height: 48px;
     width: 48px;
     border-radius: 50% 50%;
-    background-color: #fd2d65;
+    background-image: linear-gradient(to bottom left,#B10230,#fd2d65);
     transform: rotateZ(0deg);
     transition: 0.5s ease-in-out;
 }
@@ -184,8 +183,6 @@
         .say-hello-text, .say-hello-btn {
             transform: rotateZ(-180deg);
             transition: 0.9s ease-in-out;
-            background-color: white;
-            color: #fd2d65;
         }
     }
 }

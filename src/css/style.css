@@ -183,8 +183,8 @@
 .say-hello-text {
   border: none;
   font-size: 1.2em;
-  background-color: #fd2d65;
-  color: #D6DBE0;
+  background-image: linear-gradient(to bottom left, #B10230, #fd2d65);
+  color: white;
   display: inline-block;
   margin: 0;
   width: 41%;
@@ -195,12 +195,12 @@
   letter-spacing: 0.5px; }
 
 .say-hello-btn {
-  color: #D6DBE0;
+  color: white;
   border: none;
   height: 48px;
   width: 48px;
   border-radius: 50% 50%;
-  background-color: #fd2d65;
+  background-image: linear-gradient(to bottom left, #B10230, #fd2d65);
   transform: rotateZ(0deg);
   transition: 0.5s ease-in-out; }
 
@@ -215,9 +215,7 @@
     transition: 0.9s ease-in-out; }
     .rotation-anim:hover .say-hello-text, .rotation-anim:hover .say-hello-btn {
       transform: rotateZ(-180deg);
-      transition: 0.9s ease-in-out;
-      background-color: white;
-      color: #fd2d65; }
+      transition: 0.9s ease-in-out; }
 
 @keyframes hiddingContent {
   0% {
@@ -591,7 +589,7 @@
   position: absolute;
   margin: 0;
   border-right: 1px solid black;
-  background-image: linear-gradient(to bottom right, #0d1b59, #0075a0, #27c8d5);
+  background-image: linear-gradient(to bottom right, #0d1b59, #1C589F, #27c8d5);
   transition: 3s; }
 
 .tabs-list {
@@ -648,10 +646,5 @@
   color: #D6DBE0;
   text-decoration: none;
   transition: 1.5s ease; }
-
-@media screen and (max-width: 600px) {
-  .tabs-list li {
-    height: 11%;
-    overflow: hidden; } }
 
 /*# sourceMappingURL=style.css.map */
