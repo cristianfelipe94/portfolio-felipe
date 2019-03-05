@@ -338,5 +338,4 @@
     request.open('GET', searchUrl);
     // Sent the Request.
     request.send();
-
 }());
