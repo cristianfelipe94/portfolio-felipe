@@ -217,6 +217,30 @@
       transform: rotateZ(-180deg);
       transition: 0.9s ease-in-out; }
 
+.btnAction-hidden {
+  position: absolute;
+  top: -10vh;
+  left: 0px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: white;
+  transition: 2s ease-in-out; }
+
+.btnAction-showing {
+  position: absolute;
+  top: 50vh;
+  padding: 0;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  left: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 0;
+  transition: 2s ease-in-out; }
+
 @keyframes hiddingContent {
   0% {
     z-index: -50; }
@@ -425,11 +449,11 @@
   animation: blinking 50s ease-in-out infinite;
   border-radius: 5px;
   height: 100px;
-  left: 34%;
+  left: 0;
   margin: 0 auto;
   overflow: hidden;
   position: absolute;
-  right: 34%;
+  right: 0;
   width: 100px;
   transition: 1s; }
 
@@ -619,13 +643,8 @@
   text-decoration: none;
   color: #D6DBE0; }
 
-.btnAction {
-  position: absolute;
-  top: 50vh;
-  height: 25px;
-  right: 0vw;
-  cursor: pointer;
-  border: 0; }
+.tab-items span {
+  display: none; }
 
 .activity-wrapper {
   margin: 0;
@@ -647,5 +666,62 @@
   color: #D6DBE0;
   text-decoration: none;
   transition: 1.5s ease; }
+
+@media screen and (max-width: 600px) {
+  .imgHello {
+    width: 100%; }
+
+  .img-wrapper {
+    width: 70%;
+    opacity: 1;
+    height: auto; }
+
+  .say-hello-text {
+    display: none; }
+
+  .sign {
+    display: none; }
+
+  .rotation-anim {
+    text-align: center; }
+
+  .landingPageMoves {
+    left: 90%; }
+
+  .landingPageMoves .sign {
+    display: none; }
+
+  .landingPageMoves .img-wrapper {
+    opacity: 0;
+    transition: 4s; }
+
+  .content-page-showing {
+    width: 74vw;
+    left: 15vw; }
+
+  .content-page-hidden {
+    width: 74vw;
+    left: -100vw;
+    transition: 3s ease-in-out; }
+
+  .background-img-showing {
+    width: 75%;
+    left: 15%; }
+
+  .tabs-info-wrapper-showing {
+    width: 15%; }
+
+  .tabs-list a {
+    display: none; }
+
+  .tab-items span {
+    color: white;
+    width: 50%;
+    text-align: center;
+    height: 50%;
+    font-size: 2em;
+    padding: 2%;
+    margin: 0 auto;
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
