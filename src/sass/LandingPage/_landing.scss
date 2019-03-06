@@ -46,7 +46,12 @@
         left: 150%;
         right: -150%;
         transition: 3s ease-in-out;
-    }
+		}
+		.sizer-style-position {
+			margin: 8%;
+			border: 1px solid white;
+			transition: 3s ease-in-out;
+		}
 }
 
 
