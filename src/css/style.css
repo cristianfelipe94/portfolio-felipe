@@ -61,7 +61,8 @@
   left: 0;
   position: absolute;
   transition: 3s ease-in-out;
-  width: 100vw; }
+  width: 100vw;
+  overflow: hidden; }
 
 .landingPageMoves {
   border-left: 2px solid #fd2d65;
@@ -72,7 +73,8 @@
   position: absolute;
   top: 0;
   width: 25%;
-  transition: 3s ease-in-out; }
+  transition: 3s ease-in-out;
+  overflow: hidden; }
   .landingPageMoves .sign {
     display: inline-block;
     left: -20%;
