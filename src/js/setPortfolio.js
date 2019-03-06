@@ -76,7 +76,7 @@ imgPortArray.forEach((element) => {
 		backgroundModal.appendChild(modalElement);
 	});
 	portElementWrapper.appendChild(elementPort);
-	portContentBlock.appendChild(portElementWrapper);
+	projectsWrapper.appendChild(portElementWrapper);
 });
 closeModalBtn.addEventListener('click', function () {
 	backgroundModal.setAttribute('class', 'modal-content-hide');

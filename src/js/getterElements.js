@@ -4,6 +4,7 @@ const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
 const btnClose = document.getElementById('js-btn-close');
 const homeContentBlock = document.getElementById('js-home-page');
 const portContentBlock = document.getElementById('js-port-page');
+const projectsWrapper = document.getElementById('js-projects-wrapper');
 
 const educationContentBlock = document.getElementById('js-diploma-page');
 

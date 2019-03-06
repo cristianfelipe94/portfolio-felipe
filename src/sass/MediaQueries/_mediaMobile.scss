@@ -1,4 +1,8 @@
 @media screen and (max-width: 600px) {
+	.content-relativeness {
+		font-size: 17px;
+	}
+	
 	.imgHello {
 		width: 100%;
 	}
@@ -67,5 +71,17 @@
     padding: 2%;
     margin: 0 auto;
     display: block;
+	}
+
+	.exp-content-size {
+		border: 0;
+    border-bottom: 1px solid #fd2d65;
+    float: left;
+    padding: 0% 4%;
+		width: 95%;
+	}
+
+	.portfolio-wrappers {
+		width: 65%;
 	}
 }
