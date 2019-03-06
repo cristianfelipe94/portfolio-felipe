@@ -8,6 +8,7 @@ const gulp = require('gulp');
 const eslint = require('gulp-eslint');
 const connect = require('gulp-connect');
 const open = require('gulp-open');
+const concat = require('gulp-concat');
 
 //
 // Javascript linting.
@@ -47,4 +48,20 @@ gulp.task('watch', () => {
   gulp.watch('src/js/**/*.js', ['lint']);
 });
 
-gulp.task('start', ['connect', 'open', 'lint', 'watch']);
+
+gulp.task('scripts', function() {
+	return gulp.src([
+		'src/js/getterElements.js',
+		'src/js/libraries.js',
+		'src/js/apiGithub.js',
+		'src/js/closeOpen.js',
+		'src/js/setBackground.js',
+		'src/js/setTabs.js',
+		'src/js/setPortfolio.js',
+		'src/js/setDiploma.js',
+	])
+	.pipe(concat('concat.js'))
+	.pipe(gulp.dest('./src/concat-js'));
+});
+
+gulp.task('start', ['connect', 'open', 'lint', 'watch', 'scripts']);

@@ -12,6 +12,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.6.1",
     "gulp-eslint": "^5.0.0",
     "gulp-open": "^3.0.1"
