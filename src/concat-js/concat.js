@@ -1,3 +1,4 @@
+const bodyDom = document.querySelector('body');
 const helloBtn = document.getElementById('js-hello');
 const landingPage = document.getElementById('js-landingpage');
 const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
@@ -19,6 +20,9 @@ const tabsDom = document.getElementsByClassName('tab-items');
 
 const activityContentBlock = document.getElementById('js-activity-list');
 
+const btnSizer = document.getElementById('js-btn-size');
+const sizeName = document.getElementById('js-size-name');
+
 function hiddingElements(elementsToBeHide) {
 	elementsToBeHide.className = 'content-page-hidden';
 }
@@ -32,6 +36,43 @@ function generateRandomNumb (maxValue) {
 	const indexNumb = parseInt(Math.random() * maxValue);
 	return indexNumb;
 }
+
+let counterSize = 0;
+let statusSize = 1;
+btnSizer.addEventListener('click', () => {
+	if (statusSize === 1) {
+		if (counterSize === 0) {
+			sizeName.innerText = '';
+			sizeName.innerText = 'Letra mediana.';
+			bodyDom.setAttribute('class', 'content-relativeness-medium');
+			counterSize += 1;
+		} else if (counterSize === 1) {
+			sizeName.innerText = '';
+			sizeName.innerText = 'Letra larga.';
+			bodyDom.setAttribute('class', 'content-relativeness-large');
+			counterSize += 1;
+		} else if (counterSize === 2) {
+			sizeName.innerText = '';
+			sizeName.innerText = 'Letra pequeña.';
+			bodyDom.setAttribute('class', 'content-relativeness-normal');
+			counterSize = 0;
+		}
+	} else if (statusSize === 0) {
+		if (counterSize === 0) {
+			sizeName.innerText = '';
+			bodyDom.setAttribute('class', 'content-relativeness-medium');
+			counterSize += 1;
+		} else if (counterSize === 1) {
+			sizeName.innerText = '';
+			bodyDom.setAttribute('class', 'content-relativeness-large');
+			counterSize += 1;
+		} else if (counterSize === 2) {
+			sizeName.innerText = '';
+			bodyDom.setAttribute('class', 'content-relativeness-normal');
+			counterSize = 0;
+		}
+	}
+});
 
 const maxResponse = 10;
 const request = new XMLHttpRequest();
@@ -105,6 +146,8 @@ request.open('GET', searchUrl);
 request.send();
 
 helloBtn.addEventListener('click', function () {
+	statusSize = 0;
+	sizeName.innerText = '';
 	btnClose.setAttribute('class', 'btnAction-showing');
 	landingPage.setAttribute('class', 'landingPageMoves');
 	for (const e of VerticalTabs) {
@@ -115,6 +158,14 @@ helloBtn.addEventListener('click', function () {
 });
 
 btnClose.addEventListener('click', function () {
+	statusSize = 1;
+	if (counterSize === 0) {
+		sizeName.innerText = 'Letra pequeña.';
+	} else if (counterSize === 1) {
+		sizeName.innerText = 'Letra mediana.';
+	} else if (counterSize === 2) {
+		sizeName.innerText = 'Letra larga.';
+	}
 	btnClose.setAttribute('class', 'btnAction-hidden');
 	landingPage.setAttribute('class', 'landing-page-wrapper');
 	for (const e of VerticalTabs) {

@@ -1,4 +1,6 @@
 helloBtn.addEventListener('click', function () {
+	statusSize = 0;
+	sizeName.innerText = '';
 	btnClose.setAttribute('class', 'btnAction-showing');
 	landingPage.setAttribute('class', 'landingPageMoves');
 	for (const e of VerticalTabs) {
@@ -9,6 +11,14 @@ helloBtn.addEventListener('click', function () {
 });
 
 btnClose.addEventListener('click', function () {
+	statusSize = 1;
+	if (counterSize === 0) {
+		sizeName.innerText = 'Letra pequeña.';
+	} else if (counterSize === 1) {
+		sizeName.innerText = 'Letra mediana.';
+	} else if (counterSize === 2) {
+		sizeName.innerText = 'Letra larga.';
+	}
 	btnClose.setAttribute('class', 'btnAction-hidden');
 	landingPage.setAttribute('class', 'landing-page-wrapper');
 	for (const e of VerticalTabs) {

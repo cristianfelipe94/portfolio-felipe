@@ -1,3 +1,4 @@
+const bodyDom = document.querySelector('body');
 const helloBtn = document.getElementById('js-hello');
 const landingPage = document.getElementById('js-landingpage');
 const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
@@ -18,3 +19,6 @@ const portFolioContent = document.getElementById('js-wrapper-portfolio');
 const tabsDom = document.getElementsByClassName('tab-items');
 
 const activityContentBlock = document.getElementById('js-activity-list');
+
+const btnSizer = document.getElementById('js-btn-size');
+const sizeName = document.getElementById('js-size-name');

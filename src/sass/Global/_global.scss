@@ -1,4 +1,4 @@
-.content-relativeness {
+.content-relativeness-normal {
     background-color: black;
     font-family: 'Lato', Helvetica, sans-serif;
     font-size: 15px;
@@ -10,7 +10,43 @@
     width: 100vw;
 }
 
+.content-relativeness-medium {
+	background-color: black;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 17px;
+	height: 100vh;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+}
+
+.content-relativeness-large {
+	background-color: black;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 19px;
+	height: 100vh;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+}
+
 ::selection {
   background-color:#fd2d65;
   color: white;
+}
+
+.sizer-style-position {
+	position: absolute;
+	bottom: 0%;
+	z-index: 5000;
+	background-color: transparent;
+	color: white;
+	border: none;
+	padding: 2%;
+	cursor: pointer;
+	margin: 5%;
 }
