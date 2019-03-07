@@ -8,7 +8,7 @@
   display: inline-block;
   position: relative;
 	width: 100%;
-	height: 130px;
+	height: unset;
   transition: 0.8s ease;
   &:hover {
     background-image: linear-gradient(
@@ -21,7 +21,7 @@
     transition: 0.8s ease;
   }
 }
-// ola q ase
+
 .diploma-logo-size {
   width: 25%;
 }

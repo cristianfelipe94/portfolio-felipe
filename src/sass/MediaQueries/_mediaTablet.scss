@@ -1,22 +1,11 @@
-@media screen and (max-width: 480px) {
-	.content-relativeness-normal {
-		font-size: 19px;
-	}
-
-	.content-relativeness-medium {
-		font-size: 21px;
-	}
-
-	.content-relativeness-large {
-		font-size: 22px;
-	}
-
+@media screen and (max-width: 768px) {
+	
 	.imgHello {
 		width: 100%;
 	}
 
 	.img-wrapper {
-		width: 70%;
+		width: 50%;
 		opacity: 1;
 		height: auto;
 	}
@@ -26,7 +15,11 @@
 	}
 
 	.sign {
-		display: none;
+		display: block;
+	}
+
+	.rotation-anim {
+		text-align: center;
 	}
 
 	.landingPageMoves {
@@ -89,16 +82,15 @@
 		width: 65%;
 	}
 
-
 	.diploma-position {
-		height: 200px;
+		height: unset;
 	}
 
 	.landingPageMoves .sizer-style-position {
-		display: block;
+		display: none;
 	}
 
 	.sizer-style-position {
-		display: block;
+		display: none;
 	}
 }
