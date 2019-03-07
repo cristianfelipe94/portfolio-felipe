@@ -1,5 +1,5 @@
 const bodyDom = document.querySelector('body');
-const helloBtn = document.getElementById('js-hello');
+const helloBtn = document.getElementById('js-img-avatar');
 const landingPage = document.getElementById('js-landingpage');
 const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
 const btnClose = document.getElementById('js-btn-close');
