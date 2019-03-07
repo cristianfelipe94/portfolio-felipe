@@ -203,6 +203,34 @@
     border-radius: 50%;
     transition: 1s ease-in-out; }
 
+.img-wrapper::after {
+  content: "";
+  display: block;
+  border: 2px solid red;
+  border-radius: 50% 50%;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 85%;
+  height: 85%;
+  transition: 1s ease;
+  z-index: -1;
+  opacity: 0; }
+
+.img-wrapper::before {
+  content: "";
+  display: block;
+  border: 2px solid red;
+  border-radius: 50% 50%;
+  position: absolute;
+  transition: 1s ease;
+  top: 2%;
+  left: 2%;
+  width: 95%;
+  height: 95%;
+  z-index: -1;
+  opacity: 0; }
+
 .img-wrapper {
   position: absolute;
   width: 400px;
@@ -212,6 +240,22 @@
   top: 30%;
   margin: 0 auto;
   transition: 4s ease-in-out; }
+  .img-wrapper:hover::after {
+    top: -2%;
+    left: -2%;
+    width: 103%;
+    height: 103%;
+    z-index: 1;
+    opacity: 1;
+    transition: 1s ease; }
+  .img-wrapper:hover::before {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 1;
+    opacity: 1;
+    transition: 1s ease; }
 
 .imgHello, .say-hello {
   cursor: pointer; }
@@ -227,7 +271,7 @@
   color: white;
   display: inline-block;
   margin: 0;
-  width: 41%;
+  width: 80%;
   padding: 1%;
   text-align: center;
   transform: rotateZ(0deg);
@@ -237,25 +281,15 @@
 .say-hello-btn {
   color: white;
   border: none;
-  height: 48px;
-  width: 48px;
+  height: 60px;
+  width: 60px;
   border-radius: 50% 50%;
-  background-image: linear-gradient(to bottom left, #B10230, #fd2d65);
-  transform: rotateZ(0deg);
-  transition: 0.5s ease-in-out; }
+  background-image: linear-gradient(to bottom left, #B10230, #fd2d65); }
 
 .rotation-anim {
   position: absolute;
   top: 45%;
-  width: 100%;
-  transform: rotateZ(0deg);
-  transition: 0.6s ease-in-out; }
-  .rotation-anim:hover {
-    transform: rotateZ(-180deg);
-    transition: 0.9s ease-in-out; }
-    .rotation-anim:hover .say-hello-text, .rotation-anim:hover .say-hello-btn {
-      transform: rotateZ(-180deg);
-      transition: 0.9s ease-in-out; }
+  width: 100%; }
 
 .btnAction-hidden {
   position: absolute;
