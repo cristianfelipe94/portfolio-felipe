@@ -89,7 +89,6 @@
 		width: 65%;
 	}
 
-
 	.diploma-position {
 		height: 200px;
 	}
@@ -100,5 +99,29 @@
 
 	.sizer-style-position {
 		display: block;
+	}
+
+	.say-hello-btn::before {
+    left: 42%;
+	}
+
+	.say-hello-btn::after {
+    left: 42%;
+	}
+
+	.img-wrapper:hover .say-hello-btn::after {
+    height: 135%;
+    top: -22%;
+    left: 34.4%;
+    width: 30%;
+    right: 0;
+	}
+
+	.img-wrapper:hover .say-hello-btn::before {
+    height: 115%;
+    top: -12%;
+    left: 36.7%;
+    width: 25%;
+    right: 0;
 	}
 }
