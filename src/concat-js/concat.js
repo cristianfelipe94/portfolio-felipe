@@ -45,30 +45,54 @@ btnSizer.addEventListener('click', () => {
 			sizeName.innerText = '';
 			sizeName.innerText = 'Letra mediana.';
 			bodyDom.setAttribute('class', 'content-relativeness-medium');
+			btnSizer.setAttribute('class', 'sizer-style-position-await');
+			setTimeout(() => {
+			btnSizer.setAttribute('class', 'sizer-style-position');
+			}, 8000);
 			counterSize += 1;
 		} else if (counterSize === 1) {
 			sizeName.innerText = '';
 			sizeName.innerText = 'Letra larga.';
 			bodyDom.setAttribute('class', 'content-relativeness-large');
+			btnSizer.setAttribute('class', 'sizer-style-position-await');
+			setTimeout(() => {
+			btnSizer.setAttribute('class', 'sizer-style-position');
+			}, 8000);
 			counterSize += 1;
 		} else if (counterSize === 2) {
 			sizeName.innerText = '';
 			sizeName.innerText = 'Letra pequeña.';
 			bodyDom.setAttribute('class', 'content-relativeness-normal');
+			btnSizer.setAttribute('class', 'sizer-style-position-await');
+			setTimeout(() => {
+			btnSizer.setAttribute('class', 'sizer-style-position');
+			}, 8000);
 			counterSize = 0;
 		}
 	} else if (statusSize === 0) {
 		if (counterSize === 0) {
 			sizeName.innerText = '';
 			bodyDom.setAttribute('class', 'content-relativeness-medium');
+			btnSizer.setAttribute('class', 'sizer-style-position-await');
+			setTimeout(() => {
+			btnSizer.setAttribute('class', 'sizer-style-position');
+			}, 8000);
 			counterSize += 1;
 		} else if (counterSize === 1) {
 			sizeName.innerText = '';
 			bodyDom.setAttribute('class', 'content-relativeness-large');
+			btnSizer.setAttribute('class', 'sizer-style-position-await');
+			setTimeout(() => {
+			btnSizer.setAttribute('class', 'sizer-style-position');
+			}, 10000);
 			counterSize += 1;
 		} else if (counterSize === 2) {
 			sizeName.innerText = '';
 			bodyDom.setAttribute('class', 'content-relativeness-normal');
+			btnSizer.setAttribute('class', 'sizer-style-position-await');
+			setTimeout(() => {
+			btnSizer.setAttribute('class', 'sizer-style-position');
+			}, 8000);
 			counterSize = 0;
 		}
 	}
