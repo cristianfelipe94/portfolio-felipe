@@ -9,7 +9,7 @@
     transition: 3s ease-in-out;
 		width: 100vw;
 		overflow: hidden;
-    box-shadow: inset 0px 0px 20px white;
+    box-shadow: inset 0px 0px 20px black;
     will-change: left;
 }
 
@@ -64,7 +64,7 @@
     text-align: center;
 		margin: 0 auto;
 		opacity: 1;
-    transition: 3s ease-in-out;
+    transition: 0.8s ease;
 }
 
 .sign-opacity-delay {
@@ -82,7 +82,7 @@
 .img-logo {
 		width: 70%;
 		opacity: 1;
-    transition: 3s ease;
+    transition: 0.8s ease;
 }
 
 .lang {
@@ -91,8 +91,9 @@
     width: 100%;
     left: 0;
     padding: 1rem;
-    transition: 3s ease;
+    transition: 0.8s ease;
     z-index: 1;
+    opacity: 1;
 }
 
 .flag {
@@ -112,7 +113,8 @@
     padding: 1rem;
     z-index: 1;
     text-align: right;
-    transition: 3s ease;
+    transition: 0.8s ease;
+    opacity: 1;
 }
 
 .social-icon {

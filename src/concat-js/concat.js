@@ -154,20 +154,18 @@ const searchUrl = 'https://api.github.com/users/cristianfelipe94/events';
 // Request GET from the API Key.
 // API Key: ec6b87893ed99918950286ecdc97bf34.
 request.open('GET', searchUrl);
-
 // Sent the Request.
 request.send();
-
 // //////////////////////////////////////
 
 // Close and Open animator.
 // ////////////////////////
-helloBtn.addEventListener('click', function () {
+helloBtn.addEventListener('click', (() => {
 	statusSize = 0;
   sizeName.innerText = '';
 
-	langWrapperDisplay.setAttribute('class','lang-opacity-delay');
-  socialWrapperDisplay.setAttribute('class','social-opacity-delay');
+	langWrapperDisplay.setAttribute('class', 'lang-opacity-delay');
+  socialWrapperDisplay.setAttribute('class', 'social-opacity-delay');
 
   backgroundImg.setAttribute('class', 'background-img-showing');
 
@@ -197,9 +195,9 @@ helloBtn.addEventListener('click', function () {
     btnClose.setAttribute('class', 'btnAction-showing');
   });
   setTimeout(btnCloseDelay, 8000);
-});
+}));
 
-btnClose.addEventListener('click', function () {
+btnClose.addEventListener('click', (() => {
 	statusSize = 1;
 	if (counterSize === 0) {
 		sizeName.innerText = 'Letra pequeña.';
@@ -207,22 +205,41 @@ btnClose.addEventListener('click', function () {
 		sizeName.innerText = 'Letra mediana.';
 	} else if (counterSize === 2) {
 		sizeName.innerText = 'Letra larga.';
-	}
-	btnClose.setAttribute('class', 'btnAction-hidden');
-	landingPage.setAttribute('class', 'landing-page-wrapper');
-	for (const e of VerticalTabs) {
-			e.setAttribute('class', 'tabs-info-wrapper-hidden');
-	};
+  }
 
-	tabsArray.forEach(element => {
-		for (const i of element) {
-			if (i.className === 'content-page-showing') {
-				hiddingElements(i);
-			}
-		}
-	});
-	backgroundImg.setAttribute('class', 'background-img-hidden');
-});
+  btnClose.setAttribute('class', 'btnAction-hidden');
+
+  const landingPageDelay = (() => {
+    landingPage.setAttribute('class', 'landing-page-wrapper');
+  });
+  setTimeout(landingPageDelay, 4000);
+
+  const tabsMoveDelay = (() => {
+    for (const e of VerticalTabs) {
+			e.setAttribute('class', 'tabs-info-wrapper-hidden');
+    }
+  });
+  setTimeout(tabsMoveDelay, 5000);
+
+  const contentInfoDelay = (() => {
+    tabsArray.forEach((element) => {
+      for (const i of element) {
+        if (i.className === 'content-page-showing') {
+          hiddingElements(i);
+        }
+      }
+    });
+  });
+  setTimeout(contentInfoDelay, 1000);
+  
+  const backgroundHiddenDelay = (() => {
+    langWrapperDisplay.setAttribute('class', 'lang');
+    socialWrapperDisplay.setAttribute('class', 'social');
+    signWrapperDisplay.setAttribute('class', 'sign');
+    backgroundImg.setAttribute('class', 'background-img-hidden');
+  });
+  setTimeout(backgroundHiddenDelay, 7000);
+}));
 // ////////////////////////
 
 // Background image generator.
