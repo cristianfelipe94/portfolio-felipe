@@ -1,3 +1,5 @@
+// Background image generator.
+// ///////////////////////////
 const imgBackground = [
 	'img/background/ambar.jpg',
 	'img/background/ann.jpg',
@@ -16,5 +18,5 @@ function loadBackgroundImg() {
 	const indexBackground = generateRandomNumb(imgBackground.length);
 	backgroundImg.setAttribute('src', imgBackground[indexBackground]);
 }
-
 window.addEventListener('load', loadBackgroundImg);
+// ///////////////////////////

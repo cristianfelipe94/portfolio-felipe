@@ -9,6 +9,8 @@
     transition: 3s ease-in-out;
 		width: 100vw;
 		overflow: hidden;
+    box-shadow: inset 0px 0px 20px white;
+    will-change: left;
 }
 
 .landingPageMoves {
@@ -20,18 +22,13 @@
     position: absolute;
     top: 0;
     width: 25%;
-		transition: 3s ease-in-out;
+    transition: 3s;
 		overflow: hidden;
-
-		.sizer-style-position {
-			margin: 8%;
-			border: 1px solid white;
-			transition: 3s ease-in-out;
-		}
-
+    box-shadow: inset 1px 0px 90px black;
+    will-change: auto;
 		.img-logo {
 			opacity: 0;
-	}
+		}
 }
 
 .lang-opacity-delay {
@@ -54,7 +51,7 @@
     margin: 0 auto;
     position: relative;
     padding-top: 1rem;
-    transition: 0.8s ease-in-out;
+		//transition: 0.8s ease-in-out;
 }
 
 .sign {
@@ -177,7 +174,7 @@
 	left: 0;
 	top: 30%;
 	margin: 0 auto;
-	transition: 4s ease-in-out;
+	transition: 4s;
 	&:hover::after {
     top: -2%;
     left: -2%;

@@ -121,7 +121,7 @@
   height: 100%;
   position: absolute;
   left: 20%;
-  transition: 3s ease-in-out;
+  transition: 0.8s ease-in-out;
   width: 60%;
   z-index: -200; }
 
@@ -142,7 +142,9 @@
   position: absolute;
   transition: 3s ease-in-out;
   width: 100vw;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: inset 0px 0px 20px white;
+  will-change: left; }
 
 .landingPageMoves {
   border-left: 2px solid #fd2d65;
@@ -153,12 +155,10 @@
   position: absolute;
   top: 0;
   width: 25%;
-  transition: 3s ease-in-out;
-  overflow: hidden; }
-  .landingPageMoves .sizer-style-position {
-    margin: 8%;
-    border: 1px solid white;
-    transition: 3s ease-in-out; }
+  transition: 3s;
+  overflow: hidden;
+  box-shadow: inset 1px 0px 90px black;
+  will-change: auto; }
   .landingPageMoves .img-logo {
     opacity: 0; }
 
@@ -179,8 +179,7 @@
   max-width: 970px;
   margin: 0 auto;
   position: relative;
-  padding-top: 1rem;
-  transition: 0.8s ease-in-out; }
+  padding-top: 1rem; }
 
 .sign {
   display: inline-block;
@@ -291,7 +290,7 @@
   left: 0;
   top: 30%;
   margin: 0 auto;
-  transition: 4s ease-in-out; }
+  transition: 4s; }
   .img-wrapper:hover::after {
     top: -2%;
     left: -2%;
@@ -436,7 +435,7 @@
   background-color: black;
   color: #D6DBE0;
   height: 100vh;
-  left: -100vw;
+  left: -50vw;
   margin: 0 auto;
   padding: 5%;
   position: absolute;
@@ -817,7 +816,8 @@
   padding: 0;
   position: absolute;
   list-style: none;
-  transition: 0.6s ease-in-out; }
+  transition: 0.8s ease;
+  box-shadow: inset 0px 0px 20px black; }
 
 .tabs-list li {
   padding: 5%;

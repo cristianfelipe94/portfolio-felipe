@@ -1,45 +1,40 @@
-// Close and open js functions.
-///////////////////////////////
+// Close and Open animator.
+// ////////////////////////
 helloBtn.addEventListener('click', function () {
 	statusSize = 0;
-	sizeName.innerText = '';
-
-	const btnCloseDelay = (() => {
-		btnClose.setAttribute('class', 'btnAction-showing');
-	});
-	setTimeout(btnCloseDelay,6000);
-
-
-	const tabsMoveDelay = (()=> {
-	backgroundImg.setAttribute('class', 'background-img-showing');
-	});
-	setTimeout(tabsMoveDelay, 2000);
-
-	const socialDelay = (()=>{
-		for (const e of VerticalTabs) {
-			e.setAttribute('class', 'tabs-info-wrapper-showing');
-		}
-	});
-	setTimeout(socialDelay, 1000);
+  sizeName.innerText = '';
 
 	langWrapperDisplay.setAttribute('class','lang-opacity-delay');
-	socialWrapperDisplay.setAttribute('class','social-opacity-delay');
+  socialWrapperDisplay.setAttribute('class','social-opacity-delay');
 
-	const backgroundImgDelay = (() => {
-		showingElements(homeContentBlock);
-	});
-	setTimeout(backgroundImgDelay, 5000);
+  backgroundImg.setAttribute('class', 'background-img-showing');
 
-	const landingPageDelay = (() => {
-		landingPage.setAttribute('class', 'landingPageMoves');
-	});
-	setTimeout(landingPageDelay, 3000);
+  const tabsMoveDelay = (() => {
+    for (const e of VerticalTabs) {
+      e.setAttribute('class', 'tabs-info-wrapper-showing');
+    }
+  });
+  setTimeout(tabsMoveDelay, 1000);
 
 	const signatureLogoDelay = (() => {
 		signWrapperDisplay.setAttribute('class', 'sign-opacity-delay');
-	});
-	setTimeout(signatureLogoDelay, 2000);
+  });
+  setTimeout(signatureLogoDelay, 2000);
 
+  const landingPageDelay = (() => {
+    landingPage.setAttribute('class', 'landingPageMoves');
+  });
+  setTimeout(landingPageDelay, 5000);
+
+  const contentInfoDelay = (() => {
+    showingElements(homeContentBlock);
+  });
+  setTimeout(contentInfoDelay, 7000);
+
+  const btnCloseDelay = (() => {
+    btnClose.setAttribute('class', 'btnAction-showing');
+  });
+  setTimeout(btnCloseDelay, 8000);
 });
 
 btnClose.addEventListener('click', function () {
@@ -66,4 +61,4 @@ btnClose.addEventListener('click', function () {
 	});
 	backgroundImg.setAttribute('class', 'background-img-hidden');
 });
-///////////////////////////////
+// ////////////////////////

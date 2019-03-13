@@ -1,3 +1,5 @@
+// Get elements from DOM.
+// ///////////////////////
 const bodyDom = document.querySelector('body');
 const helloBtn = document.getElementById('js-img-avatar');
 const landingPage = document.getElementById('js-landingpage');
@@ -26,7 +28,10 @@ const activityContentBlock = document.getElementById('js-activity-list');
 
 const btnSizer = document.getElementById('js-btn-size');
 const sizeName = document.getElementById('js-size-name');
+// ///////////////////////
 
+// Small libraries.
+// /////////////////
 function hiddingElements(elementsToBeHide) {
 	elementsToBeHide.className = 'content-page-hidden';
 }
@@ -77,7 +82,10 @@ btnSizer.addEventListener('click', () => {
 		}
 	}
 });
+// /////////////////
 
+// Github response information generator.
+// //////////////////////////////////////
 const maxResponse = 10;
 const request = new XMLHttpRequest();
 
@@ -146,49 +154,49 @@ const searchUrl = 'https://api.github.com/users/cristianfelipe94/events';
 // Request GET from the API Key.
 // API Key: ec6b87893ed99918950286ecdc97bf34.
 request.open('GET', searchUrl);
+
 // Sent the Request.
 request.send();
 
+// //////////////////////////////////////
+
+// Close and Open animator.
+// ////////////////////////
 helloBtn.addEventListener('click', function () {
 	statusSize = 0;
-	sizeName.innerText = '';
-
-	const btnCloseDelay = (() => {
-		btnClose.setAttribute('class', 'btnAction-showing');
-	});
-	setTimeout(btnCloseDelay,6000);
-
-
-	const tabsMoveDelay = (()=> {
-	backgroundImg.setAttribute('class', 'background-img-showing');
-	});
-	setTimeout(tabsMoveDelay, 2000);
-
-	const socialDelay = (()=>{
-		for (const e of VerticalTabs) {
-			e.setAttribute('class', 'tabs-info-wrapper-showing');
-		}
-	});
-	setTimeout(socialDelay, 1000);
+  sizeName.innerText = '';
 
 	langWrapperDisplay.setAttribute('class','lang-opacity-delay');
-	socialWrapperDisplay.setAttribute('class','social-opacity-delay');
+  socialWrapperDisplay.setAttribute('class','social-opacity-delay');
 
-	const backgroundImgDelay = (() => {
-		showingElements(homeContentBlock);
-	});
-	setTimeout(backgroundImgDelay, 5000);
+  backgroundImg.setAttribute('class', 'background-img-showing');
 
-	const landingPageDelay = (() => {
-		landingPage.setAttribute('class', 'landingPageMoves');
-	});
-	setTimeout(landingPageDelay, 3000);
+  const tabsMoveDelay = (() => {
+    for (const e of VerticalTabs) {
+      e.setAttribute('class', 'tabs-info-wrapper-showing');
+    }
+  });
+  setTimeout(tabsMoveDelay, 1000);
 
 	const signatureLogoDelay = (() => {
 		signWrapperDisplay.setAttribute('class', 'sign-opacity-delay');
-	});
-	setTimeout(signatureLogoDelay, 2000);
+  });
+  setTimeout(signatureLogoDelay, 2000);
 
+  const landingPageDelay = (() => {
+    landingPage.setAttribute('class', 'landingPageMoves');
+  });
+  setTimeout(landingPageDelay, 5000);
+
+  const contentInfoDelay = (() => {
+    showingElements(homeContentBlock);
+  });
+  setTimeout(contentInfoDelay, 7000);
+
+  const btnCloseDelay = (() => {
+    btnClose.setAttribute('class', 'btnAction-showing');
+  });
+  setTimeout(btnCloseDelay, 8000);
 });
 
 btnClose.addEventListener('click', function () {
@@ -215,7 +223,10 @@ btnClose.addEventListener('click', function () {
 	});
 	backgroundImg.setAttribute('class', 'background-img-hidden');
 });
+// ////////////////////////
 
+// Background image generator.
+// ///////////////////////////
 const imgBackground = [
 	'img/background/ambar.jpg',
 	'img/background/ann.jpg',
@@ -234,9 +245,11 @@ function loadBackgroundImg() {
 	const indexBackground = generateRandomNumb(imgBackground.length);
 	backgroundImg.setAttribute('src', imgBackground[indexBackground]);
 }
-
 window.addEventListener('load', loadBackgroundImg);
+// ///////////////////////////
 
+//  Setter path for tabs and them content.
+// //////////////////////////////////////
 const tabsArray = [];
 function tab(selector) {
 	const elements = selector;
@@ -263,7 +276,10 @@ function tab(selector) {
 	}
 }
 tab(VerticalTabs);
+// //////////////////////////////////////
 
+// Porfolio projects generator.
+// ////////////////////////////
 const imgPortArray = [
 	imgPort1 = {
 		src: '../img/canvas_game_port1.jpg',
@@ -347,7 +363,10 @@ imgPortArray.forEach((element) => {
 closeModalBtn.addEventListener('click', function () {
 	backgroundModal.setAttribute('class', 'modal-content-hide');
 });
+// ////////////////////////////
 
+// Diploma elements generator.
+// ///////////////////////////
 const diplomaContent = [
 	diploma1 = {
 		src: 'img/diploma.png',
@@ -410,3 +429,4 @@ diplomaContent.forEach((element) => {
 
 	educationContentBlock.appendChild(elementListItem);
 });
+// ///////////////////////////

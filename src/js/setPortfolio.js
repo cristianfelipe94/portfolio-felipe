@@ -1,3 +1,5 @@
+// Porfolio projects generator.
+// ////////////////////////////
 const imgPortArray = [
 	imgPort1 = {
 		src: '../img/canvas_game_port1.jpg',
@@ -81,3 +83,4 @@ imgPortArray.forEach((element) => {
 closeModalBtn.addEventListener('click', function () {
 	backgroundModal.setAttribute('class', 'modal-content-hide');
 });
+// ////////////////////////////

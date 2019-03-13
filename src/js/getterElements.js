@@ -1,5 +1,5 @@
-// Get elements js declarations.
-/////////////////////////////////
+// Get elements from DOM.
+// ///////////////////////
 const bodyDom = document.querySelector('body');
 const helloBtn = document.getElementById('js-img-avatar');
 const landingPage = document.getElementById('js-landingpage');
@@ -28,4 +28,4 @@ const activityContentBlock = document.getElementById('js-activity-list');
 
 const btnSizer = document.getElementById('js-btn-size');
 const sizeName = document.getElementById('js-size-name');
-/////////////////////////////////
+// ///////////////////////

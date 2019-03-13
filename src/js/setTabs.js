@@ -1,3 +1,5 @@
+//  Setter path for tabs and them content.
+// //////////////////////////////////////
 const tabsArray = [];
 function tab(selector) {
 	const elements = selector;
@@ -24,3 +26,4 @@ function tab(selector) {
 	}
 }
 tab(VerticalTabs);
+// //////////////////////////////////////

@@ -1,3 +1,5 @@
+// Diploma elements generator.
+// ///////////////////////////
 const diplomaContent = [
 	diploma1 = {
 		src: 'img/diploma.png',
@@ -60,3 +62,4 @@ diplomaContent.forEach((element) => {
 
 	educationContentBlock.appendChild(elementListItem);
 });
+// ///////////////////////////

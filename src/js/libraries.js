@@ -1,3 +1,5 @@
+// Small libraries.
+// /////////////////
 function hiddingElements(elementsToBeHide) {
 	elementsToBeHide.className = 'content-page-hidden';
 }
@@ -48,3 +50,4 @@ btnSizer.addEventListener('click', () => {
 		}
 	}
 });
+// /////////////////

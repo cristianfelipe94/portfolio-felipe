@@ -1,3 +1,5 @@
+// Github response information generator.
+// //////////////////////////////////////
 const maxResponse = 10;
 const request = new XMLHttpRequest();
 
@@ -68,3 +70,4 @@ const searchUrl = 'https://api.github.com/users/cristianfelipe94/events';
 request.open('GET', searchUrl);
 // Sent the Request.
 request.send();
+// //////////////////////////////////////
