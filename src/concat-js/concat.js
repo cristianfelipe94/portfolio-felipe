@@ -14,6 +14,10 @@ const backgroundImg = document.getElementById('js-background-img');
 const backgroundModal = document.getElementById('js-modal');
 const closeModalBtn = document.getElementById('js-close-modal');
 
+const langWrapperDisplay = document.getElementById('js-lang-wrapper');
+const socialWrapperDisplay = document.getElementById('js-social-wrapper');
+const signWrapperDisplay = document.getElementById('js-sign-wrapper');
+
 const portFolioContent = document.getElementById('js-wrapper-portfolio');
 
 const tabsDom = document.getElementsByClassName('tab-items');
@@ -45,54 +49,30 @@ btnSizer.addEventListener('click', () => {
 			sizeName.innerText = '';
 			sizeName.innerText = 'Letra mediana.';
 			bodyDom.setAttribute('class', 'content-relativeness-medium');
-			btnSizer.setAttribute('class', 'sizer-style-position-await');
-			setTimeout(() => {
-			btnSizer.setAttribute('class', 'sizer-style-position');
-			}, 8000);
 			counterSize += 1;
 		} else if (counterSize === 1) {
 			sizeName.innerText = '';
 			sizeName.innerText = 'Letra larga.';
 			bodyDom.setAttribute('class', 'content-relativeness-large');
-			btnSizer.setAttribute('class', 'sizer-style-position-await');
-			setTimeout(() => {
-			btnSizer.setAttribute('class', 'sizer-style-position');
-			}, 8000);
 			counterSize += 1;
 		} else if (counterSize === 2) {
 			sizeName.innerText = '';
 			sizeName.innerText = 'Letra pequeña.';
 			bodyDom.setAttribute('class', 'content-relativeness-normal');
-			btnSizer.setAttribute('class', 'sizer-style-position-await');
-			setTimeout(() => {
-			btnSizer.setAttribute('class', 'sizer-style-position');
-			}, 8000);
 			counterSize = 0;
 		}
 	} else if (statusSize === 0) {
 		if (counterSize === 0) {
 			sizeName.innerText = '';
 			bodyDom.setAttribute('class', 'content-relativeness-medium');
-			btnSizer.setAttribute('class', 'sizer-style-position-await');
-			setTimeout(() => {
-			btnSizer.setAttribute('class', 'sizer-style-position');
-			}, 8000);
 			counterSize += 1;
 		} else if (counterSize === 1) {
 			sizeName.innerText = '';
 			bodyDom.setAttribute('class', 'content-relativeness-large');
-			btnSizer.setAttribute('class', 'sizer-style-position-await');
-			setTimeout(() => {
-			btnSizer.setAttribute('class', 'sizer-style-position');
-			}, 10000);
 			counterSize += 1;
 		} else if (counterSize === 2) {
 			sizeName.innerText = '';
 			bodyDom.setAttribute('class', 'content-relativeness-normal');
-			btnSizer.setAttribute('class', 'sizer-style-position-await');
-			setTimeout(() => {
-			btnSizer.setAttribute('class', 'sizer-style-position');
-			}, 8000);
 			counterSize = 0;
 		}
 	}
@@ -172,13 +152,43 @@ request.send();
 helloBtn.addEventListener('click', function () {
 	statusSize = 0;
 	sizeName.innerText = '';
-	btnClose.setAttribute('class', 'btnAction-showing');
-	landingPage.setAttribute('class', 'landingPageMoves');
-	for (const e of VerticalTabs) {
-		e.setAttribute('class', 'tabs-info-wrapper-showing');
-	}
+
+	const btnCloseDelay = (() => {
+		btnClose.setAttribute('class', 'btnAction-showing');
+	});
+	setTimeout(btnCloseDelay,6000);
+
+
+	const tabsMoveDelay = (()=> {
 	backgroundImg.setAttribute('class', 'background-img-showing');
-	showingElements(homeContentBlock);
+	});
+	setTimeout(tabsMoveDelay, 2000);
+
+	const socialDelay = (()=>{
+		for (const e of VerticalTabs) {
+			e.setAttribute('class', 'tabs-info-wrapper-showing');
+		}
+	});
+	setTimeout(socialDelay, 1000);
+
+	langWrapperDisplay.setAttribute('class','lang-opacity-delay');
+	socialWrapperDisplay.setAttribute('class','social-opacity-delay');
+
+	const backgroundImgDelay = (() => {
+		showingElements(homeContentBlock);
+	});
+	setTimeout(backgroundImgDelay, 5000);
+
+	const landingPageDelay = (() => {
+		landingPage.setAttribute('class', 'landingPageMoves');
+	});
+	setTimeout(landingPageDelay, 3000);
+
+	const signatureLogoDelay = (() => {
+		signWrapperDisplay.setAttribute('class', 'sign-opacity-delay');
+	});
+	setTimeout(signatureLogoDelay, 2000);
+
 });
 
 btnClose.addEventListener('click', function () {

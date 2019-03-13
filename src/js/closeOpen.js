@@ -1,13 +1,45 @@
+// Close and open js functions.
+///////////////////////////////
 helloBtn.addEventListener('click', function () {
 	statusSize = 0;
 	sizeName.innerText = '';
-	btnClose.setAttribute('class', 'btnAction-showing');
-	landingPage.setAttribute('class', 'landingPageMoves');
-	for (const e of VerticalTabs) {
-		e.setAttribute('class', 'tabs-info-wrapper-showing');
-	}
+
+	const btnCloseDelay = (() => {
+		btnClose.setAttribute('class', 'btnAction-showing');
+	});
+	setTimeout(btnCloseDelay,6000);
+
+
+	const tabsMoveDelay = (()=> {
 	backgroundImg.setAttribute('class', 'background-img-showing');
-	showingElements(homeContentBlock);
+	});
+	setTimeout(tabsMoveDelay, 2000);
+
+	const socialDelay = (()=>{
+		for (const e of VerticalTabs) {
+			e.setAttribute('class', 'tabs-info-wrapper-showing');
+		}
+	});
+	setTimeout(socialDelay, 1000);
+
+	langWrapperDisplay.setAttribute('class','lang-opacity-delay');
+	socialWrapperDisplay.setAttribute('class','social-opacity-delay');
+
+	const backgroundImgDelay = (() => {
+		showingElements(homeContentBlock);
+	});
+	setTimeout(backgroundImgDelay, 5000);
+
+	const landingPageDelay = (() => {
+		landingPage.setAttribute('class', 'landingPageMoves');
+	});
+	setTimeout(landingPageDelay, 3000);
+
+	const signatureLogoDelay = (() => {
+		signWrapperDisplay.setAttribute('class', 'sign-opacity-delay');
+	});
+	setTimeout(signatureLogoDelay, 2000);
+
 });
 
 btnClose.addEventListener('click', function () {
@@ -34,3 +66,4 @@ btnClose.addEventListener('click', function () {
 	});
 	backgroundImg.setAttribute('class', 'background-img-hidden');
 });
+///////////////////////////////

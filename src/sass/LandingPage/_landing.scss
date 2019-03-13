@@ -22,36 +22,30 @@
     width: 25%;
 		transition: 3s ease-in-out;
 		overflow: hidden;
-    .sign {
-        display: inline-block;
-        left: -20%;
-        margin: 0 auto;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        transition: 3s ease;
-    }
-    .tabs-wrapper .lang {
-        left: 150%;
-        position: absolute;
-        transition: 3s ease;
-        width: 100%;
-    }
-    .social {
-        position: absolute;
-        right: -150%;
-        transition: 3s ease;
-    }
-    .img-wrapper {
-        left: 150%;
-        right: -150%;
-        transition: 3s ease-in-out;
-		}
+
 		.sizer-style-position {
 			margin: 8%;
 			border: 1px solid white;
 			transition: 3s ease-in-out;
 		}
+
+		.img-logo {
+			opacity: 0;
+	}
+}
+
+.lang-opacity-delay {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	transition: 0.8s ease-in-out;
+}
+
+.social-opacity-delay {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	transition: 0.8s ease-in-out;
 }
 
 .tabs-wrapper {
@@ -60,7 +54,7 @@
     margin: 0 auto;
     position: relative;
     padding-top: 1rem;
-    transition: 3s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .sign {
@@ -71,12 +65,26 @@
 		width: 50%;
     padding: 1%;
     text-align: center;
-    margin: 0 auto;
+		margin: 0 auto;
+		opacity: 1;
     transition: 3s ease-in-out;
 }
 
+.sign-opacity-delay {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	opacity: 0;
+	transition: 0.8s ease-in-out;
+}
+
 .img-logo {
-    width: 70%;
+		width: 70%;
+		opacity: 1;
     transition: 3s ease;
 }
 
