@@ -1,17 +1,8 @@
 
-.tabs-info-wrapper-hidden {
-    position: absolute;
-    height: 100vh;
-    left: -40%;
-    width: 20%;
-    background-image: linear-gradient(to bottom right,#0d1b59,#1C589F,#2a9aa3);
-    transition: 7s;
-}
-
-.tabs-info-wrapper-showing {
+.tabs-wrapper-showing {
     height: 100vh;
     width: 20%;
-    left: 0;
+    left: 0%;
     position: absolute;
     margin: 0;
     border-right: 1px solid black;
@@ -39,7 +30,7 @@
     height: 10%;
     cursor: pointer;
     &:hover {
-        background-color: #006593;
+        background-color: #617680;
         transition: 0.5s ease-in-out;
     }
 }

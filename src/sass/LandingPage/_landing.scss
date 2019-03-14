@@ -1,16 +1,17 @@
 
 .landing-page-wrapper {
-    background-image: linear-gradient(to bottom left,#0d1b59,#74014e);
     border-left: 2px solid black;
+    background-image: linear-gradient(to bottom left,#0d1b59,#74014e);
     color: #EFEDEE;
     height: 100vh;
     left: 0;
     position: absolute;
-    transition: 3s ease-in-out;
 		width: 100vw;
 		overflow: hidden;
     box-shadow: inset 0px 0px 20px black;
     will-change: left;
+    z-index: 5;
+    transition: 3s ease-in-out;
 }
 
 .landingPageMoves {
@@ -22,13 +23,11 @@
     position: absolute;
     top: 0;
     width: 25%;
+    z-index: 5;
     transition: 3s;
 		overflow: hidden;
     box-shadow: inset 1px 0px 90px black;
     will-change: auto;
-		.img-logo {
-			opacity: 0;
-		}
 }
 
 .lang-opacity-delay {
@@ -51,7 +50,7 @@
     margin: 0 auto;
     position: relative;
     padding-top: 1rem;
-		//transition: 0.8s ease-in-out;
+		transition: 0.8s ease-in-out;
 }
 
 .sign {

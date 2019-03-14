@@ -169,32 +169,25 @@ helloBtn.addEventListener('click', (() => {
 
   backgroundImg.setAttribute('class', 'background-img-showing');
 
-  const tabsMoveDelay = (() => {
-    for (const e of VerticalTabs) {
-      e.setAttribute('class', 'tabs-info-wrapper-showing');
-    }
-  });
-  setTimeout(tabsMoveDelay, 1000);
-
 	const signatureLogoDelay = (() => {
 		signWrapperDisplay.setAttribute('class', 'sign-opacity-delay');
   });
-  setTimeout(signatureLogoDelay, 2000);
+  setTimeout(signatureLogoDelay, 1000);
 
   const landingPageDelay = (() => {
     landingPage.setAttribute('class', 'landingPageMoves');
   });
-  setTimeout(landingPageDelay, 5000);
+  setTimeout(landingPageDelay, 3000);
 
   const contentInfoDelay = (() => {
     showingElements(homeContentBlock);
   });
-  setTimeout(contentInfoDelay, 7000);
+  setTimeout(contentInfoDelay, 5000);
 
   const btnCloseDelay = (() => {
     btnClose.setAttribute('class', 'btnAction-showing');
   });
-  setTimeout(btnCloseDelay, 8000);
+  setTimeout(btnCloseDelay, 7000);
 }));
 
 btnClose.addEventListener('click', (() => {
@@ -209,18 +202,6 @@ btnClose.addEventListener('click', (() => {
 
   btnClose.setAttribute('class', 'btnAction-hidden');
 
-  const landingPageDelay = (() => {
-    landingPage.setAttribute('class', 'landing-page-wrapper');
-  });
-  setTimeout(landingPageDelay, 4000);
-
-  const tabsMoveDelay = (() => {
-    for (const e of VerticalTabs) {
-			e.setAttribute('class', 'tabs-info-wrapper-hidden');
-    }
-  });
-  setTimeout(tabsMoveDelay, 5000);
-
   const contentInfoDelay = (() => {
     tabsArray.forEach((element) => {
       for (const i of element) {
@@ -231,6 +212,11 @@ btnClose.addEventListener('click', (() => {
     });
   });
   setTimeout(contentInfoDelay, 1000);
+
+  const landingPageDelay = (() => {
+    landingPage.setAttribute('class', 'landing-page-wrapper');
+  });
+  setTimeout(landingPageDelay, 4000);
   
   const backgroundHiddenDelay = (() => {
     langWrapperDisplay.setAttribute('class', 'lang');
@@ -238,7 +224,7 @@ btnClose.addEventListener('click', (() => {
     signWrapperDisplay.setAttribute('class', 'sign');
     backgroundImg.setAttribute('class', 'background-img-hidden');
   });
-  setTimeout(backgroundHiddenDelay, 7000);
+  setTimeout(backgroundHiddenDelay, 8000);
 }));
 // ////////////////////////
 
