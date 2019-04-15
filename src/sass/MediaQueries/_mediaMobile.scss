@@ -49,7 +49,7 @@
 
 	.content-page-hidden {
 		width: 74vw;
-		left: -100vw;
+		left: -120vw;
     transition: 3s ease-in-out;
 	}
 
@@ -60,19 +60,28 @@
 
 	.tabs-info-wrapper-showing {
 		width: 15%;
-	}
+  }
+  
+  .tabs-wrapper-showing {
+    height: 100vh;
+    width: 15%;
+    left: 0%;
+    position: absolute;
+    margin: 0;
+    border-right: 1px solid black;
+    background-image: linear-gradient(to bottom right, #0d1b59, #1C589F, #2a9aa3);
+    transition: 3s;
+  }
 
 	.tabs-list a {
 		display: none;
 	}
 
 	.tab-items span {
-		color: white;
+    color: white;
     width: 50%;
     text-align: center;
-    height: 50%;
-    font-size: 2em;
-    padding: 2%;
+    font-size: 1.5em;
     margin: 0 auto;
     display: block;
 	}
