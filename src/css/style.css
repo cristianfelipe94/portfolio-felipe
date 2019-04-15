@@ -831,6 +831,18 @@
 .tab-items span {
   display: none; }
 
+.contact-block-position {
+  width: 80%;
+  margin: 5vh auto 10vh;
+  text-align: center; }
+  .contact-block-position:hover .ui-line-border {
+    border: 2px solid #fd2d65;
+    width: 100%;
+    transition: 1.5s ease-in-out; }
+
+.contact-block-position a {
+  margin: 2%; }
+
 .activity-wrapper {
   margin: 0;
   padding: 4%; }

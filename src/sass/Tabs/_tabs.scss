@@ -44,3 +44,25 @@
 .tab-items span {
 	display: none;
 }
+
+.contact-block-position {
+  width: 80%;
+  margin: 5vh auto 10vh;
+  text-align: center;
+  &:hover {
+    .ui-line-border {
+      border: 2px solid #fd2d65;
+      width: 100%;
+      transition: 1.5s ease-in-out;
+    }
+  }
+}
+
+.contact-block-position a {
+  margin: 2%;
+
+}
+
+.contact-block-position h3{
+
+}
