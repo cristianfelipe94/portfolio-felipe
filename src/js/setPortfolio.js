@@ -2,37 +2,37 @@
 // ////////////////////////////
 const imgPortArray = [
 	imgPort1 = {
-		src: '../img/canvas_game_port1.jpg',
+		src: 'img/canvas_game_port1.jpg',
 		alt: 'canvas mini game picture',
 		href: 'https://cristianfelipe94.github.io/CanvasGame/',
 		type: 'game',
 	},
 	imgPort2 = {
-		src: '../img/derrota_palabra_port1.jpg',
+		src: 'img/derrota_palabra_port1.jpg',
 		alt: 'derrota la palabra game picture',
 		href: 'https://cristianfelipe94.github.io/Derrota-la-Palabra/',
 		type: 'game',
 	},
 	imgPort3 = {
-		src: '../img/tiny_one_port1.jpg',
+		src: 'img/tiny_one_port1.jpg',
 		alt: 'tiny one picture',
 		href: 'https://cristianfelipe94.github.io/TinyOneWebSite/',
 		type: 'page',
 	},
 	imgPort4 = {
-		src: '../img/folio_port1.jpg',
+		src: 'img/folio_port1.jpg',
 		alt: 'folio picture',
 		href: 'https://cristianfelipe94.github.io/Final-Test./',
 		type: 'page',
 	},
 	imgPort5 = {
-		src: '../img/blaz_port1.jpg',
+		src: 'img/blaz_port1.jpg',
 		alt: 'blaz game picture',
 		href: 'https://cristianfelipe94.github.io/BlazRobarWebsite/',
 		type: 'page',
 	},
 	imgPort6 = {
-		src: '../img/cuda_port1.jpg',
+		src: 'img/cuda_port1.jpg',
 		alt: 'cuda game picture',
 		href: 'https://cristianfelipe94.github.io/ExamenWeb/',
 		type: 'page',
@@ -79,8 +79,5 @@ imgPortArray.forEach((element) => {
 	});
 	portElementWrapper.appendChild(elementPort);
 	projectsWrapper.appendChild(portElementWrapper);
-});
-closeModalBtn.addEventListener('click', function () {
-	backgroundModal.setAttribute('class', 'modal-content-hide');
 });
 // ////////////////////////////

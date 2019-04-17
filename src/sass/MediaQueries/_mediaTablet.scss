@@ -4,10 +4,11 @@
 		width: 100%;
 	}
 
-	.img-wrapper {
+	.landing-page-wrapper .img-wrapper {
 		width: 50%;
 		opacity: 1;
 		height: auto;
+		transition: 2s;
 	}
 
 	.say-hello-text {
@@ -32,12 +33,12 @@
 
 	.landingPageMoves .img-wrapper {
 		opacity: 0;
-    transition: 4s;
+    	transition: 0.8s;
 	}
 
 	.content-page-showing {
-		width: 74vw;
-		left: 15vw;
+		width: 68vw;
+    	left: 20vw;
 	}
 
 	.content-page-hidden {
