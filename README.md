@@ -3,7 +3,7 @@
 
 ## Requirements
 
-* Node.js 8.x or higher
+* Node.js 8.x or higher.
 
 ## Usage
 
