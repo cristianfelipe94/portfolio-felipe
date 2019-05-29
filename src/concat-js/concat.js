@@ -334,8 +334,17 @@ const imgPortArray = [
 		src: 'https://cristianfelipe94.github.io/NutClusters-Banner-Prodigious/',
 		alt: 'Banner made for Prodigious course',
 		type: 'banner',
+  },
+  imgPort9 = {
+		src: 'https://cristianfelipe94.github.io/LunchableBanner-Prodigious/',
+		alt: 'Banner made for Prodigious course',
+		type: 'banner',
+  },
+  imgPort10 = {
+		src: 'https://cristianfelipe94.github.io/PlantersBanner-Prodigious/',
+		alt: 'Banner made for Prodigious course',
+		type: 'banner',
 	},
-
 ];
 
 imgPortArray.forEach((element) => {
@@ -371,6 +380,7 @@ imgPortArray.forEach((element) => {
 		portElementWrapper.appendChild(elementPort);
 		projectsWrapper.appendChild(portElementWrapper);
 	} else if (elementTypeOf === 'banner') {
+    portElementWrapper.setAttribute('class', 'portfolio-wrapper-banner');
 		const pageLink = document.createElement('iframe');
 		pageLink.setAttribute('src', elementSrc);
 		pageLink.setAttribute('class', 'frame-portfolio-size');

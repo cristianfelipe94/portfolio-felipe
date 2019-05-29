@@ -612,13 +612,13 @@
     left: 0px; } }
 @keyframes spriteWords {
   0% {
-    content: 'Tecnolog├¡a.'; }
+    content: 'Tecnología.'; }
   10% {
     content: 'Trabajo en Equipo.'; }
   20% {
     content: 'Video juegos.'; }
   30% {
-    content: 'Buena m├║sica.'; }
+    content: 'Buena música.'; }
   40% {
     content: 'Arte.'; }
   50% {
@@ -632,7 +632,7 @@
   90% {
     content: 'Salir con amistades'; }
   100% {
-    content: 'Tecnolog├¡a.'; } }
+    content: 'Tecnología.'; } }
 .like-icons-color {
   animation: blinking 50s ease-in-out infinite;
   border-radius: 5px;
@@ -753,10 +753,19 @@
   position: absolute;
   transition: 2s ease; }
 
+.portfolio-wrapper-banner {
+  position: relative;
+  display: block;
+  width: 43%;
+  padding: 1%;
+  margin: 0 auto;
+  text-align: center; }
+
 .frame-portfolio-size {
   height: 250px;
   padding: 5px;
-  width: 300px; }
+  width: 300px;
+  border: none; }
 
 .form-block-size {
   width: 80%;
@@ -873,7 +882,7 @@
   .imgHello {
     width: 100%; }
 
-  landing-page-wrapper .img-wrapper {
+  .landing-page-wrapper .img-wrapper {
     width: 50%;
     opacity: 1;
     height: auto;
