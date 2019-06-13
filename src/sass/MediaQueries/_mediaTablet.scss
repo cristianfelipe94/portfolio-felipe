@@ -33,12 +33,12 @@
 
 	.landingPageMoves .img-wrapper {
 		opacity: 0;
-    	transition: 0.8s;
+    transition: 0.8s;
 	}
 
 	.content-page-showing {
 		width: 68vw;
-    	left: 20vw;
+    left: 20vw;
 	}
 
 	.content-page-hidden {
@@ -93,5 +93,14 @@
 
 	.sizer-style-position {
 		display: none;
-	}
+  }
+
+  .portfolio-wrappers {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .portfolio-wrapper-banner {
+    width: 100%;
+  }
 }

@@ -953,7 +953,14 @@
     display: none; }
 
   .sizer-style-position {
-    display: none; } }
+    display: none; }
+
+  .portfolio-wrappers {
+    width: 60%;
+    margin: 0 auto; }
+
+  .portfolio-wrapper-banner {
+    width: 100%; } }
 @media screen and (max-width: 780px) {
   .content-relativeness-normal {
     font-size: 19px; }

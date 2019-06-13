@@ -61,7 +61,12 @@ const imgPortArray = [
 		src: 'https://cristianfelipe94.github.io/PlantersBanner-Prodigious/',
 		alt: 'Banner made for Prodigious course',
 		type: 'banner',
-	},
+  },
+  imgPort11 = {
+		src: 'https://cristianfelipe94.github.io/MrBirthdayBanner-Prodigious/',
+		alt: 'Banner made for Prodigious course',
+		type: 'banner',
+  },
 ];
 
 imgPortArray.forEach((element) => {
