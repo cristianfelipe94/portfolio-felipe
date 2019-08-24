@@ -1,13 +1,12 @@
-
 .tabs-wrapper-showing {
-    height: 100vh;
-    width: 20%;
-    left: 0%;
-    position: absolute;
-    margin: 0;
-    border-right: 1px solid black;
-    background-image: linear-gradient(to bottom right,#0d1b59,#1C589F,#2a9aa3);
-    transition: 3s;
+  height: 100vh;
+  width: 20%;
+  left: 0%;
+  position: absolute;
+  margin: 0;
+  border-right: 1px solid black;
+  background-image: linear-gradient(to bottom right, #0d1b59, #1c589f, #2a9aa3);
+  transition: 3s;
 }
 
 .tabs-list {
@@ -25,24 +24,24 @@
 }
 
 .tabs-list li {
-    padding: 5%;
-    transition: 1.5s ease-in-out;
-    height: 10%;
-    cursor: pointer;
-    &:hover {
-        background-color: #1f6aa0;
-        transition: 0.5s ease-in-out;
-    }
+  padding: 5%;
+  transition: 1.5s ease-in-out;
+  height: 10%;
+  cursor: pointer;
+  &:hover {
+    background-color: #1f6aa0;
+    transition: 0.5s ease-in-out;
+  }
 }
 
 .tab-items a {
-    padding: 7%;
-    text-decoration: none;
-    color: #D6DBE0;
+  padding: 7%;
+  text-decoration: none;
+  color: #d6dbe0;
 }
 
 .tab-items span {
-	display: none;
+  display: none;
 }
 
 .contact-block-position {
@@ -60,9 +59,4 @@
 
 .contact-block-position a {
   margin: 2%;
-
-}
-
-.contact-block-position h3{
-
 }

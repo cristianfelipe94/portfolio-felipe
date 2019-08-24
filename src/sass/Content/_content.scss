@@ -1,42 +1,49 @@
-
 @keyframes hiddingContent {
-    0% {z-index: -50;}
-    100% {z-index: -50;}
+  0% {
+    z-index: -50;
+  }
+  100% {
+    z-index: -50;
+  }
 }
 
 .content-page-hidden {
-    animation: hiddingContent 3s;
-    background-color: black;
-    color: #D6DBE0;
-    height: 100vh;
-    left: -50vw;
-    margin: 0 auto;
-    padding: 5%;
-    position: absolute;
-    transition: 4s ease-in-out;
-    width: 58vw;
-    z-index: -50;
+  animation: hiddingContent 3s;
+  background-color: black;
+  color: #d6dbe0;
+  height: 100vh;
+  left: -50vw;
+  margin: 0 auto;
+  padding: 5%;
+  position: absolute;
+  transition: 3s ease-in-out;
+  width: 58vw;
+  z-index: -50;
 }
 
 @keyframes showingContent {
-    0% {z-index: -50;}
-    100% {z-index: -50;}
+  0% {
+    z-index: -50;
+  }
+  100% {
+    z-index: -50;
+  }
 }
 
 .content-page-showing {
-    animation: showingContent 4s;
-    color: white;
-    height: 100vh;
-    left: 20vw;
-    overflow-x: auto;
-    padding: 5%;
-    position: absolute;
-    transition: 4s ease-in-out;
-    width: 58vw;
-    z-index: 100;
+  animation: showingContent 4s;
+  color: white;
+  height: 100vh;
+  left: 20vw;
+  overflow-x: auto;
+  padding: 5%;
+  position: absolute;
+  transition: 4s ease-in-out;
+  width: 58vw;
+  z-index: 100;
 }
 
-.content-page-showing{
+.content-page-showing {
   &:hover {
     .ui-title-underline {
       width: 10%;

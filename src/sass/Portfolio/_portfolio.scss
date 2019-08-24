@@ -1,112 +1,110 @@
-
 .gallery-port {
-    width: 85%;
-    padding: 1%;
-    margin: 2% auto;
-    opacity: 0.7;
-    box-shadow: 1px 1px 10px #D6DBE0;
-    transition: 2s ease;
+  width: 85%;
+  padding: 1%;
+  margin: 2% auto;
+  opacity: 0.7;
+  box-shadow: 1px 1px 10px #d6dbe0;
+  transition: 2s ease;
 }
 
 .portfolio-wrappers {
-    position: relative;
-    display: inline-block;
-    width: 43%;
-    padding: 1%;
-    margin: 2%;
-    text-align: center;
-    &:hover {
-        .gallery-port {
-            opacity: 1;
-            box-shadow: 1px 1px 25px #fd2d65;
-            transition: 0.5s ease;
-        }
-        .portfolio-icons {
-            color: #27c8d5;
-            transition: 0.6s ease;
-            box-shadow: 0px -1px 20px #fd2d65;
-            background-color: black;
-            transition: 1s ease-in-out;
-        }
+  position: relative;
+  display: inline-block;
+  width: 43%;
+  padding: 5% 1%;
+  margin: 2%;
+  text-align: center;
+  &:hover {
+    .gallery-port {
+      opacity: 1;
+      box-shadow: 1px 1px 25px #fd2d65;
+      transition: 0.5s ease;
     }
+    .portfolio-icons {
+      color: #27c8d5;
+      transition: 0.6s ease;
+      box-shadow: 0px -1px 20px #fd2d65;
+      background-color: black;
+      transition: 1s ease-in-out;
+    }
+  }
 }
 
 .portfolio-icons {
-    z-index: 50;
-    position: absolute;
-    top: 40%;
-    left: 42%;
-    font-size: 3em;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 50%;
-    color: white;
-    padding: 2%;
-    text-align: center;
-    box-shadow: 0px 0px 15px transparent;
-    transition: 1s ease-in-out;
+  z-index: 50;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  box-shadow: 0px 0px 15px transparent;
+  transition: 1s ease-in-out;
 }
 
 .projects-wrapper-size {
-	text-align: center;
+  text-align: center;
 }
 
 .modal-img-display {
-    display: block;
-    height: 60%;
-    width: 60%;
-    opacity: 1;
-    position: relative;
-    z-index: 100;
-    margin: 5% auto;
-    transition: 2s ease;
+  display: block;
+  height: 60%;
+  width: 60%;
+  opacity: 1;
+  position: relative;
+  z-index: 100;
+  margin: 5% auto;
+  transition: 2s ease;
 }
 
 .modal-content-display {
-    display: block;
-    opacity: 1;
-    background-color: #1C3144;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: 100;
-    transition: 2s ease;
+  display: block;
+  opacity: 1;
+  background-color: #1c3144;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  transition: 2s ease;
 }
 
 .modal-close-btn {
-    height: 50px;
-    width: 50px;
-    z-index: 100;
-    display: inline-block;
-    position: absolute;
-    top: 2.5%;
-    left: 48%;
-    background-color: red;
+  height: 50px;
+  width: 50px;
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  top: 2.5%;
+  left: 48%;
+  background-color: red;
 }
 
 .modal-content-hide {
-    display: block;
-    opacity: 0;
-    z-index: 100;
-    background-color: #1C3144;
-    height: 0vh;
-    width: 100vw;
-    position: absolute;
-    transition: 2s ease;
+  display: block;
+  opacity: 0;
+  z-index: 100;
+  background-color: #1c3144;
+  height: 0vh;
+  width: 100vw;
+  position: absolute;
+  transition: 2s ease;
 }
 
 .portfolio-wrapper-banner {
   position: relative;
   display: block;
-  width: 43%;
   padding: 1%;
   margin: 0 auto;
   text-align: center;
 }
 
 .frame-portfolio-size {
-    height: 250px;
-    padding: 5px;
-    width: 300px;
-    border: none;
+  height: 250px;
+  padding: 5px;
+  width: 300px;
+  border: none;
 }

@@ -5,87 +5,153 @@
 }
 
 @keyframes blinking {
-  0% {box-shadow: 0px -1px 20px #27c8d5;}
-  10% {box-shadow: 0px -1px 20px #27c8d5;}
-  20% {box-shadow: 0px -1px 20px #fd2d65;}
-  30% {box-shadow: 0px -1px 20px #27c8d5;}
-  40% {box-shadow: 0px -1px 20px #fd2d65;}
-  50% {box-shadow: 0px -1px 20px #27c8d5;}
-  60% {box-shadow: 0px -1px 20px #fd2d65;}
-  70% {box-shadow: 0px -1px 20px #27c8d5;}
-  80% {box-shadow: 0px -1px 20px #fd2d65;}
-  100% {box-shadow: 0px -1px 20px #27c8d5;}
-  90% {box-shadow: 0px -1px 20px #fd2d65;}
-  100% {box-shadow: 0px -1px 20px #27c8d5;}
+  0% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
+  10% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
+  20% {
+    box-shadow: 0px -1px 20px #fd2d65;
+  }
+  30% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
+  40% {
+    box-shadow: 0px -1px 20px #fd2d65;
+  }
+  50% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
+  60% {
+    box-shadow: 0px -1px 20px #fd2d65;
+  }
+  70% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
+  80% {
+    box-shadow: 0px -1px 20px #fd2d65;
+  }
+  100% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
+  90% {
+    box-shadow: 0px -1px 20px #fd2d65;
+  }
+  100% {
+    box-shadow: 0px -1px 20px #27c8d5;
+  }
 }
 
 @keyframes spriteMoves {
-    0% {left: 0px;}
-    10% {left: -95px;}
-    20% {left: -191px;}
-    30% {left: -288px;}
-    40% {left: -384px;}
-    50% {left: -476px;}
-    60% {left: -572px;}
-    70% {left: -660px;}
-    80% {left: -760px;}
-    90% {left: -860px;}
-    100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: -95px;
+  }
+  20% {
+    left: -191px;
+  }
+  30% {
+    left: -288px;
+  }
+  40% {
+    left: -384px;
+  }
+  50% {
+    left: -476px;
+  }
+  60% {
+    left: -572px;
+  }
+  70% {
+    left: -660px;
+  }
+  80% {
+    left: -760px;
+  }
+  90% {
+    left: -860px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 @keyframes spriteWords {
-    0% {content: 'Tecnología.';}
-    10% {content: 'Trabajo en Equipo.';}
-    20% {content: 'Video juegos.';}
-    30% {content: 'Buena música.';}
-    40% {content: 'Arte.';}
-    50% {content: 'Tocar guitarra.';}
-    60% {content: 'Comida.';}
-    70% {content: 'Naturaleza.';}
-    80% {content: 'Gatos.';}
-    90% {content: 'Salir con amistades';}
-    100% {content: 'Tecnología.';}
+  0% {
+    content: "Tecnología.";
+  }
+  10% {
+    content: "Trabajo en Equipo.";
+  }
+  20% {
+    content: "Video juegos.";
+  }
+  30% {
+    content: "Buena música.";
+  }
+  40% {
+    content: "Arte.";
+  }
+  50% {
+    content: "Tocar guitarra.";
+  }
+  60% {
+    content: "Comida.";
+  }
+  70% {
+    content: "Naturaleza.";
+  }
+  80% {
+    content: "Gatos.";
+  }
+  90% {
+    content: "Salir con amistades";
+  }
+  100% {
+    content: "Tecnología.";
+  }
 }
 
 .like-icons-color {
   animation: blinking 50s ease-in-out infinite;
-	border-radius: 5px;
-	height: 100px;
-	left: 0;
-	margin: 0 auto;
-	overflow: hidden;
-	position: absolute;
-	right: 0;
-	width: 100px;
-	transition: 1s;
+  border-radius: 5px;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  transition: 1s;
 }
 
-
 .sprite-position {
-    animation: spriteMoves 50s ease-in-out infinite;
-    display: inline-block;
-    height: 80px;
-    margin: 10% auto;
-    opacity: 0.8;
-    position: absolute;
+  animation: spriteMoves 50s ease-in-out infinite;
+  display: inline-block;
+  height: 80px;
+  margin: 10% auto;
+  opacity: 0.8;
+  position: absolute;
 }
 
 .sprite-wrapper-position {
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    width: 70%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 70%;
 }
 
 .like-icons-words {
-    letter-spacing: 0.5px;
-    margin: 5% auto;
-    text-align: center;
-    width: 160px;
+  letter-spacing: 0.5px;
+  margin: 5% auto;
+  text-align: center;
+  width: 160px;
 }
 
-
 .like-icons-words::after {
-    animation: spriteWords 50s ease-in-out infinite;
-    content: '';
+  animation: spriteWords 50s ease-in-out infinite;
+  content: "";
 }

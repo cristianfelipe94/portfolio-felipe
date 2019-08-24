@@ -1,28 +1,33 @@
 .activity-wrapper {
-    margin: 0;
-    padding: 4%;
+  margin: 0;
+  padding: 4%;
 }
 
 .activity-item-wrapper {
-    border-bottom: 4px solid white;
-    border-radius: 2px;
-    list-style: none;
-    margin: 10% 0;
-    transition: 2s ease;
-    &:hover {
-      background-image: linear-gradient(
-        transparent, transparent, transparent,
-        transparent,transparent,transparent,
-        transparent,#fd2d65
-      );
-      border-radius: 5px;
-      border-bottom: 4px solid #fd2d65;
-      transition: 0.8s ease;
-    }
+  border-bottom: 4px solid white;
+  border-radius: 2px;
+  list-style: none;
+  margin: 10% 0;
+  transition: 2s ease;
+  &:hover {
+    background-image: linear-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      #fd2d65
+    );
+    border-radius: 5px;
+    border-bottom: 4px solid #fd2d65;
+    transition: 0.8s ease;
+  }
 }
 
 .activity-url-color {
-    color: #D6DBE0;
-    text-decoration: none;
-    transition: 1.5s ease;
+  color: #d6dbe0;
+  text-decoration: none;
+  transition: 1.5s ease;
 }

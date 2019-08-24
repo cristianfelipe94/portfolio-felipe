@@ -1,28 +1,28 @@
 .background-img-hidden {
-    display: block;
-    height: 100%;
-    position: absolute;
-    left: -20%;
-    transition: 3s ease-in-out;
-    width: 60%;
-    z-index: -200;
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: -20%;
+  transition: 3s ease-in-out;
+  width: 60%;
+  z-index: -200;
 }
 
 .background-img-showing {
-    display: block;
-    height: 100%;
-    position: absolute;
-    left: 20%;
-    transition: 0.8s ease-in-out;
-    width: 60%;
-    z-index: -200;
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  transition: 0.8s ease-in-out;
+  width: 60%;
+  z-index: -200;
 }
 
 .background-shade-color {
-    background-color: black;
-    height: 100vh;
-    opacity: 0.8;
-    position: absolute;
-    width: 100vw;
-    z-index: -100;
+  background-color: black;
+  height: 100vh;
+  opacity: 0.8;
+  position: absolute;
+  width: 100vw;
+  z-index: -100;
 }

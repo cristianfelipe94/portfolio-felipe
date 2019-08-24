@@ -1,67 +1,60 @@
 @media screen and (max-width: 968px) {
-	
-	.imgHello {
-		width: 100%;
-	}
+  .imgHello {
+    width: 100%;
+  }
 
-	.landing-page-wrapper .img-wrapper {
-		width: 50%;
-		opacity: 1;
-		height: auto;
-		transition: 2s;
-	}
+  .landing-page-wrapper .img-wrapper {
+    width: 50%;
+    opacity: 1;
+    height: auto;
+    transition: 2s;
+  }
 
-	.say-hello-text {
-		display: none;
-	}
+  .say-hello-text {
+    display: none;
+  }
 
-	.sign {
-		display: block;
-	}
+  .sign {
+    display: block;
+  }
 
-	.rotation-anim {
-		text-align: center;
-	}
+  .rotation-anim {
+    text-align: center;
+  }
 
-	.landingPageMoves {
-		left: 90%;
-	}
+  .landingPageMoves {
+    left: 90%;
+  }
 
-	.landingPageMoves .sign {
-		display: none;
-	}
+  .landingPageMoves .sign {
+    display: none;
+  }
 
-	.landingPageMoves .img-wrapper {
-		opacity: 0;
+  .landingPageMoves {
+    opacity: 1;
     transition: 0.8s;
-	}
+  }
 
-	.content-page-showing {
-		width: 68vw;
+  .content-page-showing {
+    width: 68vw;
     left: 20vw;
-	}
+  }
 
-	.content-page-hidden {
-		width: 74vw;
-		left: -100vw;
-    transition: 3s ease-in-out;
-	}
+  .background-img-showing {
+    width: 75%;
+    left: 15%;
+  }
 
-	.background-img-showing {
-		width: 75%;
-		left: 15%;
-	}
+  .tabs-info-wrapper-showing {
+    width: 15%;
+  }
 
-	.tabs-info-wrapper-showing {
-		width: 15%;
-	}
+  .tabs-list a {
+    display: none;
+  }
 
-	.tabs-list a {
-		display: none;
-	}
-
-	.tab-items span {
-		color: white;
+  .tab-items span {
+    color: white;
     width: 50%;
     text-align: center;
     height: 50%;
@@ -69,30 +62,30 @@
     padding: 2%;
     margin: 0 auto;
     display: block;
-	}
+  }
 
-	.exp-content-size {
-		border: 0;
+  .exp-content-size {
+    border: 0;
     border-bottom: 1px solid #fd2d65;
     float: left;
     padding: 0% 4%;
-		width: 95%;
-	}
+    width: 95%;
+  }
 
-	.portfolio-wrappers {
-		width: 65%;
-	}
+  .portfolio-wrappers {
+    width: 65%;
+  }
 
-	.diploma-position {
-		height: unset;
-	}
+  .diploma-position {
+    height: unset;
+  }
 
-	.landingPageMoves .sizer-style-position {
-		display: none;
-	}
+  .landingPageMoves .sizer-style-position {
+    display: none;
+  }
 
-	.sizer-style-position {
-		display: none;
+  .sizer-style-position {
+    display: none;
   }
 
   .portfolio-wrappers {

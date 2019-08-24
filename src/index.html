@@ -1,250 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
-    <meta charset="UTF-8">
-    <meta name="viewport" content='width=device-width, initial-scale=0.6, maximum-scale=0.6, user-scalable=0'>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <title>Portfolio.</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <title>Portfolio.</title>
 </head>
+
 <body id="js-page-content" class="content-relativeness-normal">
-    <div class="landing-page-wrapper" id="js-landingpage">
-        <div class="tabs-wrapper">
-            <div class="sign" id="js-sign-wrapper">
-                <img src="img/signature-logo-proj-mixed-color.png" alt="" class="img-logo">
-            </div>
-            <!--This block of code is commented as functionality is not available, just yet-->
-            <div class="lang" id="js-lang-wrapper">
-                <a href="https://www.instagram.com/stoned_christ/" target="bank" class="social-icon fab fa-instagram" id="insta"></a>
-                <!--<img src="img/español.svg" alt="" class="flag" id="españolFlagLang">
+  <div class="landing-page-wrapper" id="js-landingpage">
+    <div class="tabs-wrapper">
+      <div class="sign" id="js-sign-wrapper">
+        <img src="img/signature-logo-proj-mixed-color.png" alt="" class="img-logo" />
+      </div>
+      <!--This block of code is commented as functionality is not available, just yet-->
+      <div class="lang" id="js-lang-wrapper">
+        <a href="https://www.instagram.com/stoned_christ/" target="bank" class="social-icon fab fa-instagram"
+          id="insta"></a>
+        <!--<img src="img/español.svg" alt="" class="flag" id="españolFlagLang">
                 <img src="img/english.svg" alt="" class="flag" id="englishFlagLang">-->
-            </div>
-            <div class="social" id="js-social-wrapper">                
-                <a href="https://github.com/cristianfelipe94" target="bank" class="social-icon fab fa-github" id="github"></a>
-            </div>
-            <div class="img-wrapper" id="js-img-avatar">
-                <img src="img/developer-avatar.png" alt="Esto es una foto" class="imgHello">
-                <div class="rotation-anim">
-                    <button id="js-hello" class="say-hello-btn">Click</button>
-                </div>
-            </div>
-				</div>
-				<button class="btnAction-hidden" id="js-btn-close">
-					<span class="fas fa-window-close"></span>
-				</button>
-				<button id="js-btn-size" class="sizer-style-position">
-					Aa <span id="js-size-name">Letra pequeña.</span>
-				</button>
+      </div>
+      <div class="social" id="js-social-wrapper">
+        <a href="https://github.com/cristianfelipe94" target="bank" class="social-icon fab fa-github" id="github"></a>
+      </div>
+      <div class="img-wrapper" id="js-img-avatar">
+        <img src="img/developer-avatar.png" alt="Esto es una foto" class="imgHello" />
+        <div class="rotation-anim">
+          <button id="js-hello" class="say-hello-btn">Click</button>
+        </div>
+      </div>
+    </div>
+    <button class="btnAction-hidden" id="js-btn-close">
+      <span class="fas fa-window-close"></span>
+    </button>
+    <button id="js-btn-size" class="sizer-style-position">
+      Aa <span id="js-size-name">Letra pequeña.</span>
+    </button>
+  </div>
+
+  <img alt="Background drawings I made" class="background-img-showing" id="js-background-img" />
+
+  <div class="tabs-wrapper-showing" id="js-tabs-info-wrapper">
+    <span class="background-shade-color"></span>
+
+    <ul class="tabs-list">
+      <li class="tab-items">
+        <a href="#js-home-page">Inicio</a>
+        <span class="fas fa-home"></span>
+      </li>
+      <li class="tab-items">
+        <a href="#js-about-page">Sobre mí</a>
+        <span class="fas fa-id-badge"></span>
+      </li>
+      <li class="tab-items">
+        <a href="#js-port-page">Portafolio</a>
+        <span class="fas fa-file-code"></span>
+      </li>
+      <li class="tab-items">
+        <a href="#js-educ-page">Educación</a>
+        <span class="fas fa-graduation-cap"></span>
+      </li>
+      <li class="tab-items">
+        <a href="#js-exp-page">Experiencia</a>
+        <span class="fas fa-user-tie"></span>
+      </li>
+      <li class="tab-items">
+        <a href="#js-contact-page">Contacto</a>
+        <span class="fas fa-envelope"></span>
+      </li>
+      <li class="tab-items">
+        <a href="#js-github-page">Github</a>
+        <span class="fab fa-github-square"></span>
+      </li>
+    </ul>
+
+    <div class="content-page-hidden" id="js-home-page">
+      <div class="page-header-position">
+        <h2 class="page-title-hidden">Home</h2>
+        <p>
+          Hola bienvenida o bienvenido, mi nombre es Cristian Felipe soy
+          Diseñador y Desarrollador web.
+        </p>
+        <span class="ui-title-underline"></span>
+      </div>
+      <div class="page-content-position">
+        <p>
+          He encontrado en el Desarrollo Web una manera en la que puedo
+          divertirme y realizarme como profesional. También he tenido la
+          oportunidad de conocer personas con historias increíbles lo cual me
+          motiva a crecer como desarrollador web.
+        </p>
+        <p>
+          Soy una persona creativa, con ganas de dar lo mejor de mi y con la
+          disposición de aprender y mejorar.
+        </p>
+      </div>
+      <div class="sprite-wrapper-position">
+        <p>Cosas que me gustan: <span class="like-icons-words"></span></p>
+        <span class="like-icons-color"><img src="img/spriteThingsWhite.svg" alt="" class="sprite-position" /></span>
+      </div>
     </div>
 
-    <img alt="Background drawings I made" class="background-img-hidden" id="js-background-img">
-
-    <div class="tabs-wrapper-showing" id="js-tabs-info-wrapper">
-      <span class="background-shade-color"></span>
-
-        <ul class="tabs-list">
-          <li class="tab-items">
-						<a href="#js-home-page">Inicio</a>
-						<span class="fas fa-home"></span>
-					</li>
-          <li class="tab-items">
-						<a href="#js-about-page">Sobre mí</a>
-						<span class="fas fa-id-badge"></span>
-					</li>
-          <li class="tab-items">
-						<a href="#js-port-page">Portafolio</a>
-						<span class="fas fa-file-code"></span>
-					</li>
-          <li class="tab-items">
-						<a href="#js-educ-page">Educación</a>
-						<span class="fas fa-graduation-cap"></span>
-					</li>
-          <li class="tab-items">
-						<a href="#js-exp-page">Experiencia</a>
-						<span class="fas fa-user-tie"></span>
-					</li>
-          <li class="tab-items">
-						<a href="#js-contact-page">Contacto</a>
-						<span class="fas fa-envelope"></span>
-					</li>
-          <li class="tab-items">
-						<a href="#js-github-page">Github</a>
-						<span class="fab fa-github-square"></span>
-					</li>
-        </ul>
-
-        <div class="content-page-hidden" id="js-home-page">
-            <div class="page-header-position">
-              <h2 class="page-title-hidden">Home</h2>
-              <p>
-                Hola bienvenida o bienvenido, mi nombre es Cristian Felipe soy Diseñador y Desarrollador web.
-              </p>
-              <span class="ui-title-underline"></span>
-            </div>
-            <div class="page-content-position">
-              <p>
-                He encontrado en el Desarrollo Web una manera en la que puedo divertirme y realizarme como profesional. También he tenido la oportunidad de conocer personas con historias increíbles lo cual me motiva a crecer como desarrollador web.
-              </p>
-              <p>
-                Soy una persona creativa, con ganas de dar lo mejor de mi y con la disposición de aprender y mejorar.
-              </p>
-            </div>
-            <div class="sprite-wrapper-position">
-              <p>Cosas que me gustan: <span class="like-icons-words"></span></p>
-                <span class="like-icons-color"><img src="img/spriteThingsWhite.svg" alt="" class="sprite-position"></span>
-            </div>
+    <div class="content-page-hidden" id="js-about-page">
+      <div class="page-header-position">
+        <h2 class="page-title-hidden">Sobre mí</h2>
+        <span class="ui-title-underline"></span>
+      </div>
+      <div class="ui-content-width">
+        <div class="exp-content-size">
+          <h3>Qué he hecho?</h3>
+          <p>
+            Tuve la oportunidad de trabajar por 3 años en el ambiente de Call
+            Center con cuentas en Inglés de dos empresas, Convergys cuentas en
+            Estados Unidos y Hewlett-Packard Inc (HP) con cuentas en United
+            Kingdom (DXC Technology).
+          </p>
+          <p>
+            Donde pude desarrollar mis habilidades como trabajador, líder y
+            persona responsable de mis acciones y las acciones de mis
+            compañeros de trabajo, también tuve que aprender muchos procesos y
+            a utilizar diversas herramientas lo cual me hizo una persona que
+            se adapta rápido a nuevas experiencias, siempre trabajando de la
+            mejor manera.
+          </p>
         </div>
-
-        <div class="content-page-hidden" id="js-about-page">
-          <div class="page-header-position">
-            <h2 class="page-title-hidden">Sobre mí</h2>
-            <span class="ui-title-underline"></span>
-          </div>
-          <div class="ui-content-width">
-            <div class="exp-content-size">
-              <h3>Qué he hecho?</h3>
-              <p>
-                Tuve la oportunidad de trabajar por 3 años en el ambiente de Call Center con cuentas en Inglés de dos empresas, Convergys cuentas en Estados Unidos y Hewlett-Packard Inc (HP) con cuentas en United Kingdom (DXC Technology).
-              </p>
-              <p>
-                Donde pude desarrollar mis habilidades como trabajador, líder y persona responsable de mis acciones y las acciones de mis compañeros de trabajo, también tuve que aprender muchos procesos y a utilizar diversas herramientas lo cual me hizo una persona que se adapta rápido a nuevas experiencias, siempre trabajando de la mejor manera.
-              </p>
-            </div>
-            <div class="exp-content-size">
-              <h3>Qué espero lograr?</h3>
-              <p>
-                Recientemente tengo tres títulos de educación avanzada, del INA y el CETAV, lo cual me motiva a seguir estudiando y a prepararme más.
-              </p>
-              <p>
-                Espero llegar a trabajar y a aprender de la industria del Desarrollo Web en una empresa donde me puedan facilitar las herramientas necesarias para ser un mejor profesional.
-              </p>
-              <p>
-                Me gustaría mucho trabajar y pagarme una preparación universitaria relacionada a Desarrollo Web apenas se me dé la oportunidad, ya que es una carrera que me apasiona.
-              </p>
-            </div>
-          </div>
+        <div class="exp-content-size">
+          <h3>Qué espero lograr?</h3>
+          <p>
+            Recientemente tengo tres títulos de educación avanzada, del INA y
+            el CETAV, lo cual me motiva a seguir estudiando y a prepararme
+            más.
+          </p>
+          <p>
+            Espero llegar a trabajar y a aprender de la industria del
+            Desarrollo Web en una empresa donde me puedan facilitar las
+            herramientas necesarias para ser un mejor profesional.
+          </p>
+          <p>
+            Me gustaría mucho trabajar y pagarme una preparación universitaria
+            relacionada a Desarrollo Web apenas se me dé la oportunidad, ya
+            que es una carrera que me apasiona.
+          </p>
         </div>
+      </div>
+    </div>
 
-        <div class="content-page-hidden" id="js-port-page">
-          <div class="page-header-position">
-              <h2 class="page-title-hidden">Portfolio</h2>
-              <p>
-                Mis proyectos personales y trabajos realizados para la Universidad.
-              </p>
-            <span class="ui-title-underline"></span>
-            <div class="projects-wrapper-size" id="js-projects-wrapper"></div>
-            </div>
+    <div class="content-page-hidden" id="js-port-page">
+      <div class="page-header-position">
+        <h2 class="page-title-hidden">Portfolio</h2>
+        <p>
+          Mis proyectos personales y trabajos realizados para la Universidad.
+        </p>
+        <span class="ui-title-underline"></span>
+        <div class="projects-wrapper-size" id="js-projects-wrapper">
+          <p>Mini-juegos</p>
+          <div id="js-personal-porfolio"></div>
+          <span class="ui-title-underline"></span>
+
+          <p>PSD a HTML</p>
+          <div id="js-templates-porfolio"></div>
+          <span class="ui-title-underline"></span>
+
+          <p>Animaciones en banners utilizando GreenSock</p>
+          <p>Un curso impartido por Prodigious</p>
+          <div id="js-banners-porfolio"></div>
+          <span class="ui-title-underline"></span>
         </div>
+      </div>
+    </div>
 
-        <div class="content-page-hidden" id="js-educ-page">
-          <div class="page-header-position">
-            <h2 class="page-title-hidden">Educación</h2>
-            <p>Titulos obtenidos hasta el momento.</p>
-            <span class="ui-title-underline"></span>
-          </div>
-          <ul class="diploma-list-position" id="js-diploma-page"></ul>
-        </div>
+    <div class="content-page-hidden" id="js-educ-page">
+      <div class="page-header-position">
+        <h2 class="page-title-hidden">Educación</h2>
+        <p>Titulos obtenidos hasta el momento.</p>
+        <span class="ui-title-underline"></span>
+      </div>
+      <ul class="diploma-list-position" id="js-diploma-page"></ul>
+    </div>
 
-        <div class="content-page-hidden" id="js-exp-page">
-          <div class="page-header-position">
-            <h2>Experiencia</h2>
-            <p>
-              Como experiencia previa tuve la gran oportunidad de trabajar en Hewlett-Packard Inc (HP) y Convergys.
-            </p>
-            <span class="ui-title-underline"></span>
+    <div class="content-page-hidden" id="js-exp-page">
+      <div class="page-header-position">
+        <h2>Experiencia</h2>
+        <p>
+          Como experiencia previa tuve la gran oportunidad de trabajar en
+          Hewlett-Packard Inc (HP) y Convergys.
+        </p>
+        <span class="ui-title-underline"></span>
+      </div>
+      <ul class="ui-companies-list">
+        <li class="list-company-item">
+          <div class="ui-company-background">
+            <img src="img/hpLogo.png" alt="Hp Inc logo" class="ui-company-logo" />
           </div>
-          <ul class="ui-companies-list">
-            <li class="list-company-item">
-              <div class="ui-company-background">
-                <img src="img/hpLogo.png" alt="Hp Inc logo" class="ui-company-logo">
-              </div>
-              <p>
-                En Hewlett-Packard fui agente de Call Center en una cuenta nocturna, en la cual daba soporte técnico a clientes del Reino Unido.
-              </p>
-              <p>
-                Durante el tiempo que trabajé para dicha cuenta tuve la gran experiencia de servir como Service Desk Agent y Queue Manager.
-              </p>
-              <h3>
-                <span class="ui-line-border"></span>
-                Service Desk Agent:
-              </h3>
-              <p>
-                En este rol pude desarrollar mis habilidades para adaptarme a nuevos softwares y procesos. Para ayudar a los clientes tenía la posibilidad de tener acceso remoto al dispositivo del usuario, lo cúal era mucha responsabilidad por las politicas de privacidad que tienen las personas en Europa.
-              </p>
-              <p>
-                A su vez pude mejorar mi habilidad de escucha y la capacidad de comprender el inglés y la gran variedad de acentos que hay en Europa.
-              </p>
-              <h3>
-                <span class="ui-line-border"></span>
-                Queue Manager:
-              </h3>
-              <p>
-                En este rol tenía gran responsabilidad con mis jefes, ya que tenía que crear reportes del trabajo hecho en la noche por el equipo en el que yo estaba.
-              </p>
-              <p>
-                Me encargaba de distribuir a los compañeros de equipo el trabajo que entraba. Fui capaz de dar y recibir feedback del trabajo hecho, lo cual me hizo mejorar viendo mi propio trabajo y el trabajo de mis compañeros.
-              </p>
-              <span class="ui-line-border"></span>
-            </li>
-            <li class="list-company-item">
-              <div class="ui-company-background">
-                <img src="img/convergysLogo.png" alt="Convergys logo" class="ui-company-logo">
-              </div>
-              <p>
-                En Convergys fui agente de Call Center en la cuenta Security Assurance, en la cual daba soporte a clientes de Estados Unidos.
-              </p>
-              <p>
-                Durante el tiempo que trabajé para la cuenta Security Assurance tuve la oportunidad de crecer en diversos roles, los cuales son: Tech Support Agent, Sales Agent y Billing Department Agent.
-              </p>
-              <span class="ui-line-border"></span>
-              <h3>Tech Support Agent:</h3>
-              <p>
-                En este rol aprendí mucho de virus, identity theft, seguridad y protección de información. También pude desarrollar habilidades para comprender a los usuarios, sus necesidades y preocupaciones, desarrollé paciencia y la escucha.
-              </p>
-              <span class="ui-line-border"></span>
-              <h3>Sales Agent:</h3>
-              <p>
-                En este rol aprendí a ganarme la confianza de los usuarios, controlar diversas situaciones, ayudar al usuario y vender un producto de seguridad para la protección de información personal.
-              </p>
-              <span class="ui-line-border"></span>
-              <h3>Billing Department Agent:</h3>
-              <p>
-                En este rol pude desarrollar mi logica matemática, paciencia y habilidades para ayudar de la mejor manera a los usuarios, ya que un usuario puede ser muy complicado de tratar cuando su problema o duda está relacionada al dinero y las facturaciones.
-              </p>
-              <span class="ui-line-border"></span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="content-page-hidden" id="js-contact-page">
-          <div class="contact-header-position">
-            <h2>Contacto</h2>
-            <p>Ponte en contacto conmigo por medio de:</p>
-            <!--<p>Ingresá un mensaje para ponerme en contacto con vos.</p>-->
-            <span class="ui-title-underline"></span>
-          </div>
-          <div class="contact-block-position">
-            <h3>Gmail:</h3>
-            <p>cristianpipe0494@gmailcom</p>
+          <p>
+            En Hewlett-Packard fui agente de Call Center en una cuenta
+            nocturna, en la cual daba soporte técnico a clientes del Reino
+            Unido.
+          </p>
+          <p>
+            Durante el tiempo que trabajé para dicha cuenta tuve la gran
+            experiencia de servir como Service Desk Agent y Queue Manager.
+          </p>
+          <h3>
             <span class="ui-line-border"></span>
-            <h3>Hotmail:</h3>
-            <p>cristianpipe94@hotmail.com</p>
+            Service Desk Agent:
+          </h3>
+          <p>
+            En este rol pude desarrollar mis habilidades para adaptarme a
+            nuevos softwares y procesos. Para ayudar a los clientes tenía la
+            posibilidad de tener acceso remoto al dispositivo del usuario, lo
+            cúal era mucha responsabilidad por las politicas de privacidad que
+            tienen las personas en Europa.
+          </p>
+          <p>
+            A su vez pude mejorar mi habilidad de escucha y la capacidad de
+            comprender el inglés y la gran variedad de acentos que hay en
+            Europa.
+          </p>
+          <h3>
             <span class="ui-line-border"></span>
-            <h4>Trabajos y praticas con cógido en Github:</h4>
-            <p>Durante mi tiempo como estudiante en el CETAV, pude desarrollar varios proyectos, tanto personales como tareas. Qué tal si vez el proceso?</p>
-            <a href="https://github.com/cristianfelipe94" target="bank" class="social-icon fab fa-github" id="github"></a>
-            <span class="ui-line-border"></span>
-            <h4>Dibujos y diseños hechos por mi en Instagram:</h4>
-            <p>Considero que los trabajos y las expresiones artisticas son importantes a la hora de conocer personas, siéntete invitado de conocer mi lado creativo.</p>
-            <a href="https://www.instagram.com/stoned_christ/" target="bank" class="social-icon fab fa-instagram" id="insta"></a>
-            <span class="ui-line-border"></span>
+            Queue Manager:
+          </h3>
+          <p>
+            En este rol tenía gran responsabilidad con mis jefes, ya que tenía
+            que crear reportes del trabajo hecho en la noche por el equipo en
+            el que yo estaba.
+          </p>
+          <p>
+            Me encargaba de distribuir a los compañeros de equipo el trabajo
+            que entraba. Fui capaz de dar y recibir feedback del trabajo
+            hecho, lo cual me hizo mejorar viendo mi propio trabajo y el
+            trabajo de mis compañeros.
+          </p>
+          <span class="ui-line-border"></span>
+        </li>
+        <li class="list-company-item">
+          <div class="ui-company-background">
+            <img src="img/convergysLogo.png" alt="Convergys logo" class="ui-company-logo" />
           </div>
-          <!--
+          <p>
+            En Convergys fui agente de Call Center en la cuenta Security
+            Assurance, en la cual daba soporte a clientes de Estados Unidos.
+          </p>
+          <p>
+            Durante el tiempo que trabajé para la cuenta Security Assurance
+            tuve la oportunidad de crecer en diversos roles, los cuales son:
+            Tech Support Agent, Sales Agent y Billing Department Agent.
+          </p>
+          <span class="ui-line-border"></span>
+          <h3>Tech Support Agent:</h3>
+          <p>
+            En este rol aprendí mucho de virus, identity theft, seguridad y
+            protección de información. También pude desarrollar habilidades
+            para comprender a los usuarios, sus necesidades y preocupaciones,
+            desarrollé paciencia y la escucha.
+          </p>
+          <span class="ui-line-border"></span>
+          <h3>Sales Agent:</h3>
+          <p>
+            En este rol aprendí a ganarme la confianza de los usuarios,
+            controlar diversas situaciones, ayudar al usuario y vender un
+            producto de seguridad para la protección de información personal.
+          </p>
+          <span class="ui-line-border"></span>
+          <h3>Billing Department Agent:</h3>
+          <p>
+            En este rol pude desarrollar mi logica matemática, paciencia y
+            habilidades para ayudar de la mejor manera a los usuarios, ya que
+            un usuario puede ser muy complicado de tratar cuando su problema o
+            duda está relacionada al dinero y las facturaciones.
+          </p>
+          <span class="ui-line-border"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-page-hidden" id="js-contact-page">
+      <div class="contact-header-position">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto conmigo por medio de:</p>
+        <!--<p>Ingresá un mensaje para ponerme en contacto con vos.</p>-->
+        <span class="ui-title-underline"></span>
+      </div>
+      <div class="contact-block-position">
+        <h3>Gmail:</h3>
+        <p>cristianpipe0494@gmailcom</p>
+        <span class="ui-line-border"></span>
+        <h3>Hotmail:</h3>
+        <p>cristianpipe94@hotmail.com</p>
+        <span class="ui-line-border"></span>
+        <h4>Trabajos y praticas con cógido en Github:</h4>
+        <p>Durante mi tiempo como estudiante en el CETAV, pude desarrollar
+          varios proyectos, tanto personales como tareas. Qué tal si vez el
+          proceso?</p>
+        <a href="https://github.com/cristianfelipe94" target="bank" class="social-icon fab fa-github" id="github"></a>
+        <span class="ui-line-border"></span>
+        <h4>Dibujos y diseños hechos por mi en Instagram:</h4>
+        <p>Considero que los trabajos y las expresiones artisticas son
+          importantes a la hora de conocer personas, siéntete invitado de
+          conocer mi lado creativo.</p>
+        <a href="https://www.instagram.com/stoned_christ/" target="bank" class="social-icon fab fa-instagram"
+          id="insta"></a>
+        <span class="ui-line-border"></span>
+      </div>
+      <!--
           <form action="POST" class="form-block-size">
             <label for="js-name-input">Name</label>
             <input type="text" name="nameInput" id="js-name-input" class="input-color" placeholder="señor peppinillos" minlength="4" maxlength="15">
@@ -256,20 +321,20 @@
             <input type="submit" class="submit-color" value="Enviar">
               <br/>
           </form>-->
-        </div>
-
-        <div class="content-page-hidden" id="js-github-page">
-            <div class="page-header-position">
-              <h2 class="page-title">Github</h2>
-              <p>
-                Mi más reciente actividad en Github.
-              </p>
-              <span class="ui-title-underline"></span>
-            </div>
-            <ul class="activity-wrapper" id="js-activity-list">
-            </ul>
-        </div>
     </div>
-    <script src="concat-js/concat.js"></script>
+
+    <div class="content-page-hidden" id="js-github-page">
+      <div class="page-header-position">
+        <h2 class="page-title">Github</h2>
+        <p>
+          Mi más reciente actividad en Github.
+        </p>
+        <span class="ui-title-underline"></span>
+      </div>
+      <ul class="activity-wrapper" id="js-activity-list"> </ul>
+    </div>
+  </div>
+  <script src="concat-js/concat.js"></script>
 </body>
+
 </html>

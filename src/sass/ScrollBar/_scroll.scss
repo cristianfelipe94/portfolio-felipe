@@ -1,17 +1,16 @@
-
 ::-webkit-scrollbar {
-    width: 5px;
-    transition: 3s;
+  width: 5px;
+  transition: 3s;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e82559;
+  background: #e82559;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #606378;
+  background: #606378;
 }

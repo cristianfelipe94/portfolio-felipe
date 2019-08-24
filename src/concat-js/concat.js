@@ -1,86 +1,90 @@
 // Get elements from DOM.
 // ///////////////////////
-const bodyDom = document.querySelector('body');
-const helloBtn = document.getElementById('js-img-avatar');
-const landingPage = document.getElementById('js-landingpage');
-const VerticalTabs = document.querySelectorAll('#js-tabs-info-wrapper');
-const btnClose = document.getElementById('js-btn-close');
-const homeContentBlock = document.getElementById('js-home-page');
-const portContentBlock = document.getElementById('js-port-page');
-const projectsWrapper = document.getElementById('js-projects-wrapper');
+const bodyDom = document.querySelector("body");
+const helloBtn = document.getElementById("js-img-avatar");
+const landingPage = document.getElementById("js-landingpage");
+const VerticalTabs = document.querySelectorAll("#js-tabs-info-wrapper");
+const btnClose = document.getElementById("js-btn-close");
+const homeContentBlock = document.getElementById("js-home-page");
+const helloAction = document.getElementById("js-hello");
+const portContentBlock = document.getElementById("js-port-page");
+const projectsWrapper = document.getElementById("js-projects-wrapper");
 
-const educationContentBlock = document.getElementById('js-diploma-page');
+const educationContentBlock = document.getElementById("js-diploma-page");
 
-const backgroundImg = document.getElementById('js-background-img');
+const backgroundImg = document.getElementById("js-background-img");
 
-const backgroundModal = document.getElementById('js-modal');
-const closeModalBtn = document.getElementById('js-close-modal');
+const backgroundModal = document.getElementById("js-modal");
+const closeModalBtn = document.getElementById("js-close-modal");
 
-const langWrapperDisplay = document.getElementById('js-lang-wrapper');
-const socialWrapperDisplay = document.getElementById('js-social-wrapper');
-const signWrapperDisplay = document.getElementById('js-sign-wrapper');
+const langWrapperDisplay = document.getElementById("js-lang-wrapper");
+const socialWrapperDisplay = document.getElementById("js-social-wrapper");
+const signWrapperDisplay = document.getElementById("js-sign-wrapper");
 
-const portFolioContent = document.getElementById('js-wrapper-portfolio');
+const portFolioContent = document.getElementById("js-wrapper-portfolio");
+const portFolioPersonal = document.getElementById("js-personal-porfolio");
+const porFolioPSD = document.getElementById("js-templates-porfolio");
+const porFolioBanners = document.getElementById("js-banners-porfolio");
 
-const tabsDom = document.getElementsByClassName('tab-items');
+const tabsDom = document.getElementsByClassName("tab-items");
 
-const activityContentBlock = document.getElementById('js-activity-list');
+const activityContentBlock = document.getElementById("js-activity-list");
 
-const btnSizer = document.getElementById('js-btn-size');
-const sizeName = document.getElementById('js-size-name');
+const btnSizer = document.getElementById("js-btn-size");
+const sizeName = document.getElementById("js-size-name");
 // ///////////////////////
 
 // Small libraries.
 // /////////////////
 function hiddingElements(elementsToBeHide) {
-	elementsToBeHide.className = 'content-page-hidden';
+  elementsToBeHide.className = "content-page-hidden";
 }
 
 function showingElements(elementsToBeShown) {
-	elementsToBeShown.className = 'content-page-showing';
+  elementsToBeShown.className = "content-page-showing";
 }
 
-function generateRandomNumb (maxValue) {
-	const maxNumber = maxValue;
-	const indexNumb = parseInt(Math.random() * maxValue);
-	return indexNumb;
+function generateRandomNumb(maxValue) {
+  const maxNumber = maxValue;
+  const indexNumb = parseInt(Math.random() * maxValue);
+  return indexNumb;
 }
 
 let counterSize = 0;
 let statusSize = 1;
-btnSizer.addEventListener('click', () => {
-	if (statusSize === 1) {
-		if (counterSize === 0) {
-			sizeName.innerText = '';
-			sizeName.innerText = 'Letra mediana.';
-			bodyDom.setAttribute('class', 'content-relativeness-medium');
-			counterSize += 1;
-		} else if (counterSize === 1) {
-			sizeName.innerText = '';
-			sizeName.innerText = 'Letra larga.';
-			bodyDom.setAttribute('class', 'content-relativeness-large');
-			counterSize += 1;
-		} else if (counterSize === 2) {
-			sizeName.innerText = '';
-			sizeName.innerText = 'Letra pequeña.';
-			bodyDom.setAttribute('class', 'content-relativeness-normal');
-			counterSize = 0;
-		}
-	} else if (statusSize === 0) {
-		if (counterSize === 0) {
-			sizeName.innerText = '';
-			bodyDom.setAttribute('class', 'content-relativeness-medium');
-			counterSize += 1;
-		} else if (counterSize === 1) {
-			sizeName.innerText = '';
-			bodyDom.setAttribute('class', 'content-relativeness-large');
-			counterSize += 1;
-		} else if (counterSize === 2) {
-			sizeName.innerText = '';
-			bodyDom.setAttribute('class', 'content-relativeness-normal');
-			counterSize = 0;
-		}
-	}
+btnSizer.addEventListener("click", () => {
+  if (statusSize === 1) {
+    if (counterSize === 0) {
+      sizeName.innerText = "";
+      sizeName.innerText = "Letra mediana.";
+      bodyDom.setAttribute("class", "content-relativeness-medium");
+      counterSize += 1;
+    } else if (counterSize === 1) {
+      sizeName.innerText = "";
+      sizeName.innerText = "Letra larga.";
+      bodyDom.setAttribute("class", "content-relativeness-large");
+      counterSize += 1;
+    } else if (counterSize === 2) {
+      sizeName.innerText = "";
+      sizeName.innerText = "Letra pequeña.";
+      bodyDom.setAttribute("class", "content-relativeness-normal");
+      counterSize = 0;
+    }
+  } else if (statusSize === 0) {
+    if (counterSize === 0) {
+      sizeName.innerText = "";
+      bodyDom.setAttribute("class", "content-relativeness-medium");
+      counterSize += 1;
+    } else if (counterSize === 1) {
+      sizeName.innerText = "";
+      bodyDom.setAttribute("class", "content-relativeness-large");
+      counterSize += 1;
+    } else if (counterSize === 2) {
+      sizeName.innerText = "";
+      bodyDom.setAttribute("class", "content-relativeness-normal");
+      counterSize = 0;
+    }
+  }
 });
 // /////////////////
 
@@ -90,193 +94,196 @@ const maxResponse = 10;
 const request = new XMLHttpRequest();
 
 function generateResponseElements(event) {
-	const response = event.target.response;
-	for (let e = 0; e < maxResponse; e++) {
-		const activityItem = document.createElement('li');
-		const activityDate = document.createElement('p');
-		const activityCommit = document.createElement('p');
-		const activityName = document.createElement('p');
-		const activityUrl = document.createElement('a');
+  const response = event.target.response;
+  for (let e = 0; e < maxResponse; e++) {
+    const activityItem = document.createElement("li");
+    const activityDate = document.createElement("p");
+    const activityCommit = document.createElement("p");
+    const activityName = document.createElement("p");
+    const activityUrl = document.createElement("a");
 
-		const responseUrlName = response[e].repo.name;
-		const responseUrlDomain = 'https://github.com/';
-		const responseFinalUrl = `${responseUrlDomain}${responseUrlName}`;
-		const responseTypeAction = response[e].type;
-		const responseDate = response[e].created_at;
-		const responseDateFormated = responseDate.slice(0, 10).split('-').reverse().join('.');
+    const responseUrlName = response[e].repo.name;
+    const responseUrlDomain = "https://github.com/";
+    const responseFinalUrl = `${responseUrlDomain}${responseUrlName}`;
+    const responseTypeAction = response[e].type;
+    const responseDate = response[e].created_at;
+    const responseDateFormated = responseDate
+      .slice(0, 10)
+      .split("-")
+      .reverse()
+      .join(".");
 
-		let responseMessage = response[e].payload.commits;
-		if (responseMessage !== undefined) {
-			responseMessage = response[e].payload.commits[0].message;
-			activityUrl.setAttribute('href', responseFinalUrl);
-			activityUrl.setAttribute('target', '_blank');
-			activityUrl.setAttribute('class', 'activity-url-color');
+    let responseMessage = response[e].payload.commits;
+    if (responseMessage !== undefined) {
+      responseMessage = response[e].payload.commits[0].message;
+      activityUrl.setAttribute("href", responseFinalUrl);
+      activityUrl.setAttribute("target", "_blank");
+      activityUrl.setAttribute("class", "activity-url-color");
 
-			activityDate.innerText = responseDateFormated;
-			activityCommit.innerText = responseMessage;
-			activityName.innerText = responseTypeAction;
-			activityUrl.innerText = responseFinalUrl;
+      activityDate.innerText = responseDateFormated;
+      activityCommit.innerText = responseMessage;
+      activityName.innerText = responseTypeAction;
+      activityUrl.innerText = responseFinalUrl;
 
-			activityItem.appendChild(activityDate);
-			activityItem.appendChild(activityCommit);
-			activityItem.appendChild(activityName);
-			activityItem.appendChild(activityUrl);
+      activityItem.appendChild(activityDate);
+      activityItem.appendChild(activityCommit);
+      activityItem.appendChild(activityName);
+      activityItem.appendChild(activityUrl);
 
-			activityItem.setAttribute('class', 'activity-item-wrapper');
+      activityItem.setAttribute("class", "activity-item-wrapper");
 
-			activityContentBlock.appendChild(activityItem);
-		} else if (responseMessage === undefined) {
-			activityUrl.setAttribute('href', responseFinalUrl);
-			activityUrl.setAttribute('target', '_blank');
-			activityUrl.setAttribute('class', 'activity-url-color');
+      activityContentBlock.appendChild(activityItem);
+    } else if (responseMessage === undefined) {
+      activityUrl.setAttribute("href", responseFinalUrl);
+      activityUrl.setAttribute("target", "_blank");
+      activityUrl.setAttribute("class", "activity-url-color");
 
-			activityDate.innerText = responseDateFormated;
-			activityName.innerText = responseTypeAction;
-			activityUrl.innerText = responseFinalUrl;
+      activityDate.innerText = responseDateFormated;
+      activityName.innerText = responseTypeAction;
+      activityUrl.innerText = responseFinalUrl;
 
-			activityItem.appendChild(activityDate);
-			activityItem.appendChild(activityName);
-			activityItem.appendChild(activityUrl);
+      activityItem.appendChild(activityDate);
+      activityItem.appendChild(activityName);
+      activityItem.appendChild(activityUrl);
 
-			activityItem.setAttribute('class', 'activity-item-wrapper');
+      activityItem.setAttribute("class", "activity-item-wrapper");
 
-			activityContentBlock.appendChild(activityItem);
-		}
-	}
+      activityContentBlock.appendChild(activityItem);
+    }
+  }
 }
-request.addEventListener('load', generateResponseElements);
+request.addEventListener("load", generateResponseElements);
 
 // Response the system is waiting.
-request.responseType = 'json';
+request.responseType = "json";
 
-const searchUrl = 'https://api.github.com/users/cristianfelipe94/events';
+const searchUrl = "https://api.github.com/users/cristianfelipe94/events";
 
 // Request GET from the API Key.
 // API Key: ec6b87893ed99918950286ecdc97bf34.
-request.open('GET', searchUrl);
+request.open("GET", searchUrl);
 // Sent the Request.
 request.send();
 // //////////////////////////////////////
 
 // Close and Open animator.
 // ////////////////////////
-helloBtn.addEventListener('click', (() => {
-	statusSize = 0;
-  sizeName.innerText = '';
+helloBtn.addEventListener("click", () => {
+  statusSize = 0;
+  sizeName.innerText = "";
 
-	langWrapperDisplay.setAttribute('class', 'lang-opacity-delay');
-  socialWrapperDisplay.setAttribute('class', 'social-opacity-delay');
+  langWrapperDisplay.setAttribute("class", "lang-opacity-delay");
+  socialWrapperDisplay.setAttribute("class", "social-opacity-delay");
 
-  backgroundImg.setAttribute('class', 'background-img-showing');
-
-	const signatureLogoDelay = (() => {
-		signWrapperDisplay.setAttribute('class', 'sign-opacity-delay');
-  });
+  const signatureLogoDelay = () => {
+    signWrapperDisplay.setAttribute("class", "sign-opacity-delay");
+    helloAction.innerHTML = "";
+  };
   setTimeout(signatureLogoDelay, 1000);
 
-  const landingPageDelay = (() => {
-    landingPage.setAttribute('class', 'landingPageMoves');
-  });
+  const landingPageDelay = () => {
+    landingPage.setAttribute("class", "landingPageMoves");
+  };
   setTimeout(landingPageDelay, 3000);
 
-  const contentInfoDelay = (() => {
+  const contentInfoDelay = () => {
     showingElements(homeContentBlock);
-  });
+  };
   setTimeout(contentInfoDelay, 5000);
 
-  const btnCloseDelay = (() => {
-    btnClose.setAttribute('class', 'btnAction-showing');
-  });
+  const btnCloseDelay = () => {
+    btnClose.setAttribute("class", "btnAction-showing");
+  };
   setTimeout(btnCloseDelay, 7000);
-}));
+});
 
-btnClose.addEventListener('click', (() => {
-	statusSize = 1;
-	if (counterSize === 0) {
-		sizeName.innerText = 'Letra pequeña.';
-	} else if (counterSize === 1) {
-		sizeName.innerText = 'Letra mediana.';
-	} else if (counterSize === 2) {
-		sizeName.innerText = 'Letra larga.';
+btnClose.addEventListener("click", () => {
+  statusSize = 1;
+  if (counterSize === 0) {
+    sizeName.innerText = "Letra pequeña.";
+  } else if (counterSize === 1) {
+    sizeName.innerText = "Letra mediana.";
+  } else if (counterSize === 2) {
+    sizeName.innerText = "Letra larga.";
   }
 
-  btnClose.setAttribute('class', 'btnAction-hidden');
+  btnClose.setAttribute("class", "btnAction-hidden");
 
-  const contentInfoDelay = (() => {
-    tabsArray.forEach((element) => {
+  const contentInfoDelay = () => {
+    tabsArray.forEach(element => {
       for (const i of element) {
-        if (i.className === 'content-page-showing') {
+        if (i.className === "content-page-showing") {
           hiddingElements(i);
         }
       }
     });
-  });
+  };
   setTimeout(contentInfoDelay, 1000);
 
-  const landingPageDelay = (() => {
-    landingPage.setAttribute('class', 'landing-page-wrapper');
-  });
+  const landingPageDelay = () => {
+    landingPage.setAttribute("class", "landing-page-wrapper");
+  };
   setTimeout(landingPageDelay, 4000);
-  
-  const backgroundHiddenDelay = (() => {
-    langWrapperDisplay.setAttribute('class', 'lang');
-    socialWrapperDisplay.setAttribute('class', 'social');
-    signWrapperDisplay.setAttribute('class', 'sign');
-    backgroundImg.setAttribute('class', 'background-img-hidden');
-  });
-  setTimeout(backgroundHiddenDelay, 8000);
-}));
-// ////////////////////////
 
+  const backgroundHiddenDelay = () => {
+    langWrapperDisplay.setAttribute("class", "lang");
+    socialWrapperDisplay.setAttribute("class", "social");
+    signWrapperDisplay.setAttribute("class", "sign");
+    helloAction.innerHTML = "Click";
+  };
+  setTimeout(backgroundHiddenDelay, 8000);
+});
+// ////////////////////////
 // Background image generator.
 // ///////////////////////////
 const imgBackground = [
-	'img/background/ambar.jpg',
-	'img/background/ann.jpg',
-	'img/background/soft.jpg',
-	'img/background/floyd.jpg',
-	'img/background/mermaid.jpg',
-	'img/background/witch.jpg',
-	'img/background/support.jpg',
-	'img/background/skinish.jpg',
-	'img/background/rights.jpg',
-	'img/background/strong.jpg',
-	'img/background/zelda.jpg',
+  "img/background/ambar.jpg",
+  "img/background/ann.jpg",
+  "img/background/soft.jpg",
+  "img/background/floyd.jpg",
+  "img/background/mermaid.jpg",
+  "img/background/witch.jpg",
+  "img/background/support.jpg",
+  "img/background/skinish.jpg",
+  "img/background/rights.jpg",
+  "img/background/strong.jpg",
+  "img/background/zelda.jpg"
 ];
 
 function loadBackgroundImg() {
-	const indexBackground = generateRandomNumb(imgBackground.length);
-	backgroundImg.setAttribute('src', imgBackground[indexBackground]);
+  const indexBackground = generateRandomNumb(imgBackground.length);
+  backgroundImg.setAttribute("src", imgBackground[indexBackground]);
+  backgroundImg.setAttribute("class", "background-img-showing");
 }
-window.addEventListener('load', loadBackgroundImg);
+window.addEventListener("load", loadBackgroundImg);
 // ///////////////////////////
 
 //  Setter path for tabs and them content.
 // //////////////////////////////////////
 const tabsArray = [];
 function tab(selector) {
-	const elements = selector;
-	for (const element of elements) {
-		const links = element.querySelectorAll('ul > li');
+  const elements = selector;
+  for (const element of elements) {
+    const links = element.querySelectorAll("ul > li");
 
-		const listItem = element.querySelectorAll('div .content-page-hidden');
-		tabsArray.push(listItem);
+    const listItem = element.querySelectorAll("div .content-page-hidden");
+    tabsArray.push(listItem);
 
-		for (const link of links) {
-			link.addEventListener('click', function change(e) {
-				clear();
-				let insideElement = link.children[0];
-				const tabsOption = insideElement.getAttribute('href');
-				let tabsContent = element.querySelector(tabsOption);
-				showingElements(tabsContent);
-			});
-			function clear() {
-				for (const item of listItem) {
-					hiddingElements(item);
-				}
-			}
-		}
-	}
+    for (const link of links) {
+      link.addEventListener("click", function change(e) {
+        clear();
+        let insideElement = link.children[0];
+        const tabsOption = insideElement.getAttribute("href");
+        let tabsContent = element.querySelector(tabsOption);
+        showingElements(tabsContent);
+      });
+      function clear() {
+        for (const item of listItem) {
+          hiddingElements(item);
+        }
+      }
+    }
+  }
 }
 tab(VerticalTabs);
 // //////////////////////////////////////
@@ -284,180 +291,194 @@ tab(VerticalTabs);
 // Porfolio projects generator.
 // ////////////////////////////
 const imgPortArray = [
-	imgPort1 = {
-		src: 'img/canvas_game_port1.jpg',
-		alt: 'canvas mini game picture',
-		href: 'https://cristianfelipe94.github.io/CanvasGame/',
-		type: 'game',
-	},
-	imgPort2 = {
-		src: 'img/derrota_palabra_port1.jpg',
-		alt: 'derrota la palabra game picture',
-		href: 'https://cristianfelipe94.github.io/Derrota-la-Palabra/',
-		type: 'game',
-	},
-	imgPort3 = {
-		src: 'img/tiny_one_port1.jpg',
-		alt: 'tiny one picture',
-		href: 'https://cristianfelipe94.github.io/TinyOneWebSite/',
-		type: 'page',
-	},
-	imgPort4 = {
-		src: 'img/folio_port1.jpg',
-		alt: 'folio picture',
-		href: 'https://cristianfelipe94.github.io/Final-Test./',
-		type: 'page',
-	},
-	imgPort5 = {
-		src: 'img/blaz_port1.jpg',
-		alt: 'blaz game picture',
-		href: 'https://cristianfelipe94.github.io/BlazRobarWebsite/',
-		type: 'page',
-	},
-	imgPort6 = {
-		src: 'img/cuda_port1.jpg',
-		alt: 'cuda game picture',
-		href: 'https://cristianfelipe94.github.io/ExamenWeb/',
-		type: 'page',
-	},
-	imgPort7 = {
-		src: 'https://cristianfelipe94.github.io/Cheesecake-Banner-Animation/',
-		alt: 'Banner made for Prodigious course',
-		type: 'banner',
-	},
-	imgPort8 = {
-		src: 'https://cristianfelipe94.github.io/CherryBanner-Prodigious/',
-		alt: 'Banner made for Prodigious course',
-		type: 'banner',
-	},
-	imgPort8 = {
-		src: 'https://cristianfelipe94.github.io/NutClusters-Banner-Prodigious/',
-		alt: 'Banner made for Prodigious course',
-		type: 'banner',
-  },
-  imgPort9 = {
-		src: 'https://cristianfelipe94.github.io/LunchableBanner-Prodigious/',
-		alt: 'Banner made for Prodigious course',
-		type: 'banner',
-  },
-  imgPort10 = {
-		src: 'https://cristianfelipe94.github.io/PlantersBanner-Prodigious/',
-		alt: 'Banner made for Prodigious course',
-		type: 'banner',
-  },
-  imgPort11 = {
-		src: 'https://cristianfelipe94.github.io/MrBirthdayBanner-Prodigious/',
-		alt: 'Banner made for Prodigious course',
-		type: 'banner',
-  },
+  (imgPort13 = {
+    src: "img/turing-pwa.jpg",
+    alt: "react application for educational purposes.",
+    href: "https://turning.netlify.com/#/",
+    type: "game",
+    description: "Esta es una PWA creada con ReactJs, HTML y CSS."
+  }),
+  (imgPort1 = {
+    src: "img/canvas_game_port1.jpg",
+    alt: "canvas mini game picture",
+    href: "https://cristianfelipe94.github.io/CanvasGame/",
+    type: "game",
+    description: "Canvas, Javascript, HTML y SASS."
+  }),
+  (imgPort2 = {
+    src: "img/derrota_palabra_port1.jpg",
+    alt: "derrota la palabra game picture",
+    href: "https://cristianfelipe94.github.io/Derrota-la-Palabra/",
+    type: "game",
+    description: '"Word Beater" usando HTML, Javascript y CSS.'
+  }),
+  (imgPort3 = {
+    src: "img/tiny_one_port1.jpg",
+    alt: "tiny one picture",
+    href: "https://cristianfelipe94.github.io/TinyOneWebSite/",
+    type: "page"
+  }),
+  (imgPort4 = {
+    src: "img/folio_port1.jpg",
+    alt: "folio picture",
+    href: "https://cristianfelipe94.github.io/Final-Test./",
+    type: "page"
+  }),
+  (imgPort5 = {
+    src: "img/blaz_port1.jpg",
+    alt: "blaz game picture",
+    href: "https://cristianfelipe94.github.io/BlazRobarWebsite/",
+    type: "page"
+  }),
+  (imgPort6 = {
+    src: "img/cuda_port1.jpg",
+    alt: "cuda game picture",
+    href: "https://cristianfelipe94.github.io/ExamenWeb/",
+    type: "page"
+  }),
+  (imgPort7 = {
+    src: "https://cristianfelipe94.github.io/PlantersBanner-Prodigious/",
+    alt: "Banner made for Prodigious course",
+    type: "banner"
+  }),
+  (imgPort8 = {
+    src: "https://cristianfelipe94.github.io/MrBirthdayBanner-Prodigious/",
+    alt: "Banner made for Prodigious course",
+    type: "banner"
+  }),
+  (imgPort9 = {
+    src: "https://cristianfelipe94.github.io/NutClusters-Banner-Prodigious/",
+    alt: "Banner made for Prodigious course",
+    type: "banner"
+  }),
+  (imgPort10 = {
+    src: "https://cristianfelipe94.github.io/LunchableBanner-Prodigious/",
+    alt: "Banner made for Prodigious course",
+    type: "banner"
+  }),
+  ,
+  (imgPort11 = {
+    src: "https://cristianfelipe94.github.io/Cheesecake-Banner-Animation/",
+    alt: "Banner made for Prodigious course",
+    type: "banner"
+  }),
+  (imgPort12 = {
+    src: "https://cristianfelipe94.github.io/CherryBanner-Prodigious/",
+    alt: "Banner made for Prodigious course",
+    type: "banner"
+  })
 ];
 
-imgPortArray.forEach((element) => {
-	const elementSrc = element.src;
-	const elementAlt = element.alt;
-	const elementUrl = element.href;
-	const elementTypeOf = element.type;
-	let elementPort;
-	const portElementWrapper = document.createElement('div');
-	portElementWrapper.setAttribute('class', 'portfolio-wrappers');
-	if (elementTypeOf === 'game') {
-		const gameLink = document.createElement('a');
-		elementPort = document.createElement('img');
-		gameLink.setAttribute('class', 'portfolio-icons fas fa-gamepad');
-		gameLink.setAttribute('href', elementUrl);
-		gameLink.setAttribute('target', '_blank');
-		portElementWrapper.appendChild(gameLink);
-		elementPort.setAttribute('src', elementSrc);
-		elementPort.setAttribute('alt', elementAlt);
-		elementPort.setAttribute('class', 'gallery-port');
-		portElementWrapper.appendChild(elementPort);
-		projectsWrapper.appendChild(portElementWrapper);
-	} else if (elementTypeOf === 'page') {
-		const pageLink = document.createElement('a');
-		elementPort = document.createElement('img');
-		pageLink.setAttribute('class', 'portfolio-icons fas fa-eye');
-		pageLink.setAttribute('href', elementUrl);
-		pageLink.setAttribute('target', '_blank');
-		portElementWrapper.appendChild(pageLink);
-		elementPort.setAttribute('src', elementSrc);
-		elementPort.setAttribute('alt', elementAlt);
-		elementPort.setAttribute('class', 'gallery-port');
-		portElementWrapper.appendChild(elementPort);
-		projectsWrapper.appendChild(portElementWrapper);
-	} else if (elementTypeOf === 'banner') {
-    portElementWrapper.setAttribute('class', 'portfolio-wrapper-banner');
-		const pageLink = document.createElement('iframe');
-		pageLink.setAttribute('src', elementSrc);
-		pageLink.setAttribute('class', 'frame-portfolio-size');
-		pageLink.setAttribute('target', '_blank');
-		portElementWrapper.appendChild(pageLink);
-		projectsWrapper.appendChild(portElementWrapper);
-	}
+imgPortArray.forEach(element => {
+  const elementSrc = element.src;
+  const elementAlt = element.alt;
+  const elementUrl = element.href;
+  const elementTypeOf = element.type;
+  let elementPort;
+  const portElementWrapper = document.createElement("div");
+  portElementWrapper.setAttribute("class", "portfolio-wrappers");
+  if (elementTypeOf === "game") {
+    const gameDescription = element.description;
+    const gameDescriptionElement = document.createElement("p");
+    portElementWrapper.appendChild(gameDescriptionElement);
+    const gameLink = document.createElement("a");
+    elementPort = document.createElement("img");
+    gameLink.setAttribute("class", "portfolio-icons fas fa-gamepad");
+    gameLink.setAttribute("href", elementUrl);
+    gameLink.setAttribute("target", "_blank");
+    portElementWrapper.appendChild(gameLink);
+    gameDescriptionElement.innerText = gameDescription;
+    elementPort.setAttribute("src", elementSrc);
+    elementPort.setAttribute("alt", elementAlt);
+    elementPort.setAttribute("class", "gallery-port");
+    portElementWrapper.appendChild(elementPort);
+    portFolioPersonal.appendChild(portElementWrapper);
+  } else if (elementTypeOf === "page") {
+    const pageLink = document.createElement("a");
+    elementPort = document.createElement("img");
+    pageLink.setAttribute("class", "portfolio-icons fas fa-eye");
+    pageLink.setAttribute("href", elementUrl);
+    pageLink.setAttribute("target", "_blank");
+    portElementWrapper.appendChild(pageLink);
+    elementPort.setAttribute("src", elementSrc);
+    elementPort.setAttribute("alt", elementAlt);
+    elementPort.setAttribute("class", "gallery-port");
+    portElementWrapper.appendChild(elementPort);
+    porFolioPSD.appendChild(portElementWrapper);
+  } else if (elementTypeOf === "banner") {
+    portElementWrapper.setAttribute("class", "portfolio-wrapper-banner");
+    const pageLink = document.createElement("iframe");
+    pageLink.setAttribute("src", elementSrc);
+    pageLink.setAttribute("class", "frame-portfolio-size");
+    pageLink.setAttribute("target", "_blank");
+    portElementWrapper.appendChild(pageLink);
+    porFolioBanners.appendChild(portElementWrapper);
+  }
 });
 // ////////////////////////////
 
 // Diploma elements generator.
 // ///////////////////////////
 const diplomaContent = [
-	diploma1 = {
-		src: 'img/diploma.png',
-		alt: 'diploma information',
-		content: 'Título de Diseño y Desarrollo Web CETAV',
-		date: 'Fecha CETAV',
-	},
-	diploma2 = {
-		src: 'img/diploma.png',
-		alt: 'diploma information',
-		content: 'Título de Pronunciación Inglesa INA',
-		date: 'Fecha INA',
-	},
-	diploma3 = {
-		src: 'img/diploma.png',
-		alt: 'diploma information',
-		content: 'Titulo de Aplicaciones Ofimáticas INA',
-		date: 'Fecha INA',
-	},
-	diploma4 = {
-		src: 'img/diploma.png',
-		alt: 'diploma information',
-		content: 'Título de Secundaria Liceo Anastasio Alfaro',
-		date: 'Fecha Secundaria',
-	},
-	diploma5 = {
-		src: 'img/diploma.png',
-		alt: 'diploma information',
-		content: 'Título de Primaria Escuela Roberto Cantillano Vindas',
-		date: 'Fecha Primaria',
-	},
+  (diploma1 = {
+    src: "img/diploma.png",
+    alt: "diploma information",
+    content: "Título de Diseño y Desarrollo Web CETAV",
+    date: "Fecha CETAV"
+  }),
+  (diploma2 = {
+    src: "img/diploma.png",
+    alt: "diploma information",
+    content: "Título de Pronunciación Inglesa INA",
+    date: "Fecha INA"
+  }),
+  (diploma3 = {
+    src: "img/diploma.png",
+    alt: "diploma information",
+    content: "Titulo de Aplicaciones Ofimáticas INA",
+    date: "Fecha INA"
+  }),
+  (diploma4 = {
+    src: "img/diploma.png",
+    alt: "diploma information",
+    content: "Título de Secundaria Liceo Anastasio Alfaro",
+    date: "Fecha Secundaria"
+  }),
+  (diploma5 = {
+    src: "img/diploma.png",
+    alt: "diploma information",
+    content: "Título de Primaria Escuela Roberto Cantillano Vindas",
+    date: "Fecha Primaria"
+  })
 ];
 
-diplomaContent.forEach((element) => {
-	const srcElement = element.src;
-	const altElement = element.alt;
-	const contentElement = element.content;
-	const dateElement = element.date;
+diplomaContent.forEach(element => {
+  const srcElement = element.src;
+  const altElement = element.alt;
+  const contentElement = element.content;
+  const dateElement = element.date;
 
-	const elementListItem = document.createElement('li');
-	const elementLogo = document.createElement('img');
-	const elementInformation = document.createElement('p');
-	const elementDateInfo = document.createElement('p');
+  const elementListItem = document.createElement("li");
+  const elementLogo = document.createElement("img");
+  const elementInformation = document.createElement("p");
+  const elementDateInfo = document.createElement("p");
 
-	elementLogo.setAttribute('src', srcElement);
-	elementLogo.setAttribute('alt', altElement);
-	elementLogo.setAttribute('class', 'diploma-logo-size');
+  elementLogo.setAttribute("src", srcElement);
+  elementLogo.setAttribute("alt", altElement);
+  elementLogo.setAttribute("class", "diploma-logo-size");
 
-	elementInformation.innerText = contentElement;
-	elementInformation.setAttribute('class', 'diploma-content');
+  elementInformation.innerText = contentElement;
+  elementInformation.setAttribute("class", "diploma-content");
 
-	elementDateInfo.innerText = dateElement;
-	elementDateInfo.setAttribute('class', 'diploma-date-position');
+  elementDateInfo.innerText = dateElement;
+  elementDateInfo.setAttribute("class", "diploma-date-position");
 
-	elementListItem.setAttribute('class', 'diploma-position');
+  elementListItem.setAttribute("class", "diploma-position");
 
-	elementListItem.appendChild(elementLogo);
-	elementListItem.appendChild(elementInformation);
-	elementListItem.appendChild(elementDateInfo);
+  elementListItem.appendChild(elementLogo);
+  elementListItem.appendChild(elementInformation);
+  elementListItem.appendChild(elementDateInfo);
 
-	educationContentBlock.appendChild(elementListItem);
+  educationContentBlock.appendChild(elementListItem);
 });
 // ///////////////////////////

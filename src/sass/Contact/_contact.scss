@@ -1,6 +1,6 @@
 .form-block-size {
-    width: 80%;
-    margin: 5% auto;
+  width: 80%;
+  margin: 5% auto;
 }
 
 .contact-header-position {
@@ -10,34 +10,34 @@
 }
 
 .input-color {
-    margin: 5% 2%;
-    overflow: visible;
-    width: 50%;
+  margin: 5% 2%;
+  overflow: visible;
+  width: 50%;
 }
 
 .message-input-color {
-	margin: 2% 0 5%;
-	overflow: visible;
-	width: 92%;
-	padding: 4%;
+  margin: 2% 0 5%;
+  overflow: visible;
+  width: 92%;
+  padding: 4%;
 }
 
 .submit-color {
-    background-image: linear-gradient(to bottom right,#0075a0,#27c8d5);
-    border: none;
-    box-shadow: 1px 1px 30px#27c8d5;
-    color: white;
-    display: block;
-    font-size: 1.1rem;
-    left: 0;
-    margin: 0 auto;
-    padding: 2%;
-    position: absolute;
-    right: 0;
-    transition: 2s;
-    width: 50%;
-    &:hover {
-        box-shadow: 1px 1px 20px #0075a0;
-        transition: 1s;
-    }
+  background-image: linear-gradient(to bottom right, #0075a0, #27c8d5);
+  border: none;
+  box-shadow: 1px 1px 30px#27c8d5;
+  color: white;
+  display: block;
+  font-size: 1.1rem;
+  left: 0;
+  margin: 0 auto;
+  padding: 2%;
+  position: absolute;
+  right: 0;
+  transition: 2s;
+  width: 50%;
+  &:hover {
+    box-shadow: 1px 1px 20px #0075a0;
+    transition: 1s;
+  }
 }
